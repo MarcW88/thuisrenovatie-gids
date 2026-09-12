@@ -9,7 +9,14 @@ on:
       - 'problemen-oplossen/**'
       - 'vakman-en-offertes/**'
       - 'doe-het-zelf/**'
+      - 'content/site.json'
+      - 'content/meta*.json'
+      - 'index.html'
+      - 'robots.txt'
+      - 'sitemap.xml'
       - 'generate_pages.py'
+      - 'scripts/render_homepage_seo.py'
+      - 'scripts/validate_global_seo.py'
       - 'scripts/validate_renovation_structure.py'
       - 'scripts/validate_empty_content_phase.py'
   push:
@@ -21,7 +28,14 @@ on:
       - 'problemen-oplossen/**'
       - 'vakman-en-offertes/**'
       - 'doe-het-zelf/**'
+      - 'content/site.json'
+      - 'content/meta*.json'
+      - 'index.html'
+      - 'robots.txt'
+      - 'sitemap.xml'
       - 'generate_pages.py'
+      - 'scripts/render_homepage_seo.py'
+      - 'scripts/validate_global_seo.py'
   workflow_dispatch:
 
 jobs:
@@ -34,5 +48,7 @@ jobs:
           python-version: '3.12'
       - name: Validate Dutch page structure
         run: python scripts/validate_renovation_structure.py
-      - name: Keep pages empty until editorial generation is enabled
+      - name: Validate route content state
         run: python scripts/validate_empty_content_phase.py
+      - name: Validate global SEO state
+        run: python scripts/validate_global_seo.py
