@@ -1,0 +1,33 @@
+name: Editorial workflow readiness
+
+on:
+  pull_request:
+    paths:
+      - 'AGENTS.md'
+      - '.agents/**'
+      - 'scripts/**'
+      - '.github/workflows/editorial-quality.yml'
+  workflow_dispatch:
+
+jobs:
+  policy-and-routing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate 80-20 skill policy
+        run: python scripts/check_skill_policy.py
+      - name: Validate site structure
+        run: python scripts/validate_renovation_structure.py
+      - name: Confirm empty-content phase
+        run: python scripts/validate_empty_content_phase.py
+      - name: Show editorial routing
+        run: |
+          echo "PLAN -> renovatie-plannen"
+          echo "PROJECT -> renovatieprojecten"
+          echo "SUSTAINABILITY -> verduurzamen"
+          echo "DIY -> doe-het-zelf"
+          echo "TROUBLESHOOTING -> problemen-oplossen"
+          echo "LEAD -> vakman-en-offertes"

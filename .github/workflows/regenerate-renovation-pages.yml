@@ -1,0 +1,44 @@
+name: Regenerate empty renovation pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'generate_pages.py'
+      - 'css/**'
+      - 'js/**'
+      - '.github/workflows/regenerate-renovation-pages.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regenerate current empty page shell
+        run: python generate_pages.py
+      - name: Validate structure
+        run: python scripts/validate_renovation_structure.py
+      - name: Guard empty-content phase
+        run: python scripts/validate_empty_content_phase.py
+      - name: Commit regenerated shells
+        run: |
+          git config user.name "Marc Williame"
+          git config user.email "146358493+MarcW88@users.noreply.github.com"
+          git add renovatie-plannen renovatieprojecten verduurzamen problemen-oplossen vakman-en-offertes doe-het-zelf
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit"
+          else
+            git commit -m "content: regenerate empty renovation pages"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
