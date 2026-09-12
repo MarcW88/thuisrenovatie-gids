@@ -48,6 +48,18 @@ META = {
         "title": "Huis renoveren: stappenplan voor een slimme renovatie | Thuisrenovatie Gids",
         "description": "Je huis renoveren? Ontdek waar je begint, welke beslissingen eerst komen en hoe je scope, budget, vergunningen en uitvoering logisch plant.",
     },
+    "renovatie-plannen/renovatie-volgorde": {
+        "title": "Renovatie volgorde: wat moet eerst bij verbouwen? | Thuisrenovatie Gids",
+        "description": "Welke renovatiewerken moeten eerst? Bepaal de juiste volgorde op basis van veiligheid, afhankelijkheden, installaties en afwerking.",
+    },
+    "renovatie-plannen/renovatiefasen": {
+        "title": "Renovatiefasen: van voorbereiding tot oplevering | Thuisrenovatie Gids",
+        "description": "Bekijk de belangrijkste renovatiefasen en welke beslissingen je per fase neemt, van inventarisatie en budget tot uitvoering en oplevering.",
+    },
+    "renovatie-plannen/complete-renovatie": {
+        "title": "Complete renovatie: zo plan je een volledige woningrenovatie | Thuisrenovatie Gids",
+        "description": "Een complete renovatie plannen? Ontdek wanneer één integraal project logisch is, wanneer je beter faseert en hoe je afhankelijkheden beheert.",
+    },
 }
 
 
