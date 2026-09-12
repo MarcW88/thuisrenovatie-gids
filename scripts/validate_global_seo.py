@@ -1,4 +1,5 @@
 from pathlib import Path
+from urllib.parse import urlsplit
 import json
 import re
 import xml.etree.ElementTree as ET
@@ -23,6 +24,23 @@ for category in CATEGORY_DIRS:
 
 errors = []
 canonicals = []
+titles = {}
+inbound = {path: 0 for path in html_files}
+
+
+def target_file(href):
+    if not href.startswith("/") or href.startswith("//"):
+        return None
+
+    clean_path = urlsplit(href).path
+    if clean_path == "/":
+        return R / "index.html"
+
+    if not clean_path.endswith("/"):
+        return None
+
+    return R / clean_path.strip("/") / "index.html"
+
 
 for path in html_files:
     html = path.read_text(encoding="utf-8")
@@ -44,6 +62,13 @@ for path in html_files:
     if not re.search(r'<meta name="description" content="[^"]+">', html):
         errors.append(f"{rel}: missing meta description")
 
+    title_match = re.search(r"<title>(.*?)</title>", html, flags=re.DOTALL)
+    if not title_match:
+        errors.append(f"{rel}: missing title")
+    else:
+        title = re.sub(r"\s+", " ", title_match.group(1)).strip()
+        titles.setdefault(title, []).append(str(rel))
+
     if html.count("<h1") != 1:
         errors.append(f"{rel}: expected exactly one H1")
 
@@ -61,6 +86,16 @@ for path in html_files:
 
     if '/vakman-en-offertes/offertes-vergelijken/' not in html:
         errors.append(f"{rel}: missing global comparison CTA")
+
+    for href in re.findall(r'<a\b[^>]*\bhref="([^"]+)"', html):
+        target = target_file(href)
+        if target is None:
+            continue
+        if not target.exists():
+            errors.append(f"{rel}: broken internal link {href}")
+            continue
+        if target in inbound and target != path:
+            inbound[target] += 1
 
 robots_path = R / "robots.txt"
 if not robots_path.exists():
@@ -95,6 +130,16 @@ else:
 if len(canonicals) != len(set(canonicals)):
     errors.append("Duplicate canonical URLs detected")
 
+for title, paths in titles.items():
+    if len(paths) > 1:
+        errors.append(f'Duplicate title "{title}": {paths}')
+
+for path, count in inbound.items():
+    if path == R / "index.html":
+        continue
+    if count == 0:
+        errors.append(f"{path.relative_to(R)}: orphan page with no internal inbound link")
+
 if errors:
     print("Global SEO validation failed:")
     for error in errors:
@@ -103,5 +148,6 @@ if errors:
 
 print(
     f"Validated {len(html_files)} HTML pages: {EXPECTED_ROBOTS}, "
-    "self-canonical, descriptions, schema, sitemap, robots and CTA."
+    "self-canonical, unique titles, descriptions, schema, sitemap, robots, "
+    "CTA and internal-link integrity."
 )
