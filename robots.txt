@@ -1,0 +1,5 @@
+# Crawling blijft toegestaan zodat zoekmachines de noindex-directive kunnen zien.
+User-agent: *
+Allow: /
+
+Sitemap: https://thuisrenovatie-gids.nl/sitemap.xml
