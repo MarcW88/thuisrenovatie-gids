@@ -47,6 +47,10 @@ Structuur: wanneer een vakman nodig is → voorbereiding → wat in de offerte m
 - Geen fictieve hands-on ervaring.
 - Geen nieuwe route of CTA-flow introduceren zonder aansluiting op de bestaande architectuur.
 
-## Huidige beperking
+## Publiceren per route
 
-Zolang de site in de lege-contentfase zit, mag deze workflow briefs en voorstellen opleveren maar niet automatisch tekst in de gegenereerde HTML publiceren.
+Content wordt route voor route geactiveerd. Een pagina mag pas uit de lege-contentfase wanneer er een gecontroleerde bron bestaat op:
+
+`content/<route>/body.html`
+
+`generate_pages.py` injecteert alleen zulke expliciet geactiveerde pagina's. Alle andere routes behouden automatisch de lege skeleton. Zo kan één cluster gecontroleerd worden opgebouwd zonder dat onvoltooide content elders op de site verschijnt.
