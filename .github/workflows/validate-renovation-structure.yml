@@ -1,0 +1,38 @@
+name: Validate renovation structure
+
+on:
+  pull_request:
+    paths:
+      - 'renovatie-plannen/**'
+      - 'renovatieprojecten/**'
+      - 'verduurzamen/**'
+      - 'problemen-oplossen/**'
+      - 'vakman-en-offertes/**'
+      - 'doe-het-zelf/**'
+      - 'generate_pages.py'
+      - 'scripts/validate_renovation_structure.py'
+      - 'scripts/validate_empty_content_phase.py'
+  push:
+    branches: [main]
+    paths:
+      - 'renovatie-plannen/**'
+      - 'renovatieprojecten/**'
+      - 'verduurzamen/**'
+      - 'problemen-oplossen/**'
+      - 'vakman-en-offertes/**'
+      - 'doe-het-zelf/**'
+      - 'generate_pages.py'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate Dutch page structure
+        run: python scripts/validate_renovation_structure.py
+      - name: Keep pages empty until editorial generation is enabled
+        run: python scripts/validate_empty_content_phase.py
