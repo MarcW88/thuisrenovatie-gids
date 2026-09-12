@@ -80,6 +80,30 @@ META = {
         "title": "Rendement van renovatie: meer dan terugverdientijd | Thuisrenovatie Gids",
         "description": "Beoordeel renovatierendement op kosten, comfort, energie, onderhoud, risico en toekomstwaarde in plaats van op één theoretische terugverdientijd.",
     },
+    "renovatieprojecten": {
+        "title": "Renovatieprojecten: bepaal eerst je scope | Thuisrenovatie Gids",
+        "description": "Van badkamer tot aanbouw: bepaal per renovatieproject eerst de scope, technische afhankelijkheden en offerte-eisen voordat je vakmensen vergelijkt.",
+    },
+    "renovatieprojecten/badkamer-renovatie": {
+        "title": "Badkamer renovatie: eerst beslissen, dan offertes | Thuisrenovatie Gids",
+        "description": "Badkamer renoveren? Bepaal eerst indeling, leidingen, elektra, ventilatie en afwerking. Zo maak je kosten en offertes beter vergelijkbaar.",
+    },
+    "renovatieprojecten/keuken-renovatie": {
+        "title": "Keuken renovatie: scope, techniek en offerte | Thuisrenovatie Gids",
+        "description": "Keuken renoveren? Bepaal eerst wat je behoudt, indeling, aansluitingen, elektra en ventilatie voordat je bestelt en offertes vergelijkt.",
+    },
+    "renovatieprojecten/aanbouw": {
+        "title": "Aanbouw plannen: constructie, vergunning en offerte | Thuisrenovatie Gids",
+        "description": "Een aanbouw plannen? Bepaal eerst doel, constructie, fundering, daglicht, installaties en vergunning voordat je ontwerpen en offertes vergelijkt.",
+    },
+    "renovatieprojecten/fundering": {
+        "title": "Funderingsproblemen: eerst onderzoek, dan herstel | Thuisrenovatie Gids",
+        "description": "Vermoeden van funderingsproblemen? Ontdek waarom onderzoek vóór herstel komt en welke informatie je nodig hebt om hersteloffertes te vergelijken.",
+    },
+    "renovatieprojecten/ramen-en-glas": {
+        "title": "Ramen en glas vervangen: kies vanuit je woning | Thuisrenovatie Gids",
+        "description": "Ramen of glas vervangen? Beoordeel eerst kozijnen, bestaand glas, ventilatie en isolatie voordat je HR++, triple glas of nieuwe kozijnen kiest.",
+    },
 }
 
 
