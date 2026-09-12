@@ -49,16 +49,36 @@ META = {
         "description": "Je huis renoveren? Ontdek waar je begint, welke beslissingen eerst komen en hoe je scope, budget, vergunningen en uitvoering logisch plant.",
     },
     "renovatie-plannen/renovatie-volgorde": {
-        "title": "Renovatie volgorde: wat moet eerst bij verbouwen? | Thuisrenovatie Gids",
-        "description": "Welke renovatiewerken moeten eerst? Bepaal de juiste volgorde op basis van veiligheid, afhankelijkheden, installaties en afwerking.",
+        "title": "Renovatie volgorde: wat eerst en wat later? | Thuisrenovatie Gids",
+        "description": "Bepaal de juiste renovatievolgorde op basis van technische afhankelijkheden. Voorkom dubbel werk tussen constructie, installaties, isolatie en afwerking.",
     },
     "renovatie-plannen/renovatiefasen": {
-        "title": "Renovatiefasen: van voorbereiding tot oplevering | Thuisrenovatie Gids",
-        "description": "Bekijk de belangrijkste renovatiefasen en welke beslissingen je per fase neemt, van inventarisatie en budget tot uitvoering en oplevering.",
+        "title": "Renovatiefasen: van inventarisatie tot oplevering | Thuisrenovatie Gids",
+        "description": "Bekijk de belangrijkste renovatiefasen en de beslissingen die per fase rond moeten zijn voordat je naar de volgende stap gaat.",
     },
     "renovatie-plannen/complete-renovatie": {
-        "title": "Complete renovatie: zo plan je een volledige woningrenovatie | Thuisrenovatie Gids",
-        "description": "Een complete renovatie plannen? Ontdek wanneer één integraal project logisch is, wanneer je beter faseert en hoe je afhankelijkheden beheert.",
+        "title": "Complete renovatie plannen zonder dubbel werk | Thuisrenovatie Gids",
+        "description": "Plan een complete woningrenovatie als één systeem. Ontdek wanneer integraal renoveren logisch is, wat je eerst beslist en hoe je werkzaamheden coördineert.",
+    },
+    "renovatie-plannen/renovatiekosten": {
+        "title": "Renovatiekosten: wat bepaalt de totale prijs? | Thuisrenovatie Gids",
+        "description": "Ontdek welke factoren renovatiekosten bepalen en hoe je kosten vergelijkbaar maakt zonder te vertrouwen op misleidende gemiddelde prijzen.",
+    },
+    "renovatie-plannen/renovatie-budget": {
+        "title": "Renovatiebudget maken: zo bouw je financiële ruimte op | Thuisrenovatie Gids",
+        "description": "Maak een renovatiebudget met vaste scope, keuze-opties, projectkosten en ruimte voor onzekerheden. Zo houd je grip op je renovatie.",
+    },
+    "renovatie-plannen/renovatievergunning": {
+        "title": "Renovatievergunning: wanneer moet je controleren? | Thuisrenovatie Gids",
+        "description": "Controleer vóór je renovatie of een vergunning, melding of informatieplicht speelt en gebruik de officiële Vergunningscheck van het Omgevingsloket.",
+    },
+    "renovatie-plannen/subsidies-renovatie": {
+        "title": "Subsidies voor renovatie: zo controleer je actuele regelingen | Thuisrenovatie Gids",
+        "description": "Bekijk hoe subsidies je renovatiebeslissing beïnvloeden en waar je actuele voorwaarden voor onder meer ISDE controleert vóór je opdracht geeft.",
+    },
+    "renovatie-plannen/rendement-renovatie": {
+        "title": "Rendement van renovatie: meer dan terugverdientijd | Thuisrenovatie Gids",
+        "description": "Beoordeel renovatierendement op kosten, comfort, energie, onderhoud, risico en toekomstwaarde in plaats van op één theoretische terugverdientijd.",
     },
 }
 
