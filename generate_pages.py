@@ -80,6 +80,18 @@ META = {
         "title": "Rendement van renovatie: meer dan terugverdientijd | Thuisrenovatie Gids",
         "description": "Beoordeel renovatierendement op kosten, comfort, energie, onderhoud, risico en toekomstwaarde in plaats van op één theoretische terugverdientijd.",
     },
+    "renovatieprojecten": {
+        "title": "Renovatieprojecten: bepaal eerst je scope | Thuisrenovatie Gids",
+        "description": "Van badkamer tot aanbouw: bepaal per renovatieproject eerst de scope, technische afhankelijkheden en offerte-eisen voordat je vakmensen vergelijkt.",
+    },
+    "renovatieprojecten/badkamer-renovatie": {
+        "title": "Badkamer renovatie: eerst beslissen, dan offertes | Thuisrenovatie Gids",
+        "description": "Badkamer renoveren? Bepaal eerst indeling, leidingen, elektra, ventilatie en afwerking. Zo maak je kosten en offertes beter vergelijkbaar.",
+    },
+    "renovatieprojecten/keuken-renovatie": {
+        "title": "Keuken renovatie: scope, techniek en offerte | Thuisrenovatie Gids",
+        "description": "Keuken renoveren? Bepaal eerst wat je behoudt, indeling, aansluitingen, elektra en ventilatie voordat je bestelt en offertes vergelijkt.",
+    },
 }
 
 
