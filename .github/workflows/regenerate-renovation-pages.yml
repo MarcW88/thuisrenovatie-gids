@@ -1,13 +1,14 @@
-name: Regenerate empty renovation pages
+name: Regenerate renovation pages
 
 on:
   workflow_dispatch:
   push:
-    branches: [main]
     paths:
       - 'generate_pages.py'
+      - 'content/**'
       - 'css/**'
       - 'js/**'
+      - 'scripts/validate_empty_content_phase.py'
       - '.github/workflows/regenerate-renovation-pages.yml'
 
 permissions:
@@ -25,13 +26,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Regenerate current empty page shell
+      - name: Regenerate renovation pages
         run: python generate_pages.py
       - name: Validate structure
         run: python scripts/validate_renovation_structure.py
-      - name: Guard empty-content phase
+      - name: Validate route content state
         run: python scripts/validate_empty_content_phase.py
-      - name: Commit regenerated shells
+      - name: Commit regenerated pages
         run: |
           git config user.name "Marc Williame"
           git config user.email "146358493+MarcW88@users.noreply.github.com"
@@ -39,6 +40,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No generated changes to commit"
           else
-            git commit -m "content: regenerate empty renovation pages"
+            git commit -m "content: regenerate renovation pages"
             git push origin HEAD:${{ github.ref_name }}
           fi
