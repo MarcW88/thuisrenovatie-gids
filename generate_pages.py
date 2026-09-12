@@ -4,7 +4,10 @@ import json
 
 R = Path(__file__).parent
 CONTENT_ROOT = R / "content"
-META = json.loads((CONTENT_ROOT / "meta.json").read_text(encoding="utf-8"))
+
+META = {}
+for meta_file in sorted(CONTENT_ROOT.glob("meta*.json")):
+    META.update(json.loads(meta_file.read_text(encoding="utf-8")))
 
 ROUTES = {
     "renovatie-plannen": [
@@ -29,7 +32,10 @@ ROUTES = {
         "vakman-kiezen", "aannemer-kiezen", "offertes-vergelijken",
         "offerte-controleren", "zelf-doen-of-uitbesteden",
     ],
-    "doe-het-zelf": [],
+    "doe-het-zelf": [
+        "zonnepanelen-zelf-plaatsen", "traprenovatie-zelf-doen",
+        "warmtepomp-zelf-plaatsen",
+    ],
 }
 
 LABEL = {
