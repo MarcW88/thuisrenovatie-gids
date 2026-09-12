@@ -104,6 +104,50 @@ META = {
         "title": "Ramen en glas vervangen: kies vanuit je woning | Thuisrenovatie Gids",
         "description": "Ramen of glas vervangen? Beoordeel eerst kozijnen, bestaand glas, ventilatie en isolatie voordat je HR++, triple glas of nieuwe kozijnen kiest.",
     },
+    "verduurzamen": {
+        "title": "Woning verduurzamen: welke maatregel eerst? | Thuisrenovatie Gids",
+        "description": "Verduurzaam je woning in een logische volgorde: isolatie, ventilatie, verwarming en zonnepanelen afgestemd op de huidige staat van je huis.",
+    },
+    "verduurzamen/isolatie": {
+        "title": "Huis isoleren: bepaal eerst waar de warmte verloren gaat | Thuisrenovatie Gids",
+        "description": "Dak, vloer, gevel of glas isoleren? Bepaal eerst bestaande isolatie, vocht, ventilatie en toekomstige verwarming voordat je een maatregel kiest.",
+    },
+    "verduurzamen/isolatie/dakisolatie": {
+        "title": "Dakisolatie kiezen: eerst dakopbouw en vocht controleren | Thuisrenovatie Gids",
+        "description": "Dak isoleren? Controleer daktype, bestaande isolatie, vocht en zoldergebruik voordat je methode, materiaal en offerte kiest.",
+    },
+    "verduurzamen/isolatie/vloerisolatie": {
+        "title": "Vloerisolatie: kies vanuit kruipruimte, vocht en vloer | Thuisrenovatie Gids",
+        "description": "Vloerisolatie of bodemisolatie? Beoordeel eerst kruipruimte, vocht, vloertype en vloerverwarming en vergelijk offertes op isolatiewaarde.",
+    },
+    "verduurzamen/isolatie/gevelisolatie": {
+        "title": "Gevelisolatie: spouw, binnenzijde of buitenzijde? | Thuisrenovatie Gids",
+        "description": "Gevel isoleren? Vergelijk spouwisolatie, voorzetwand en buitengevelisolatie op gevelopbouw, vocht, ventilatie en vergunning.",
+    },
+    "verduurzamen/zonnepanelen": {
+        "title": "Zonnepanelen kiezen: stem opwek af op dak en verbruik | Thuisrenovatie Gids",
+        "description": "Zonnepanelen plaatsen? Beoordeel eerst dakconditie, schaduw, toekomstig stroomverbruik, omvormer en meterkast voordat je offertes vergelijkt.",
+    },
+    "verduurzamen/warmtepomp": {
+        "title": "Warmtepomp kiezen: is jouw woning er klaar voor? | Thuisrenovatie Gids",
+        "description": "Hybride of volledig elektrische warmtepomp? Beoordeel eerst isolatie, radiatoren, warmtevraag, ruimte en geluid voordat je een systeem kiest.",
+    },
+    "verduurzamen/cv-ketel": {
+        "title": "Cv-ketel vervangen: cv, hybride of warmtepomp? | Thuisrenovatie Gids",
+        "description": "Cv-ketel aan vervanging toe? Vergelijk opnieuw gas, hybride en volledig elektrisch op basis van isolatie, afgifte en toekomstplannen.",
+    },
+    "verduurzamen/ventilatie": {
+        "title": "Ventilatie bij isoleren: gezond én energiezuinig | Thuisrenovatie Gids",
+        "description": "Ventilatie verbeteren? Stem toevoer, afvoer en regeling af op isolatie en luchtdichtheid en controleer actuele ISDE-voorwaarden voor ventilatie.",
+    },
+    "verduurzamen/dubbel-glas": {
+        "title": "Dubbel glas vervangen: HR++ of triple glas? | Thuisrenovatie Gids",
+        "description": "Oud dubbel glas vervangen? Beoordeel kozijnen, ventilatie en gevelplan voordat je HR++, triple glas of nieuwe kozijnen kiest.",
+    },
+    "verduurzamen/energie-besparen": {
+        "title": "Energie besparen in huis: kies de juiste volgorde | Thuisrenovatie Gids",
+        "description": "Bespaar energie met een logische route van instellingen en isolatie naar ventilatie, verwarming en zonnepanelen, afgestemd op jouw woning.",
+    },
 }
 
 
@@ -116,7 +160,7 @@ def route_body(route):
     if content_file.exists():
         return content_file.read_text(encoding="utf-8"), "content-page"
 
-    skeleton = """<section class=\"blank\" aria-label=\"Lege contentruimte\"><div class=\"container\"><div class=\"skeleton\"><div><i></i><i></i><i></i><b></b></div><aside><i></i><i></i><b></b></aside></div></div></section>"""
+    skeleton = """<section class=\"blank\" aria-label=\"Lege contentruimte\"><div class=\"container\"><div class=\"skeleton\"><div><i></i><i></i><i></i><b></b></aside></div></div></section>"""
     return skeleton, "empty"
 
 
