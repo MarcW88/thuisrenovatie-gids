@@ -160,7 +160,7 @@ def route_body(route):
     if content_file.exists():
         return content_file.read_text(encoding="utf-8"), "content-page"
 
-    skeleton = """<section class=\"blank\" aria-label=\"Lege contentruimte\"><div class=\"container\"><div class=\"skeleton\"><div><i></i><i></i><i></i><b></b></aside></div></div></section>"""
+    skeleton = """<section class=\"blank\" aria-label=\"Lege contentruimte\"><div class=\"container\"><div class=\"skeleton\"><div><i></i><i></i><i></i><b></b></div><aside><i></i><i></i><b></b></aside></div></div></section>"""
     return skeleton, "empty"
 
 
