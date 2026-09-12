@@ -1,8 +1,10 @@
 from pathlib import Path
 from html import escape
+import json
 
 R = Path(__file__).parent
 CONTENT_ROOT = R / "content"
+META = json.loads((CONTENT_ROOT / "meta.json").read_text(encoding="utf-8"))
 
 ROUTES = {
     "renovatie-plannen": [
@@ -37,117 +39,6 @@ LABEL = {
     "problemen-oplossen": "Problemen oplossen",
     "vakman-en-offertes": "Vakman & offertes",
     "doe-het-zelf": "Doe het zelf",
-}
-
-META = {
-    "renovatie-plannen": {
-        "title": "Renovatie plannen: van idee naar uitvoerbaar plan | Thuisrenovatie Gids",
-        "description": "Plan je renovatie op basis van beslissingen, afhankelijkheden, budget en regels. Start met de juiste volgorde en voorkom dubbel werk.",
-    },
-    "renovatie-plannen/huis-renoveren": {
-        "title": "Huis renoveren: stappenplan voor een slimme renovatie | Thuisrenovatie Gids",
-        "description": "Je huis renoveren? Ontdek waar je begint, welke beslissingen eerst komen en hoe je scope, budget, vergunningen en uitvoering logisch plant.",
-    },
-    "renovatie-plannen/renovatie-volgorde": {
-        "title": "Renovatie volgorde: wat eerst en wat later? | Thuisrenovatie Gids",
-        "description": "Bepaal de juiste renovatievolgorde op basis van technische afhankelijkheden. Voorkom dubbel werk tussen constructie, installaties, isolatie en afwerking.",
-    },
-    "renovatie-plannen/renovatiefasen": {
-        "title": "Renovatiefasen: van inventarisatie tot oplevering | Thuisrenovatie Gids",
-        "description": "Bekijk de belangrijkste renovatiefasen en de beslissingen die per fase rond moeten zijn voordat je naar de volgende stap gaat.",
-    },
-    "renovatie-plannen/complete-renovatie": {
-        "title": "Complete renovatie plannen zonder dubbel werk | Thuisrenovatie Gids",
-        "description": "Plan een complete woningrenovatie als één systeem. Ontdek wanneer integraal renoveren logisch is, wat je eerst beslist en hoe je werkzaamheden coördineert.",
-    },
-    "renovatie-plannen/renovatiekosten": {
-        "title": "Renovatiekosten: wat bepaalt de totale prijs? | Thuisrenovatie Gids",
-        "description": "Ontdek welke factoren renovatiekosten bepalen en hoe je kosten vergelijkbaar maakt zonder te vertrouwen op misleidende gemiddelde prijzen.",
-    },
-    "renovatie-plannen/renovatie-budget": {
-        "title": "Renovatiebudget maken: zo bouw je financiële ruimte op | Thuisrenovatie Gids",
-        "description": "Maak een renovatiebudget met vaste scope, keuze-opties, projectkosten en ruimte voor onzekerheden. Zo houd je grip op je renovatie.",
-    },
-    "renovatie-plannen/renovatievergunning": {
-        "title": "Renovatievergunning: wanneer moet je controleren? | Thuisrenovatie Gids",
-        "description": "Controleer vóór je renovatie of een vergunning, melding of informatieplicht speelt en gebruik de officiële Vergunningscheck van het Omgevingsloket.",
-    },
-    "renovatie-plannen/subsidies-renovatie": {
-        "title": "Subsidies voor renovatie: zo controleer je actuele regelingen | Thuisrenovatie Gids",
-        "description": "Bekijk hoe subsidies je renovatiebeslissing beïnvloeden en waar je actuele voorwaarden voor onder meer ISDE controleert vóór je opdracht geeft.",
-    },
-    "renovatie-plannen/rendement-renovatie": {
-        "title": "Rendement van renovatie: meer dan terugverdientijd | Thuisrenovatie Gids",
-        "description": "Beoordeel renovatierendement op kosten, comfort, energie, onderhoud, risico en toekomstwaarde in plaats van op één theoretische terugverdientijd.",
-    },
-    "renovatieprojecten": {
-        "title": "Renovatieprojecten: bepaal eerst je scope | Thuisrenovatie Gids",
-        "description": "Van badkamer tot aanbouw: bepaal per renovatieproject eerst de scope, technische afhankelijkheden en offerte-eisen voordat je vakmensen vergelijkt.",
-    },
-    "renovatieprojecten/badkamer-renovatie": {
-        "title": "Badkamer renovatie: eerst beslissen, dan offertes | Thuisrenovatie Gids",
-        "description": "Badkamer renoveren? Bepaal eerst indeling, leidingen, elektra, ventilatie en afwerking. Zo maak je kosten en offertes beter vergelijkbaar.",
-    },
-    "renovatieprojecten/keuken-renovatie": {
-        "title": "Keuken renovatie: scope, techniek en offerte | Thuisrenovatie Gids",
-        "description": "Keuken renoveren? Bepaal eerst wat je behoudt, indeling, aansluitingen, elektra en ventilatie voordat je bestelt en offertes vergelijkt.",
-    },
-    "renovatieprojecten/aanbouw": {
-        "title": "Aanbouw plannen: constructie, vergunning en offerte | Thuisrenovatie Gids",
-        "description": "Een aanbouw plannen? Bepaal eerst doel, constructie, fundering, daglicht, installaties en vergunning voordat je ontwerpen en offertes vergelijkt.",
-    },
-    "renovatieprojecten/fundering": {
-        "title": "Funderingsproblemen: eerst onderzoek, dan herstel | Thuisrenovatie Gids",
-        "description": "Vermoeden van funderingsproblemen? Ontdek waarom onderzoek vóór herstel komt en welke informatie je nodig hebt om hersteloffertes te vergelijken.",
-    },
-    "renovatieprojecten/ramen-en-glas": {
-        "title": "Ramen en glas vervangen: kies vanuit je woning | Thuisrenovatie Gids",
-        "description": "Ramen of glas vervangen? Beoordeel eerst kozijnen, bestaand glas, ventilatie en isolatie voordat je HR++, triple glas of nieuwe kozijnen kiest.",
-    },
-    "verduurzamen": {
-        "title": "Woning verduurzamen: welke maatregel eerst? | Thuisrenovatie Gids",
-        "description": "Verduurzaam je woning in een logische volgorde: isolatie, ventilatie, verwarming en zonnepanelen afgestemd op de huidige staat van je huis.",
-    },
-    "verduurzamen/isolatie": {
-        "title": "Huis isoleren: bepaal eerst waar de warmte verloren gaat | Thuisrenovatie Gids",
-        "description": "Dak, vloer, gevel of glas isoleren? Bepaal eerst bestaande isolatie, vocht, ventilatie en toekomstige verwarming voordat je een maatregel kiest.",
-    },
-    "verduurzamen/isolatie/dakisolatie": {
-        "title": "Dakisolatie kiezen: eerst dakopbouw en vocht controleren | Thuisrenovatie Gids",
-        "description": "Dak isoleren? Controleer daktype, bestaande isolatie, vocht en zoldergebruik voordat je methode, materiaal en offerte kiest.",
-    },
-    "verduurzamen/isolatie/vloerisolatie": {
-        "title": "Vloerisolatie: kies vanuit kruipruimte, vocht en vloer | Thuisrenovatie Gids",
-        "description": "Vloerisolatie of bodemisolatie? Beoordeel eerst kruipruimte, vocht, vloertype en vloerverwarming en vergelijk offertes op isolatiewaarde.",
-    },
-    "verduurzamen/isolatie/gevelisolatie": {
-        "title": "Gevelisolatie: spouw, binnenzijde of buitenzijde? | Thuisrenovatie Gids",
-        "description": "Gevel isoleren? Vergelijk spouwisolatie, voorzetwand en buitengevelisolatie op gevelopbouw, vocht, ventilatie en vergunning.",
-    },
-    "verduurzamen/zonnepanelen": {
-        "title": "Zonnepanelen kiezen: stem opwek af op dak en verbruik | Thuisrenovatie Gids",
-        "description": "Zonnepanelen plaatsen? Beoordeel eerst dakconditie, schaduw, toekomstig stroomverbruik, omvormer en meterkast voordat je offertes vergelijkt.",
-    },
-    "verduurzamen/warmtepomp": {
-        "title": "Warmtepomp kiezen: is jouw woning er klaar voor? | Thuisrenovatie Gids",
-        "description": "Hybride of volledig elektrische warmtepomp? Beoordeel eerst isolatie, radiatoren, warmtevraag, ruimte en geluid voordat je een systeem kiest.",
-    },
-    "verduurzamen/cv-ketel": {
-        "title": "Cv-ketel vervangen: cv, hybride of warmtepomp? | Thuisrenovatie Gids",
-        "description": "Cv-ketel aan vervanging toe? Vergelijk opnieuw gas, hybride en volledig elektrisch op basis van isolatie, afgifte en toekomstplannen.",
-    },
-    "verduurzamen/ventilatie": {
-        "title": "Ventilatie bij isoleren: gezond én energiezuinig | Thuisrenovatie Gids",
-        "description": "Ventilatie verbeteren? Stem toevoer, afvoer en regeling af op isolatie en luchtdichtheid en controleer actuele ISDE-voorwaarden voor ventilatie.",
-    },
-    "verduurzamen/dubbel-glas": {
-        "title": "Dubbel glas vervangen: HR++ of triple glas? | Thuisrenovatie Gids",
-        "description": "Oud dubbel glas vervangen? Beoordeel kozijnen, ventilatie en gevelplan voordat je HR++, triple glas of nieuwe kozijnen kiest.",
-    },
-    "verduurzamen/energie-besparen": {
-        "title": "Energie besparen in huis: kies de juiste volgorde | Thuisrenovatie Gids",
-        "description": "Bespaar energie met een logische route van instellingen en isolatie naar ventilatie, verwarming en zonnepanelen, afgestemd op jouw woning.",
-    },
 }
 
 
