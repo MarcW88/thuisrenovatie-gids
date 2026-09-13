@@ -1,7 +1,7 @@
 # Brief v2 — Renovatievergunning
 
 - Route: `/renovatie-plannen/renovatievergunning/`
-- Status: QA_IN_PROGRESS
+- Status: QA_COMPLETE
 - Market: Netherlands / nl-NL
 - Primary queries: `vergunning verbouwing`, `vergunning renovatie`, `omgevingsvergunning verbouwen`
 - Reader task: determine what must be checked before committing to a renovation and understand the result of the official Vergunningcheck.
@@ -72,3 +72,10 @@ The final structure should follow the task, not a fixed article template, but it
 ## Safety/legal boundary
 
 Do not state that a particular homeowner definitely does or does not need a permit without the location- and activity-specific official check. Treat examples as attention signals and explicitly distinguish general guidance from the authoritative result.
+
+## QA completion
+
+- SERP matrix persisted and applied.
+- Fact-check: PASS.
+- Post-write gap check: no missing or partial MUST.
+- Page is eligible for `PUBLISH_REVIEW` while site-level indexation remains disabled.
