@@ -1,40 +1,68 @@
 # Skill policy — 80/20
 
-Thuisrenovatie Gids volgt dezelfde orkestratiegedachte als `bloc-notes-numerique`: generieke expertise komt zo veel mogelijk uit bestaande publieke GitHub-skills; custom code is beperkt tot domeinspecifieke routing en orkestratie.
+Thuisrenovatie Gids gebruikt dezelfde orkestratiegedachte als `bloc-notes-numerique`: generieke expertise komt uit bestaande skills; custom code blijft beperkt tot domeinspecifieke routing, veiligheid en clustercontrole.
 
 ## Huidige verdeling
 
-- Upstream skills: **11**
+- Upstream/reused skills: **21**
 - Custom skills: **2**
-- Totaal: **13**
-- Upstream: **84,6%**
-- Custom: **15,4%**
+- Totaal: **23**
+- Upstream/reused: **91,3%**
+- Custom: **8,7%**
 
 De CI faalt zodra custom skills meer dan 20% van het totaal vormen.
 
-## Upstream catalogus
+## Upstream / reused catalogus
 
-Alle upstream skills hieronder komen uit `rampstackco/claude-skills` en worden lokaal als compacte vendored adapters gebruikt. De upstream-URL staat ook in de frontmatter van elk `SKILL.md`.
+### Reeds aanwezige Rampstack-skills
 
-| Skill | Rol |
-|---|---|
-| `seo-keyword` | zoekvraag, cluster en intentie |
-| `seo-content-audit` | inhoudelijke SEO-audit |
-| `seo-onpage` | title, headings, body, schema, links |
-| `seo-technical` | crawl/index/rendering |
-| `content-brief-authoring` | schrijfbrief |
-| `content-and-copy` | schrijven en herschrijven |
-| `editorial-qa` | eindredactie en publicatiecontrole |
-| `evidence-based-reviews` | bewijsdiscipline en claims |
-| `information-architecture` | structuur en interne links |
-| `jtbd-framing` | gebruikersbehoefte en beslissituatie |
-| `cro-optimization` | conversie zonder trustverlies |
+- `seo-keyword`
+- `seo-content-audit`
+- `seo-onpage`
+- `seo-technical`
+- `content-brief-authoring`
+- `content-and-copy`
+- `editorial-qa`
+- `evidence-based-reviews`
+- `information-architecture`
+- `jtbd-framing`
+- `cro-optimization`
+
+### Uit het bestaande `bloc-notes-numerique` editorial engine hergebruikt
+
+- `search-intent`
+- `content-refresh`
+- `fact-check`
+- `affiliate-value`
+- `internal-linking-audit`
+- `humanizer`
+- `general-writing`
+- `anti-ai-slop`
+- `seo-drift`
+- `seo-best-practices`
+
+Elke reused skill bevat een `upstream` GitHub-URL in de frontmatter. Skills die op een ander domein waren afgestemd zijn inhoudelijk aangepast aan renovatie, maar behouden dezelfde verantwoordelijkheid in de keten.
 
 ## Custom catalogus
 
 | Skill | Waarom custom? |
 |---|---|
-| `renovation-analysis-workflow` | routeert renovatiepagina's naar het juiste analysepad |
-| `renovation-content-workflow` | vertaalt analyse naar het juiste renovatieformat |
+| `renovation-analysis-workflow` | sitebrede audit/cluster/publish orchestration, renovatiegrenzen, safety en structurele similariteit |
+| `renovation-content-workflow` | productie-orchestratie, renovatiegrenzen, safety en integratie in de lokale source of truth |
 
-Een nieuwe custom skill is alleen toegestaan wanneer de taak werkelijk sitespecifieke orkestratie vereist én de 80/20-regel na toevoeging nog steeds slaagt.
+## Verplichte architectuur
+
+De custom workflows mogen geen tweede versie bevatten van methodes die al in de reused skills bestaan. Ze mogen alleen:
+
+1. de juiste skills in de juiste volgorde routeren;
+2. beslissingen mappen naar `KEEP / LIGHT_UPDATE / DEEP_REWRITE / MERGE / NOINDEX`;
+3. grenzen tussen renovatieclusters bewaken;
+4. renovatiespecifieke veiligheids- en actualiteitsrisico's bewaken;
+5. clusterbrede structurele cloning detecteren;
+6. `PUBLISH_REVIEW` en handoff naar menselijke validatie organiseren.
+
+## Anti-template regel
+
+`PLAN`, `PROJECT`, `SUSTAINABILITY`, `TROUBLESHOOTING`, `DIY`, `LEAD`, `CHOICE`, `EXPLAINER` en `HOW_TO` zijn classificaties of risicogrids. Ze mogen nooit een verplicht redactioneel template worden.
+
+Geen nieuwe custom skill toevoegen tenzij de taak werkelijk sitespecifieke orkestratie vereist én de 80/20-regel na toevoeging nog steeds slaagt.
