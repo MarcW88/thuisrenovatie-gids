@@ -12,4 +12,13 @@
 
 .problem-shell .diagnostic-rail .active{background:var(--terra-text)}.problem-shell .decision-card:hover>span,.problem-shell .phase-list>div>span{color:var(--terra-text)}
 
+/* P2: resolve the remaining rendered contrast and undersized-UI findings. */
+.trust p,.section-head>p,.intent p,.sequence-grid>div>p:last-child{color:var(--muted-text)}.intent>i,.sequence li>span{color:var(--muted-text);font-size:11px}.intent:hover>i,.intent.active>i{color:#dce5e0}.checks div:last-child p{color:var(--terra-text)}.menu-toggle em,.decision-head small,.metrics span,.sequence i{font-size:11px}
+
+/* P2: make editorial labels calmer and reduce the repeated template treatment. */
+.content-kicker,.aside-label,.compare-label,.source-box>span,.link-pair a>span,.conversion-box>div>span{text-transform:none;letter-spacing:.035em}.breadcrumbs{text-transform:none;letter-spacing:.04em}.quick-answer{border-left:0;border:1px solid var(--line)}.aside-card{border-top:0;box-shadow:inset 0 3px 0 var(--green)}
+
+/* P2: remove the empty 65/35 page-head panel and give each content family a subtle identity. */
+.content-page .page-head{background:var(--cream)}.section-renovatie-plannen .page-head{background:#f3f0e8}.section-renovatieprojecten .page-head{background:var(--stone)}.section-verduurzamen .page-head{background:#edf2ef}.section-problemen-oplossen .page-head{background:#e8efec}.section-vakman-en-offertes .page-head{background:#f3f0e9}.section-doe-het-zelf .page-head{background:#f5ece6}
+
 @media(max-width:700px){.footer-grid>div a{min-height:36px}.table-wrap{margin-left:0;margin-right:0}.content-kicker,.aside-label,.compare-label,.source-box>span,.link-pair a>span{font-size:11px}.conversion-box p{font-size:13px}}
