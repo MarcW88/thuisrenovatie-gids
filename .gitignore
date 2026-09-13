@@ -16,3 +16,8 @@ Thumbs.db
 *.temp
 __pycache__/
 *.pyc
+
+# Node / design audit
+node_modules/
+.artifacts/
+.lighthouseci/
