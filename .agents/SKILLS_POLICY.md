@@ -1,20 +1,20 @@
 # Skill policy — 80/20
 
-Thuisrenovatie Gids gebruikt dezelfde orkestratiegedachte als `bloc-notes-numerique`: generieke expertise komt uit bestaande skills; custom code blijft beperkt tot domeinspecifieke routing, veiligheid en clustercontrole.
+Thuisrenovatie Gids gebruikt dezelfde orkestratiegedachte als `bloc-notes-numerique`: generieke expertise komt uit bestaande GitHub-skills; custom code blijft beperkt tot domeinspecifieke routing, veiligheid, clustergrenzen en publicatiegates.
 
 ## Huidige verdeling
 
-- Upstream/reused skills: **21**
+- Upstream/reused skills: **24**
 - Custom skills: **2**
-- Totaal: **23**
-- Upstream/reused: **91,3%**
-- Custom: **8,7%**
+- Totaal: **26**
+- Upstream/reused: **92,3%**
+- Custom: **7,7%**
 
 De CI faalt zodra custom skills meer dan 20% van het totaal vormen.
 
-## Upstream / reused catalogus
+## Verbatim upstream — RampStack
 
-### Reeds aanwezige Rampstack-skills
+De volgende **14** directories worden volledig en ongewijzigd gevendord uit `rampstackco/claude-skills`, inclusief hun `references/` en andere bestanden wanneer aanwezig:
 
 - `seo-keyword`
 - `seo-content-audit`
@@ -27,8 +27,15 @@ De CI faalt zodra custom skills meer dan 20% van het totaal vormen.
 - `information-architecture`
 - `jtbd-framing`
 - `cro-optimization`
+- `seo-competitor`
+- `seo-aeo-geo`
+- `brand-voice`
 
-### Uit het bestaande `bloc-notes-numerique` editorial engine hergebruikt
+De exacte broncommit en Git blob hashes staan in `.agents/UPSTREAM_SOURCES.json`. `scripts/validate_upstream_skills.py` controleert dat deze directories lokaal **byte-for-byte overeenkomen** met de gepinde GitHub-bron. Domeinaanpassingen zijn in deze directories verboden.
+
+## Reused editorial engine — bloc-notes-numerique
+
+De volgende 10 skills komen uit het bestaande editorial engine en mogen waar nodig domeinspecifiek zijn aangepast met behoud van dezelfde verantwoordelijkheid:
 
 - `search-intent`
 - `content-refresh`
@@ -41,25 +48,32 @@ De CI faalt zodra custom skills meer dan 20% van het totaal vormen.
 - `seo-drift`
 - `seo-best-practices`
 
-Elke reused skill bevat een `upstream` GitHub-URL in de frontmatter. Skills die op een ander domein waren afgestemd zijn inhoudelijk aangepast aan renovatie, maar behouden dezelfde verantwoordelijkheid in de keten.
-
 ## Custom catalogus
 
 | Skill | Waarom custom? |
 |---|---|
-| `renovation-analysis-workflow` | sitebrede audit/cluster/publish orchestration, renovatiegrenzen, safety en structurele similariteit |
-| `renovation-content-workflow` | productie-orchestratie, renovatiegrenzen, safety en integratie in de lokale source of truth |
+| `renovation-analysis-workflow` | sitebrede audit/cluster/publish orchestration, renovatiegrenzen, SERP/content-gap gates, safety en structurele similariteit |
+| `renovation-content-workflow` | productie-orchestratie, research-handoff, renovatiegrenzen, safety, source-of-truth en post-write gap validation |
 
 ## Verplichte architectuur
 
-De custom workflows mogen geen tweede versie bevatten van methodes die al in de reused skills bestaan. Ze mogen alleen:
+De custom workflows mogen geen tweede versie bevatten van methodes die al in de reused/upstream skills bestaan. Ze mogen alleen:
 
 1. de juiste skills in de juiste volgorde routeren;
 2. beslissingen mappen naar `KEEP / LIGHT_UPDATE / DEEP_REWRITE / MERGE / NOINDEX`;
 3. grenzen tussen renovatieclusters bewaken;
 4. renovatiespecifieke veiligheids- en actualiteitsrisico's bewaken;
 5. clusterbrede structurele cloning detecteren;
-6. `PUBLISH_REVIEW` en handoff naar menselijke validatie organiseren.
+6. research-artefacten en post-write coverage gates verplichten;
+7. `PUBLISH_REVIEW` en handoff naar menselijke validatie organiseren.
+
+## Deep rewrite-regel
+
+Een `DEEP_REWRITE` mag niet rechtstreeks van audit naar tekst gaan. Vereist zijn:
+
+`SERP coverage matrix → evidence/brief → draft → post-write gap check → PUBLISH_REVIEW`.
+
+Als actuele SERP- of brondata nodig is maar niet beschikbaar is, wordt het datagat expliciet vastgelegd. Het mag niet worden ingevuld met modelgeheugen of aannames.
 
 ## Anti-template regel
 
