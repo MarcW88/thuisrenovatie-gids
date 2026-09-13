@@ -1,344 +1,248 @@
 ---
 name: renovation-content-workflow
-description: Workflow unique de production et correction SEO/GEO pour thuisrenovatie-gids.nl. Utiliser après renovation-analysis-workflow lorsqu'une page existante nécessite LIGHT_UPDATE ou DEEP_REWRITE, ou pour créer une nouvelle page. Orchestre intention, recherche, preuves, brief, rédaction et QA sans imposer de template par cluster.
+description: Workflow de production/correction SEO/GEO pour thuisrenovatie-gids.nl. Consomme une décision d'analyse, une matrice SERP/content-gap et un brief, puis orchestre les skills GitHub complets de voice, copy, preuves, GEO, humanisation, SEO et QA. Un DEEP_REWRITE ne peut pas être rédigé sans research artifact et doit produire un post-write gap check.
 provenance: custom
 metadata:
+  engine_version: 2
   adapted_for: thuisrenovatie-gids.nl
   source_engine: https://github.com/MarcW88/bloc-notes-numerique/tree/main/.agents/skills/guide-content-workflow
   orchestration_target: ">=80% existing GitHub skills"
-  custom_scope: "renovation routing + category boundaries + safety + source-of-truth integration"
+  custom_scope: "research handoff + renovation routing/safety + source-of-truth + post-write coverage gate"
 ---
 
-# Renovation Content Workflow
+# Renovation Content Workflow v2
 
 ## Rôle
 
-C'est le **seul workflow de production/correction** à utiliser pour les contenus éditoriaux de Thuisrenovatie Gids.
+C'est le **seul workflow de production/correction** du site.
 
-Pour une page existante, la séquence normale est :
+Séquence normale pour une page existante :
 
-`renovation-analysis-workflow / AUDIT` → décision → correction si nécessaire → `renovation-analysis-workflow / PUBLISH_REVIEW`.
+`AUDIT / CLUSTER_AUDIT → décision → research gate → brief → draft → factual/GEO/style/SEO passes → post-write gap check → PUBLISH_REVIEW`.
 
-Décisions consommées :
+Décisions :
 
 - `KEEP` → ne pas réécrire ;
 - `LIGHT_UPDATE` → corriger uniquement le scope identifié ;
-- `DEEP_REWRITE` → reconstruire la page tout en préservant les éléments valides ;
-- `MERGE` / `NOINDEX` → ne pas produire une nouvelle version sans décision humaine sur le rôle de l'URL.
+- `DEEP_REWRITE` → reconstruire en préservant la valeur identifiée, **uniquement après le gate de recherche** ;
+- `MERGE / NOINDEX` → aucune nouvelle version sans décision humaine sur le rôle de l'URL.
 
-Pour une **nouvelle URL**, effectuer directement intention, recherche, preuves et brief avant la rédaction.
-
-Le workflow ne modifie jamais `indexing_enabled` de lui-même.
+Le workflow ne change jamais l'indexation de lui-même.
 
 ---
 
-# 1. Entrées
+# 1. Entrées obligatoires
 
-Lire avant toute production :
+Lire :
 
-- `AGENTS.md` et les règles de design/rendu si concernées ;
+- `AGENTS.md` ;
 - `.agents/skills/renovation-analysis-workflow/SKILL.md` ;
-- l'audit de la page lorsqu'elle existe ;
-- la page cible et sa source de vérité `content/<route>/body.html` ;
-- `content/briefs/<route>.md` et `content/reviews/<route>.md` lorsqu'ils existent ;
-- les pages voisines du cluster ;
-- les pages des autres clusters qui répondent à des sous-questions proches ;
-- les données sémantiques, GSC, logs ou autres signaux disponibles ;
-- les sources nécessaires aux faits actuels.
+- audit/cluster audit et décision ;
+- page existante + `content/<route>/body.html` ;
+- pages voisines ;
+- `content/brand/voice.md` ;
+- sources/preuves disponibles.
 
-Ne pas utiliser la mémoire du modèle pour combler un manque factuel.
+Pour `DEEP_REWRITE`, lire obligatoirement :
 
-Pour une page existante, préserver explicitement la valeur identifiée par `renovation-analysis-workflow / AUDIT`.
+- `content/research/<route>/serp-coverage.md` ;
+- le brief associé lorsque disponible.
 
----
-
-# 2. Router le travail sans créer un template
-
-La route indique la **frontière éditoriale** :
-
-- `PLAN` → `renovatie-plannen/` ;
-- `PROJECT` → `renovatieprojecten/` ;
-- `SUSTAINABILITY` → `verduurzamen/` ;
-- `TROUBLESHOOTING` → `problemen-oplossen/` ;
-- `DIY` → `doe-het-zelf/` ;
-- `LEAD` → `vakman-en-offertes/`.
-
-Cette classification ne dicte jamais la structure de l'article.
-
-Identifier ensuite le travail dominant uniquement pour choisir les risques à vérifier :
-
-- `CHOICE` — aider à arbitrer entre options, priorités, contraintes ou approches ;
-- `EXPLAINER` — expliquer un mécanisme, une règle, un coût, un risque ou une technologie ;
-- `HOW_TO` — permettre une tâche, une préparation, un contrôle ou une procédure.
-
-Une page peut être hybride.
-
-Lire si utile :
-
-- `references/choice-guide.md` ;
-- `references/explainer-guide.md` ;
-- `references/how-to-guide.md`.
-
-Ces références sont des **questions de contrôle**, pas des architectures à reproduire. Elles ne doivent jamais imposer l'ordre ou le nombre de sections, un tableau, une FAQ, une checklist ou un nombre d'étapes.
+Si la matrice manque, si elle n'a pas inspecté une SERP actuelle ou si un data gap empêche de confirmer un MUST central : **STOP — retourner au workflow d'analyse**. Ne pas improviser la recherche pendant la rédaction.
 
 ---
 
-# 3. Chaîne de production fondée sur les skills réutilisés
+# 2. Les skills doivent être réellement exécutés
 
-La majorité de la méthode doit provenir des skills existants. Le présent fichier orchestre ; il ne duplique pas leurs méthodologies.
+Un nom dans ce fichier n'est pas une validation. À chaque étape, ouvrir le `SKILL.md` complet correspondant et appliquer sa méthode pertinente.
 
-## Étape 1 — intention, cluster et rôle
+Les upstream RampStack listés dans `.agents/UPSTREAM_SOURCES.json` sont vendored verbatim. Les règles spécifiques à la rénovation restent dans ce workflow et dans `AGENTS.md`, jamais dans les copies upstream.
+
+---
+
+# 3. Étape 1 — convertir la recherche en brief
 
 Utiliser :
 
-- `seo-keyword` lorsque recherche, clustering ou validation du topic est nécessaire ;
-- `search-intent` pour la tâche exacte, les sous-questions, le niveau de maturité et le résultat attendu ;
-- `seo-content-audit` et `content-refresh` pour une page existante lorsque l'audit l'a demandé ;
-- `jtbd-framing` lorsque le job ou le contexte de décision doit être clarifié ;
-- `information-architecture` lorsque le rôle de la page ou la frontière entre clusters est incertain.
+- `seo-keyword` et `search-intent` pour confirmer le query set/tâche ;
+- `seo-competitor` pour relire les conclusions SERP/content-depth d'un `DEEP_REWRITE` ;
+- `jtbd-framing` si le job doit être formulé plus précisément ;
+- `information-architecture` si le rôle de l'URL est encore ambigu ;
+- `content-brief-authoring` comme méthode principale du brief.
 
-Confirmer :
+Le brief est persisté dans `content/briefs/<route>.md` et porte :
 
-- requête/topic principal ;
-- intention ;
-- tâche ou décision du lecteur ;
-- périmètre ;
-- route propriétaire ;
-- prochaine étape logique ;
-- chevauchements internes.
+`workflow_version: 2`
 
-### Gate de frontière
+Il doit traduire la matrice en choix éditoriaux, pas la remplacer.
 
-Une page ne doit pas absorber une autre fonction du site uniquement parce que le sujet est lié.
+Minimum requis :
 
-Si le rôle apparaît incorrect malgré l'audit, arrêter et renvoyer vers `renovation-analysis-workflow` plutôt que forcer un texte dans le slug.
-
-## Étape 2 — recherche et registre de preuves
-
-Utiliser `fact-check` pour les claims vérifiables.
-
-Adapter la recherche à la stabilité du sujet :
-
-- principe physique ou construction stable → exactitude et source solide ;
-- prix, main-d'œuvre, disponibilité → vérification actuelle + date ;
-- subside, fiscalité, permis, réglementation, norme ou procédure administrative → source officielle actuelle + territoire + date ;
-- performance, rendement, économie ou valeur → conditions et hypothèses explicites ;
-- claim expérientiel important → `evidence-based-reviews` si nécessaire.
-
-Pour les claims importants, conserver :
-
-- affirmation ;
-- source ;
-- date de consultation ;
-- territoire ;
-- portée/conditions ;
-- stabilité ;
-- niveau d'incertitude.
-
-Une inconnue reste inconnue, qualifiée ou exclue.
-
-## Étape 3 — questions propres au type dominant
-
-### `CHOICE`
-
-Documenter seulement ce qui change l'arbitrage : critères, compromis, critères éliminatoires, dépendances, coût lorsque pertinent, risques et situations où chaque option cesse d'être adaptée.
-
-### `EXPLAINER`
-
-Documenter seulement ce qui permet de comprendre correctement : concept, termes voisins, mécanisme, causalité, conséquence pratique, limites, hypothèses et exceptions.
-
-Une définition seule n'est pas une explication.
-
-### `HOW_TO`
-
-Documenter seulement ce qui permet d'exécuter la tâche : contexte, prérequis, méthode vérifiée, résultat attendu, vérification, échecs probables, alternatives et stop conditions de sécurité.
-
-Ne jamais inventer une étape parce qu'elle semble probable.
-
-## Étape 4 — valeur affiliée / lead lorsque pertinent
-
-Utiliser `affiliate-value` avant la rédaction finale lorsque la page influence une dépense, une demande de devis, un choix de vakman, un produit ou une installation.
-
-Pour les pages `LEAD`, utiliser aussi `cro-optimization`, mais uniquement après avoir établi la valeur et la confiance.
-
-La page doit rester utile sans lien affilié ni formulaire. Les critères, limites, alternatives et conséquences pratiques doivent exister indépendamment de la conversion.
-
-## Étape 5 — brief propre à la page
-
-Utiliser `content-brief-authoring` comme skill principal de brief et persister le résultat dans `content/briefs/<route>.md`, en conservant les champs utiles de `references/brief-template.md`.
-
-Le brief doit contenir uniquement ce qui change réellement la page :
-
-- intention/tâche ;
-- route et rôle ;
-- valeur propre ;
-- périmètre et exclusions ;
-- faits et entités nécessaires ;
-- preuves ;
-- risques ;
-- contraintes de sécurité ;
-- valeur existante à préserver pour une mise à jour ;
-- liens vers les prochaines questions ;
+- primary query + tâche ;
+- audience/maturité ;
+- ownership et exclusions ;
+- MUST/SHOULD issus de la matrice ;
 - angle/thèse ;
-- structure proposée **issue de cette recherche**.
+- preuves/faits nécessaires ;
+- data gaps ;
+- information gain choisi ;
+- contraintes sécurité/fraîcheur ;
+- valeur existante à préserver ;
+- prochaines questions/liens ;
+- structure proposée **après** recherche.
 
-### Règle centrale
+Aucune architecture imposée par `PLAN`, `PROJECT`, `CHOICE`, etc.
 
-Il n'existe **aucune architecture éditoriale obligatoire par type de route ou type de contenu**.
+---
 
-Le plan final est construit après l'intention et les preuves. Chaque grande section doit être justifiable par une question, une étape nécessaire, une distinction, une preuve, un arbitrage, une dépendance, un risque ou une limite.
+# 4. Étape 2 — voice avant copy
 
-Deux pages d'un même cluster peuvent avoir des structures très différentes.
+Utiliser le skill complet `brand-voice` avec `content/brand/voice.md` comme système de voix du site.
 
-## Étape 6 — rédaction
+Le draft doit rester : pratique sans simplisme, expert sans ton scolaire, direct sans brutalité, indépendant sans cynisme.
 
-Utiliser `content-and-copy` pour produire la prose à partir du brief et du registre de preuves.
+Si un passage doit être plus prudent pour des raisons de sécurité ou de réglementation, le tone shift approprié prime sur le style marketing.
 
-Règles :
+---
 
-- répondre suffisamment tôt à la question principale ;
-- employer un néerlandais naturel, précis et sobre ;
-- expliquer ce que les faits changent pour le lecteur ;
-- distinguer faits, interprétations, hypothèses et inconnues ;
-- ne jamais inventer test, inspection, mesure, prix, économie, réglementation, disponibilité ou procédure ;
-- utiliser tableaux, listes et étapes uniquement lorsqu'ils améliorent la compréhension ;
-- éviter les FAQ répétitives ;
-- ne pas pousser un lead ou un vakman avant que la décision du lecteur soit suffisamment mûre ;
-- pour `LIGHT_UPDATE`, ne pas réécrire par réflexe les passages que l'audit a demandé de préserver.
+# 5. Étape 3 — rédaction pour la substance
 
-Intégrer le contenu dans la **source de vérité** :
+Utiliser le skill complet `content-and-copy`.
+
+Le draft doit :
+
+- répondre assez tôt à la tâche centrale ;
+- couvrir chaque MUST avec la profondeur nécessaire, pas avec un quota de mots ;
+- apporter les chiffres, distinctions, exemples, règles de décision ou synthèses décidés dans le brief ;
+- expliciter les trade-offs importants ;
+- distinguer fait, interprétation, hypothèse et inconnue ;
+- éviter le remplissage et les répétitions ;
+- utiliser tableau/liste/étapes uniquement lorsque le format aide réellement ;
+- préserver les passages valides identifiés par l'audit ;
+- ne jamais inventer test, mesure, inspection, prix, économie, règle, procédure ou disponibilité.
+
+Source de vérité :
 
 `content/<route>/body.html`
 
-Puis régénérer avec `generate_pages.py`. Ne pas éditer uniquement le HTML généré.
+Le HTML généré n'est jamais la source éditoriale primaire.
 
 ---
 
-# 4. Contrôles post-rédaction
+# 6. Étape 4 — preuves et factualité
 
-Exécuter les passes pertinentes séparément ; ne pas déclarer plusieurs contrôles effectués après une relecture générique.
+Après rédaction, exécuter `fact-check` sur **les claims réellement écrits**.
 
-## Étape 7 — factualité après rédaction
+Pour les claims instables : source, date, territoire, scope et conditions à côté ou suffisamment près du claim.
 
-Relancer `fact-check` sur les claims réellement écrits. Si une modification ultérieure introduit un nouveau fait, repasser ce fait par ce gate.
+`evidence-based-reviews` est conditionnel et ne permet jamais de simuler une expérience.
 
-Utiliser `evidence-based-reviews` seulement pour les jugements expérientiels qui le nécessitent.
+Les passages sécurité (structure, fondations, gaz, électricité, amiante, hauteur/toiture, risque structurel, travail réglementé) sont relus séparément avant toute passe stylistique.
 
-## Étape 8 — sécurité et limites
+---
 
-Relire séparément les passages relatifs à structure, fondations, gaz, électricité, amiante, toiture/hauteur, humidité potentiellement structurelle et travaux réglementés.
+# 7. Étape 5 — GEO/AEO sans slop
 
-Une passe de style ne peut jamais supprimer ou affaiblir une stop condition importante.
+Exécuter le skill complet `seo-aeo-geo` **après** que les faits ont été vérifiés.
 
-## Étape 9 — maillage
+Appliquer seulement les principes qui améliorent aussi la page humaine :
 
-Utiliser `internal-linking-audit`.
+- réponse directe au début d'une section si elle répond à une vraie question ;
+- faits atomiques et contexte/source adjacents ;
+- définitions lorsque nécessaires ;
+- tableaux pour vraies données/comparaisons ;
+- étapes numérotées pour une procédure réellement séquentielle ;
+- dates/méthodologie pour les données sensibles.
 
-Un lien existe parce qu'il répond à la prochaine question logique, pas pour atteindre un quota. Vérifier les cibles, les ancres et la frontière entre clusters.
+Interdits : FAQ artificielle, répétition de la même réponse sous plusieurs formes, sous-titres en question uniquement pour les bots, `snippet blocks` qui cassent la lecture.
 
-## Étape 10 — finition éditoriale
+L'objectif GEO est la **citation worthiness**, pas un style robotique.
 
-Dans cet ordre logique :
+---
 
-1. `humanizer` sur l'intégralité du contenu visible ;
-2. `general-writing` avec le minimum de changements nécessaires ;
-3. `anti-ai-slop` en mode review/detection ;
+# 8. Étape 6 — maillage et conversion
+
+Exécuter `internal-linking-audit`. Un lien existe parce qu'il répond à la prochaine question logique, jamais pour atteindre un quota.
+
+Exécuter `affiliate-value` lorsque la page influence une dépense/devis/choix de professionnel.
+
+Pour `LEAD`, `cro-optimization` intervient seulement après que la valeur et la confiance sont établies.
+
+---
+
+# 9. Étape 7 — finition éditoriale séparée
+
+Exécuter séparément, dans cet ordre :
+
+1. `humanizer` sur tout le contenu visible ;
+2. `general-writing` ;
+3. `anti-ai-slop` en review/detection ;
 4. `seo-drift` uniquement si un baseline utile existe.
 
-Après ces passes, vérifier qu'aucun fait, prérequis, limite, nuance ou avertissement de sécurité n'a été perdu ou inventé.
+Après chaque passe, préserver : faits, sources, nuance, sécurité, MUST coverage et information gain. Une passe de style ne peut pas supprimer la substance qui justifie la page.
 
-## Étape 11 — SEO et QA
+---
 
-Utiliser :
+# 10. Étape 8 — SEO et QA
+
+Exécuter :
 
 1. `seo-onpage` ;
 2. `seo-technical` ;
-3. `seo-best-practices` seulement pour les règles réellement applicables ;
+3. `seo-best-practices` pour les règles applicables ;
 4. `editorial-qa` ;
-5. lecture complète dans l'ordre rendu, desktop/mobile lorsque le rendu est disponible.
+5. lecture rendue desktop/mobile lorsque possible.
 
-Le contrôle final doit notamment confirmer :
-
-- tâche satisfaite ;
-- architecture propre à la page ;
-- pas de clonage mécanique des types ou références ;
-- faits/procédures actuels lorsque nécessaire ;
-- limites importantes préservées ;
-- frontière claire avec les clusters voisins ;
-- sécurité explicite ;
-- valeur sans affiliation ;
-- aucun faux hands-on, faux diagnostic ou fausse inspection.
+Vérifier que title/H1/description correspondent à l'intention réellement traitée, pas seulement au mot-clé primaire.
 
 ---
 
-# 5. PUBLISH_REVIEW obligatoire
+# 11. Étape 9 — post-write gap check obligatoire
 
-Une fois la correction/rédaction terminée, **ne pas auto-valider dans ce workflow**.
+Pour chaque `DEEP_REWRITE` v2, créer :
 
-Passer la main à :
+`content/reviews/<route>/post-write-gap-check.md`
 
-`renovation-analysis-workflow / PUBLISH_REVIEW`
+à partir de `references/post-write-gap-check-template.md`.
 
-Ce mode exécute :
+Reporter **chaque MUST et SHOULD pertinent** de la matrice pré-write :
 
-- `python3 scripts/validate_content_quality.py` pour les blockers machine ;
-- les gates substantiels ;
-- la comparaison au cluster.
+- statut `COVERED / PARTIAL / MISSING` ;
+- emplacement dans la page ;
+- preuve/source préservée ;
+- justification si PARTIAL.
 
-Résultats possibles :
+Puis vérifier :
 
-- `PASS — READY_FOR_HUMAN_VALIDATION` ;
-- `FAIL — KEEP_NOINDEX`.
+- les opportunités GEO réellement utiles sont présentes ;
+- l'information gain choisie a survécu au style pass ;
+- brand voice, humanizer, general-writing et anti-ai-slop ont été exécutés séparément ;
+- aucune nouvelle structure clonée n'a été créée.
 
-Un PASS reste suivi d'une validation humaine explicite avant toute instruction d'indexation.
+Un `MUST = MISSING`, claim central non vérifié ou data gap central non résolu force :
 
----
+`FAIL — KEEP_NOINDEX`
 
-# 6. Statuts et traçabilité
-
-Le brief/review peut conserver :
-
-- `BRIEF_READY` ;
-- `DRAFT_READY` ;
-- `QA_IN_PROGRESS` ;
-- `REVISION_REQUIRED` ;
-- `HUMAN_APPROVED` ;
-- `PUBLISHABLE`.
-
-Ils ne remplacent pas la décision de `renovation-analysis-workflow`.
-
-Dans `content/reviews/<route>.md`, consigner au minimum les passes réellement effectuées, les blockers, les corrections importantes, les sources sensibles et les risques résiduels. Ne pas marquer un skill `PASS` sur la seule base du validateur machine.
-
-`PUBLISHABLE` exige : PUBLISH_REVIEW PASS + validation humaine + contrôles techniques. L'indexation reste une instruction séparée.
+Le workflow ne peut pas transformer ce FAIL en PASS en ajoutant une note.
 
 ---
 
-# 7. Handoffs entre clusters
+# 12. Handoff vers PUBLISH_REVIEW
 
-Le workflow reste unique à l'échelle du site, mais il doit renvoyer l'intention vers le bon cluster lorsque la frontière est mauvaise :
+Une fois le gap check terminé, passer la main à :
 
-- vers `renovatie-plannen/` pour décisions transversales de planification ;
-- vers `renovatieprojecten/` pour un chantier concret ;
-- vers `verduurzamen/` pour énergie/confort/installation ;
-- vers `problemen-oplossen/` pour symptôme/diagnostic prudent ;
-- vers `doe-het-zelf/` seulement pour une tâche réellement adaptée au DIY ;
-- vers `vakman-en-offertes/` lorsque la vraie tâche est de sélectionner ou cadrer un prestataire.
+`renovation-analysis-workflow / PUBLISH_REVIEW`.
 
-Ne jamais forcer une sous-question dans une page uniquement parce que le mot-clé semble proche.
+Ne pas auto-valider dans ce workflow.
+
+Statuts possibles dans les artefacts : `BRIEF_READY`, `DRAFT_READY`, `QA_IN_PROGRESS`, `REVISION_REQUIRED`, `HUMAN_APPROVED`, `PUBLISHABLE`.
+
+`PUBLISHABLE` exige : PUBLISH_REVIEW PASS + validation humaine + contrôles techniques. L'indexation reste une instruction distincte.
 
 ---
 
-# 8. Ce que ce workflow ne doit pas devenir
+# 13. Interdits
 
-Ne pas ajouter :
+Ne pas utiliser comme proxy de qualité : quota de mots, nombre minimum de H2/H3, quota de liens/sources, nombre obligatoire d'étapes, FAQ/tableau obligatoire, score qualité artificiel ou structure fixe par cluster/type.
 
-- quota de mots ;
-- nombre minimum de H2/H3 ;
-- quota de liens ou de sources ;
-- nombre obligatoire d'étapes ;
-- tableau ou FAQ obligatoire ;
-- score qualité artificiel ;
-- architecture fixe `PLAN`, `PROJECT`, `SUSTAINABILITY`, `DIY`, `TROUBLESHOOTING`, `LEAD`, `CHOICE`, `EXPLAINER` ou `HOW_TO` ;
-- deuxième copie des règles de `fact-check`, SEO, rédaction, humanisation ou QA déjà présentes dans les skills spécialisés.
-
-La couche custom doit rester limitée au routing rénovation, aux frontières de cluster, à la sécurité et à l'intégration dans la source de vérité du site.
+Ne pas recopier dans ce workflow les frameworks maintenus dans les upstream skills. Sa valeur est l'orchestration, les frontières rénovation, la sécurité, les gates research/post-write et l'intégration dans la source de vérité.

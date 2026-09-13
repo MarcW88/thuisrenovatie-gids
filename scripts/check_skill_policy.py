@@ -1,44 +1,62 @@
 from pathlib import Path
-import re
+import json
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS = ROOT / '.agents' / 'skills'
+MANIFEST = ROOT / '.agents' / 'UPSTREAM_SOURCES.json'
 
-records = []
-errors = []
-for skill_file in sorted(SKILLS.glob('*/SKILL.md')):
-    text = skill_file.read_text(encoding='utf-8')
-    match = re.search(r'^provenance:\s*(upstream|custom)\s*$', text, re.M)
-    if not match:
-        errors.append(f'{skill_file}: ontbrekende provenance (upstream/custom)')
-        continue
-    provenance = match.group(1)
-    if provenance == 'upstream':
-        upstream = re.search(r'^upstream:\s*(https://github\.com/\S+)\s*$', text, re.M)
-        if not upstream:
-            errors.append(f'{skill_file}: upstream skill zonder geldige GitHub-URL')
-    records.append((skill_file.parent.name, provenance))
+if not MANIFEST.exists():
+    raise SystemExit('FAIL: .agents/UPSTREAM_SOURCES.json ontbreekt')
 
-if errors:
-    print('\n'.join(errors))
-    raise SystemExit(1)
+manifest = json.loads(MANIFEST.read_text(encoding='utf-8'))
+verbatim_upstream = {entry['skill'] for entry in manifest.get('skills', [])}
 
-if not records:
-    raise SystemExit('Geen skills gevonden')
+reused_engine = {
+    'search-intent',
+    'content-refresh',
+    'fact-check',
+    'affiliate-value',
+    'internal-linking-audit',
+    'humanizer',
+    'general-writing',
+    'anti-ai-slop',
+    'seo-drift',
+    'seo-best-practices',
+}
 
-upstream_count = sum(p == 'upstream' for _, p in records)
-custom_count = sum(p == 'custom' for _, p in records)
-total = len(records)
+custom = {
+    'renovation-analysis-workflow',
+    'renovation-content-workflow',
+}
+
+actual = {path.parent.name for path in SKILLS.glob('*/SKILL.md')}
+expected = verbatim_upstream | reused_engine | custom
+
+missing = sorted(expected - actual)
+unknown = sorted(actual - expected)
+if missing:
+    raise SystemExit('FAIL: verwachte skills ontbreken: ' + ', '.join(missing))
+if unknown:
+    raise SystemExit('FAIL: skills zonder policy-classificatie: ' + ', '.join(unknown))
+
+upstream_reused = verbatim_upstream | reused_engine
+upstream_count = len(upstream_reused)
+custom_count = len(custom)
+total = len(actual)
 custom_ratio = custom_count / total
 upstream_ratio = upstream_count / total
 
-print(f'Skills: {total} | upstream={upstream_count} ({upstream_ratio:.1%}) | custom={custom_count} ({custom_ratio:.1%})')
-for name, provenance in records:
-    print(f'- {name}: {provenance}')
+print(
+    f'Skills: {total} | upstream/reused={upstream_count} ({upstream_ratio:.1%}) '
+    f'| custom={custom_count} ({custom_ratio:.1%})'
+)
+print(f'- verbatim RampStack: {len(verbatim_upstream)}')
+print(f'- reused editorial engine: {len(reused_engine)}')
+print(f'- custom orchestration: {len(custom)}')
 
 if custom_ratio > 0.20:
     raise SystemExit(f'FAIL: custom skill ratio {custom_ratio:.1%} is hoger dan 20%')
 if upstream_ratio < 0.80:
-    raise SystemExit(f'FAIL: upstream skill ratio {upstream_ratio:.1%} is lager dan 80%')
+    raise SystemExit(f'FAIL: upstream/reused ratio {upstream_ratio:.1%} is lager dan 80%')
 
 print('PASS: 80/20 skill policy gerespecteerd')
