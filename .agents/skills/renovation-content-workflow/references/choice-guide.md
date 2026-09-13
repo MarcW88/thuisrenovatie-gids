@@ -1,23 +1,26 @@
-# Guide de choix et d’arbitrage
+# Keuze- en afwegingsgids voor renovatie
 
-Utiliser cette référence lorsque le lecteur doit arbitrer entre plusieurs options, contraintes ou approches.
+Gebruik deze referentie wanneer de lezer moet kiezen tussen opties, prioriteiten, niveaus van ingreep of uitvoeringswijzen.
 
-Cette fiche est une **grille de questions**, pas une architecture de page. Ne pas en déduire un ordre de H2/H3, un nombre de sections, un tableau obligatoire ou une checklist finale systématique.
+Dit is een **vragenlijst voor analyse**, geen pagina-architectuur. Leid hieruit geen vaste H2/H3-volgorde, verplicht aantal secties, tabel of checklist af.
 
-## Questions de recherche utiles
+## Nuttige onderzoeksvragen
 
-- Quelle décision exacte le lecteur doit-il prendre ?
-- Quels critères changent réellement cette décision ?
-- Lesquels sont éliminatoires, lesquels sont des compromis et lesquels relèvent d’une préférence ?
-- Quelles dépendances comptent : format, logiciel, cloud, abonnement, coût, durée de support, portabilité ou autre ?
-- Dans quelles situations chaque option devient-elle un mauvais choix ?
-- Quelles informations sont stables et lesquelles doivent être revérifiées actuellement ?
-- Une documentation officielle suffit-elle au claim ou faut-il une source indépendante ?
+- Welke exacte beslissing moet de lezer nemen?
+- Welke woningcontext verandert die beslissing?
+- Welke criteria zijn doorslaggevend, welke zijn trade-offs en welke zijn voorkeur?
+- Welke afhankelijkheden met andere werken tellen mee?
+- Zijn er criteria die een optie uitsluiten?
+- Welke risico's, veiligheidsgrenzen of vergunningen spelen mee?
+- Welke kosten zijn structureel en welke sterk contextafhankelijk?
+- Welke informatie is stabiel en welke moet actueel worden gecontroleerd?
+- Wanneer wordt een vakman of specialist noodzakelijk?
+- In welke situaties wordt elke optie een slechte keuze?
 
 ## Gate éditorial
 
-Le guide doit aider à **arbitrer**, pas seulement énumérer des avantages et inconvénients.
+De pagina moet helpen **beslissen**, niet alleen voor- en nadelen opsommen.
 
-Une matrice, un tableau ou une checklist peut être utile si la décision le justifie, mais aucun de ces formats n’est obligatoire.
+Een matrix, tabel of checklist kan nuttig zijn wanneer de beslissing dat vraagt, maar geen enkel format is verplicht.
 
-Ne pas transformer une comparaison documentaire en classement de produits ou en « meilleur choix » non démontré. Si la tâche devient réellement de sélectionner des modèles, passer au workflow Comparatif.
+Een aanbeveling moet uit expliciete criteria en voorwaarden volgen. Gebruik geen generieke "beste keuze" zonder context of bewijs.
