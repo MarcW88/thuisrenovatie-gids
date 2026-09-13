@@ -1,11 +1,6 @@
 name: Vendor full upstream skills
 
 on:
-  push:
-    branches:
-      - restore-full-upstream-skills
-    paths:
-      - '.github/workflows/vendor-full-upstream-skills.yml'
   workflow_dispatch:
 
 permissions:
@@ -13,13 +8,11 @@ permissions:
 
 jobs:
   vendor:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout target repository
         uses: actions/checkout@v4
         with:
-          ref: restore-full-upstream-skills
           fetch-depth: 0
 
       - name: Checkout pinned RampStack source
@@ -31,20 +24,10 @@ jobs:
         run: |
           set -euo pipefail
           skills=(
-            seo-keyword
-            seo-content-audit
-            seo-onpage
-            seo-technical
-            content-brief-authoring
-            content-and-copy
-            editorial-qa
-            evidence-based-reviews
-            information-architecture
-            jtbd-framing
-            cro-optimization
-            seo-competitor
-            seo-aeo-geo
-            brand-voice
+            seo-keyword seo-content-audit seo-onpage seo-technical
+            content-brief-authoring content-and-copy editorial-qa evidence-based-reviews
+            information-architecture jtbd-framing cro-optimization
+            seo-competitor seo-aeo-geo brand-voice
           )
           for skill in "${skills[@]}"; do
             test -f "/tmp/rampstack/skills/$skill/SKILL.md"
@@ -86,7 +69,6 @@ jobs:
                   'vendoring': 'verbatim-directory',
                   'files': files,
               })
-
           manifest = {
               'schema_version': 1,
               'source_repo': 'https://github.com/rampstackco/claude-skills',
@@ -97,8 +79,9 @@ jobs:
           Path('.agents/UPSTREAM_SOURCES.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
           PY
 
-      - name: Commit vendored skills
+      - name: Validate and commit vendored skills
         run: |
+          python scripts/validate_upstream_skills.py
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add .agents/skills .agents/UPSTREAM_SOURCES.json
@@ -106,5 +89,5 @@ jobs:
             echo 'No vendor changes required.'
             exit 0
           fi
-          git commit -m 'chore: vendor full RampStack skill directories'
-          git push origin HEAD:restore-full-upstream-skills
+          git commit -m 'chore: sync full pinned RampStack skill directories'
+          git push origin HEAD:${GITHUB_REF_NAME}
