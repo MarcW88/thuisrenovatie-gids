@@ -1,51 +1,24 @@
-# Content brief — Renovatie volgorde
+# Brief v2 - Renovatievolgorde
 
 - Route: `/renovatie-plannen/renovatie-volgorde/`
-- Type: `PLAN`
-- Markt: Nederland
-- Taal: Nederlands
-- Rol: beslispagina over afhankelijkheden en uitvoeringsvolgorde
+- Status: QA_IN_PROGRESS
+- Primary query: `renovatie volgorde` / `volgorde verbouwing`
+- Reader task: een bruikbare technische volgorde krijgen voor renovatiewerken.
+- Decision: DEEP_REWRITE
+- Last researched: 2026-09-13
 
-## Primaire gebruikersjob
-Ik weet welke delen van mijn woning ik wil renoveren, maar ik wil weten **wat eerst moet en welke werkzaamheden elkaar beïnvloeden**, zodat ik dubbel werk voorkom.
+## SERP form
 
-## Zoekintentie
-Informatief + praktisch beslissend. Niet dezelfde intentie als `renovatiefasen`: deze pagina gaat over technische en praktische afhankelijkheden tussen werkzaamheden, niet over de projectlevenscyclus.
+The intent expects an explicit sequence, not only caveats. Give a usable default while explaining the dependencies that can change it.
 
-## SEO-focus
-- renovatie volgorde
-- volgorde verbouwen
-- volgorde huis renoveren
-- wat eerst bij renovatie
-- volgorde werkzaamheden verbouwing
+## Core answer
 
-## Differentiatie
-Geen universele 1-tot-10-lijst presenteren alsof elke woning hetzelfde is. Werk met beslisregels:
-- eerst risico's die veiligheid, stabiliteit of waterdichtheid beïnvloeden;
-- eerst verborgen of ingrijpende werken vóór afwerking;
-- eerst keuzes die maatvoering en aansluitingen bepalen;
-- toekomstige werken meenemen voordat iets definitief wordt dichtgezet.
+Default logic: research/preparation -> demolition -> structure/shell -> installations -> insulation/build-up -> closing/plaster -> floors/kitchen/bath/custom work -> finishing/handover. Make clear that exact order changes with floor build-up, living situation and project scope.
 
-## Structuur
-1. Snel antwoord
-2. Waarom er geen universele volgorde bestaat
-3. Vier beslisregels voor de juiste volgorde
-4. Typische afhankelijkheden tussen werkzaamheden
-5. Voorbeeldscenario's
-6. Veelgemaakte volgordefouten
-7. Wanneer coördinatie door een vakman zinvol wordt
+## Differentiation
 
-## Interne links
-- `/renovatie-plannen/huis-renoveren/`
-- `/renovatie-plannen/renovatiefasen/`
-- `/renovatie-plannen/complete-renovatie/`
-- `/renovatie-plannen/renovatie-budget/`
-- `/vakman-en-offertes/aannemer-kiezen/`
+Explain *why* a step comes before another. Include concrete dependencies such as kitchen relocation, underfloor heating and insulation/ventilation. Avoid repeating the broad planning steps from `huis-renoveren`.
 
 ## Safety
-Geen dragende delen, elektra, gas, asbestverdachte materialen of ernstige vochtproblemen als gewone DIY-stap behandelen.
 
-## Prioriteiten
-CRITICAL: afhankelijkheden en stopcondities boven generieke stappenlijst.
-IMPORTANT: duidelijke scheiding met `renovatiefasen`.
-OPTIONAL: later uitbreiden met interactieve volgorde-check.
+High-risk findings are investigated before demolition or closure.

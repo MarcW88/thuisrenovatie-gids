@@ -1,96 +1,34 @@
-# Content brief — Huis renoveren
+# Brief v2 - Huis renoveren
 
 - Route: `/renovatie-plannen/huis-renoveren/`
-- Type: `PLAN`
-- Markt: Nederland
-- Taal: Nederlands
-- Rol: pijlerpagina binnen `renovatie-plannen`
-- Laatste broncheck: 2026-09-12
+- Status: QA_IN_PROGRESS
+- Market: Nederland
+- Primary query: `huis renoveren`
+- Reader task: begrijpen waar een woningrenovatie begint en welke beslissingen vóór uitvoering vast moeten staan.
+- Decision: DEEP_REWRITE
+- Last researched: 2026-09-13
 
-## Primaire gebruikersjob
+## Intent and role
 
-Ik wil mijn huis renoveren, maar ik wil eerst weten **waar ik moet beginnen, welke beslissingen ik in welke volgorde moet nemen en wanneer ik nog niet moet starten met uitvoeren**.
+Broad planning pillar. Answer "waar begin ik?" early, then move from technical state to scope, dependencies, rules, cost/budget, comparable offers, work order and handover. Do not duplicate the detailed physical work order or project lifecycle pages.
 
-## Zoekintentie
+## Evidence
 
-Hoofdzakelijk informatief met een sterke besliscomponent. De gebruiker zoekt geen encyclopedisch overzicht van alle renovatiewerken, maar een manier om van een vaag renovatie-idee naar een uitvoerbaar plan te gaan.
+- Rijksoverheid / Omgevingsloket for permit and notification checks.
+- Cost figures belong on `/renovatiekosten/`; summarize and hand off rather than duplicate tables.
+- Safety claims must preserve escalation for structure, foundation, gas, electricity and asbestos.
 
-## SEO-focus
+## Architecture rationale
 
-Primaire term:
-- huis renoveren
+A sequential homeowner decision path is justified by the query. It is not the cluster template. Use mostly prose and only one compact start check when it improves actionability.
 
-Natuurlijke ondersteunende termen:
-- woning renoveren
-- huis renovatie
-- renovatie plannen
-- stappenplan renovatie
-- waar beginnen met renoveren
-- volgorde renovatie
+## Boundaries
 
-Geen keyword stuffing en geen geforceerde woordquota.
+- `/renovatie-volgorde/`: physical order of works.
+- `/renovatiefasen/`: project lifecycle and decision gates.
+- `/complete-renovatie/`: multi-system whole-house coordination.
+- `/renovatiekosten/`: current market price benchmarks.
 
-## SERP-kans
+## Internal next steps
 
-Veel bestaande pagina's focussen op een lineair stappenplan. Thuisrenovatie Gids differentieert door de pagina op te bouwen rond **beslismomenten en stopcondities**:
-
-1. Is de woning technisch veilig en droog genoeg om verder te plannen?
-2. Is de gewenste eindsituatie duidelijk genoeg?
-3. Zijn vergunningen, constructieve gevolgen en technische afhankelijkheden onderzocht?
-4. Is het budget gebaseerd op scope en offertes in plaats van op één generiek bedrag?
-5. Is de volgorde afgestemd voordat afwerking wordt besteld of uitgevoerd?
-
-## Bewijs- en actualiteitschecks
-
-Niet zonder actuele bron noemen:
-- subsidies of subsidieregelingen;
-- exacte vergunningsplicht;
-- vaste prijsranges per m²;
-- rendement of terugverdientijden;
-- wettelijke of technische normen.
-
-Voor vergunningen verwijzen naar het officiële Omgevingsloket:
-https://omgevingswet.overheid.nl/thema/woning-verbouwen
-
-## Structuur
-
-1. Snel antwoord: waar begin je?
-2. Eerst bepalen welk soort renovatie je plant
-3. De renovatie in beslisfasen
-4. Checkpoints: wanneer nog niet doorgaan
-5. In één keer of in fasen renoveren
-6. Budget zonder schijnprecisie
-7. Vergunningen en regels
-8. Wanneer vakmensen betrekken
-9. Volgende stap binnen de cluster
-
-## Interne links
-
-- `/renovatie-plannen/renovatie-volgorde/`
-- `/renovatie-plannen/renovatiefasen/`
-- `/renovatie-plannen/complete-renovatie/`
-- `/renovatie-plannen/renovatiekosten/`
-- `/renovatie-plannen/renovatie-budget/`
-- `/renovatie-plannen/renovatievergunning/`
-- `/renovatie-plannen/subsidies-renovatie/`
-- `/renovatie-plannen/rendement-renovatie/`
-- `/vakman-en-offertes/offertes-vergelijken/`
-
-## Safety
-
-Bij signalen van constructieve problemen, ernstige vochtproblemen, asbestverdachte materialen, gas- of elektrische risico's geen DIY-diagnose normaliseren. Eerst een geschikte deskundige of vakman inschakelen.
-
-## Prioriteiten
-
-### CRITICAL
-- Beslislogica boven generieke lijstjes.
-- Geen verzonnen prijzen/subsidies/regels.
-- Duidelijke veiligheids- en stopcondities.
-
-### IMPORTANT
-- Interne clusterlinks.
-- Nederland expliciet als marktcontext.
-- Vergunningcheck via officiële bron.
-
-### OPTIONAL
-- Later uitbreiden met interactieve renovatieplanner zodra meerdere clusterpagina's inhoud hebben.
+Link only where the next question naturally becomes order, phases, costs, budget, permits or offers.
