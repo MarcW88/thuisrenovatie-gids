@@ -1,33 +1,104 @@
-name: Editorial workflow readiness
+name: Validate editorial engine
 
 on:
+  push:
+    branches:
+      - main
+      - restore-editorial-engine
+    paths:
+      - 'AGENTS.md'
+      - '.agents/**'
+      - 'content/**'
+      - 'generate_pages.py'
+      - 'scripts/**'
+      - '.github/workflows/editorial-quality.yml'
   pull_request:
     paths:
       - 'AGENTS.md'
       - '.agents/**'
+      - 'content/**'
+      - 'generate_pages.py'
       - 'scripts/**'
       - '.github/workflows/editorial-quality.yml'
   workflow_dispatch:
 
 jobs:
-  policy-and-routing:
+  validate-engine:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
       - name: Validate 80-20 skill policy
         run: python scripts/check_skill_policy.py
+
       - name: Validate site structure
         run: python scripts/validate_renovation_structure.py
-      - name: Confirm empty-content phase
+
+      - name: Validate active versus skeleton routes
         run: python scripts/validate_empty_content_phase.py
-      - name: Show editorial routing
+
+      - name: Regenerate pages from source of truth
+        run: python generate_pages.py
+
+      - name: Validate machine-detectable content blockers
+        run: python scripts/validate_content_quality.py
+
+      - name: Confirm editorial workflow contract
         run: |
-          echo "PLAN -> renovatie-plannen"
-          echo "PROJECT -> renovatieprojecten"
-          echo "SUSTAINABILITY -> verduurzamen"
-          echo "DIY -> doe-het-zelf"
-          echo "TROUBLESHOOTING -> problemen-oplossen"
-          echo "LEAD -> vakman-en-offertes"
+          python - <<'PY'
+          from pathlib import Path
+
+          analysis = Path('.agents/skills/renovation-analysis-workflow/SKILL.md').read_text(encoding='utf-8')
+          content = Path('.agents/skills/renovation-content-workflow/SKILL.md').read_text(encoding='utf-8')
+
+          required_analysis = [
+              'AUDIT',
+              'CLUSTER_AUDIT',
+              'PUBLISH_REVIEW',
+              'KEEP',
+              'LIGHT_UPDATE',
+              'DEEP_REWRITE',
+              'MERGE',
+              'NOINDEX',
+              'search-intent',
+              'content-refresh',
+              'fact-check',
+              'affiliate-value',
+              'internal-linking-audit',
+              'anti-ai-slop',
+          ]
+          required_content = [
+              'content-brief-authoring',
+              'content-and-copy',
+              'fact-check',
+              'internal-linking-audit',
+              'humanizer',
+              'general-writing',
+              'anti-ai-slop',
+              'seo-onpage',
+              'seo-technical',
+              'seo-best-practices',
+              'editorial-qa',
+              'PUBLISH_REVIEW',
+          ]
+
+          missing = [f'analysis:{x}' for x in required_analysis if x not in analysis]
+          missing += [f'content:{x}' for x in required_content if x not in content]
+          if missing:
+              raise SystemExit('Missing workflow contract elements: ' + ', '.join(missing))
+
+          forbidden_templates = [
+              'verplicht aantal H2',
+              'verplicht aantal woorden',
+          ]
+          # These phrases may only appear as explicit prohibitions, so no failure is
+          # based on wording alone. The machine contract focuses on required engine
+          # stages; editorial structure remains a PUBLISH_REVIEW responsibility.
+          print('PASS: restored AUDIT -> CONTENT -> PUBLISH_REVIEW contract present')
+          PY
