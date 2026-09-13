@@ -1,83 +1,95 @@
-# Modèle de brief Guide
+# Renovatiebrief — beslissingen, bewijs en grenzen
 
-Ce fichier sert à conserver les décisions qui changent réellement la page. Il ne constitue pas un template éditorial.
+Dit bestand bewaart alleen beslissingen die de pagina werkelijk veranderen. Het is **geen redactioneel template**.
 
 ```yaml
 url:
-slug:
+route:
 status: BRIEF_READY
-guide_type: choice | explainer | how-to | hybrid
+route_family: PLAN | PROJECT | SUSTAINABILITY | TROUBLESHOOTING | DIY | LEAD
+dominant_task: choice | explainer | how-to | hybrid
 primary_keyword:
 search_intent:
 reader_task:
-business_role:
+market: NL
 last_researched:
 ```
 
-## Décision éditoriale
+## Redactionele beslissing
 
-- Question ou tâche centrale :
-- Réponse attendue en une phrase :
-- Valeur propre de la page :
-- Ce que cette URL doit traiter :
-- Ce qu'elle ne doit pas traiter :
-- Valeur existante à préserver, si mise à jour :
+- Centrale vraag of taak:
+- Verwacht antwoord in één zin:
+- Eigen waarde van deze pagina:
+- Wat deze URL wel moet behandelen:
+- Wat deze URL niet moet behandelen:
+- Bestaande waarde die behouden moet blijven, indien update:
 
-## Univers sémantique
+## Semantisch universum
 
-| Terme / entité | Rôle pour la compréhension | Intention couverte | Page interne proche éventuelle |
+| Term / entiteit | Rol voor begrip of beslissing | Intentie | Nabije interne pagina |
 |---|---|---|---|
 
-## Recherche et intention
+## Onderzoek en intentie
 
-- Signaux sémantiques / GSC disponibles :
-- Forme de réponse attendue :
-- Angles utiles déjà bien couverts ailleurs :
-- Lacunes ou besoins que cette page doit réellement résoudre :
-- Incertitudes :
+- Beschikbare semantische / GSC / SERP-signalen:
+- Verwachte antwoordvorm:
+- Wat elders al goed wordt afgedekt:
+- Welke lacune deze pagina werkelijk oplost:
+- Onzekerheden die de beslissing kunnen wijzigen:
 
-## Registre de preuves
+## Bewijsregister
 
-| Affirmation ou étape prévue | Source | Date | Stabilité | Portée / limites |
-|---|---|---|---|---|
+| Claim / stap | Bron | Gecontroleerd op | Territorium | Stabiliteit | Scope / beperkingen |
+|---|---|---|---|---|---|
 
-## Architecture propre à cette page
+## Veiligheid en actualiteit
 
-Ne compléter que les éléments justifiés par l'intention et les preuves.
+- Mogelijke stopcondities:
+- Werk waarvoor vakexpertise nodig is:
+- Prijzen/kosten die actueel gecontroleerd moeten worden:
+- Subsidies/vergunningen/regelgeving die officiële actuele bronnen vereisen:
+- Rendement/prestatieclaims met aannames:
 
-- Title :
-- Meta description :
-- H1 :
-- Réponse / orientation initiale :
-- Questions, distinctions, étapes ou arbitrages à traiter :
-- Formats utiles éventuels : tableau / liste / procédure / exemple / aucun :
-- Ordre retenu et justification :
-- Éléments volontairement exclus :
+## Architectuur eigen aan deze pagina
 
-Il n'existe aucun nombre obligatoire de H2/H3, aucun tableau ou FAQ obligatoire et aucune architecture imposée par `guide_type`.
+Vul alleen in wat door intentie en bewijs wordt gerechtvaardigd.
 
-## Maillage interne
+- Title:
+- Meta description:
+- H1:
+- Antwoord/orientatie bovenaan:
+- Vragen, onderscheidingen, stappen, afhankelijkheden of afwegingen die nodig zijn:
+- Eventuele nuttige vorm: tabel / lijst / procedure / voorbeeld / geen:
+- Gekozen volgorde en waarom:
+- Bewust uitgesloten elementen:
 
-| Depuis/vers | Ancre envisagée | Question suivante résolue |
+Er bestaat geen verplicht aantal H2/H3, geen verplichte tabel of FAQ en geen architectuur die door `route_family` of `dominant_task` wordt opgelegd.
+
+## Interne links
+
+| Van/naar | Mogelijke ankertekst | Volgende vraag die de link oplost |
 |---|---|---|
 
-## Risques et frontières
+## Risico's en grenzen
 
-- Cannibalisation Guide / Guide :
-- Frontière avec `/usages/` :
-- Frontière avec `/comparatifs/` :
-- Frontière avec `/marques/` :
-- Données à revérifier :
-- Affirmations exclues faute de preuve :
-- Test ou source indépendante nécessaire :
+- Cannibalisatie binnen cluster:
+- Grens met andere clusters:
+- Data die opnieuw gecontroleerd moet worden:
+- Claims uitgesloten wegens onvoldoende bewijs:
+- Conversierisico / CTA te vroeg:
+- Safety risk:
+- Structural cloning risk:
 
-## Contrôles
+## Controles
 
-- [ ] Intention / tâche confirmée
-- [ ] Sources adaptées aux claims
-- [ ] Différenciation réelle
-- [ ] Architecture justifiée par cette page
-- [ ] Maillage utile contrôlé
-- [ ] Génération et rendu contrôlés
-- [ ] `guide-analysis-workflow / PUBLISH_REVIEW` exécuté
-- [ ] Validation humaine obtenue avant indexation
+- [ ] Intentie / taak bevestigd
+- [ ] Route-eigenaarschap bevestigd
+- [ ] Bronnen passend bij claims
+- [ ] Territorium en actualiteit gecontroleerd waar nodig
+- [ ] Veiligheidsgrenzen bepaald
+- [ ] Werkelijke differentiatie
+- [ ] Architectuur gerechtvaardigd door deze pagina
+- [ ] Interne links gecontroleerd
+- [ ] Bronbestand en rendering gecontroleerd
+- [ ] `renovation-analysis-workflow / PUBLISH_REVIEW` uitgevoerd
+- [ ] Menselijke validatie verkregen vóór indexatie
