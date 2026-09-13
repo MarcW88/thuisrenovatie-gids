@@ -47,6 +47,7 @@ ROUTES = {
 
 LABEL = {
     "renovatie-plannen": "Renovatie plannen",
+    "renovatie-budget": "Renovatiebudget",
     "renovatieprojecten": "Renovatieprojecten",
     "verduurzamen": "Verduurzamen",
     "problemen-oplossen": "Problemen oplossen",
