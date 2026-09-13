@@ -1,122 +1,70 @@
-# Rapport Guide — PUBLISH_REVIEW
+# Publish gate — Thuisrenovatie Gids
 
-Ce rapport documente les contrôles réellement exécutés. Le validateur machine ne peut jamais remplir automatiquement les gates éditoriaux.
+Gebruik deze checklist alleen wanneer een pagina als inhoudelijk afgewerkt wordt beschouwd. Ze vervangt `renovation-analysis-workflow / PUBLISH_REVIEW` niet, maar helpt de review traceerbaar te maken.
 
-```yaml
-url:
-slug:
-audit_decision:
-draft_commit:
-reviewed_at:
-publish_review: PASS — READY_FOR_HUMAN_VALIDATION | FAIL — KEEP_NOINDEX
-indexing_status: noindex
-```
+## Machine gate
 
-## 1. Intention et rôle
+- [ ] `python3 scripts/validate_content_quality.py` = PASS
+- [ ] geldige title, meta description, H1, canonical en robots
+- [ ] geen placeholders
+- [ ] geen gebroken interne links of anchors in de actieve content
+- [ ] bronbestand bestaat in `content/<route>/body.html`
 
-- Question / tâche principale :
-- Type dominant : CHOICE / EXPLAINER / HOW_TO / HYBRID
-- Intention satisfaite : PASS/FAIL
-- Valeur propre de cette URL :
-- Frontière avec Guides voisins :
-- Frontière avec Usages / Comparatifs / Marques :
+## Intentie en clusterrol
 
-## 2. Valeur existante et scope de correction
+- [ ] primaire taak/intentie is duidelijk
+- [ ] routefamilie is de juiste eigenaar van die intentie
+- [ ] overlap met nabije pagina's is onderzocht
+- [ ] geen onopgeloste cannibalisatie
+- [ ] architectuur is eigen aan de pagina en niet gekopieerd uit een cluster-template
 
-- Éléments demandés à préserver par l’AUDIT :
-- Éléments effectivement préservés :
-- Corrections réalisées :
-- Suppressions ou changements structurants et justification :
+## Bewijs en actualiteit
 
-## 3. Fact-check et fraîcheur
+- [ ] belangrijke claims zijn via `fact-check` beoordeeld
+- [ ] prijzen/kosten zijn actueel, gedateerd en contextueel indien genoemd
+- [ ] subsidies, vergunningen, regelgeving en normen steunen op actuele passende bronnen
+- [ ] territorium is duidelijk waar regels of steunmaatregelen lokaal verschillen
+- [ ] prestatie-, rendement- en besparingsclaims bevatten de nodige voorwaarden/aannames
+- [ ] onzekerheden zijn zichtbaar in plaats van opgevuld
 
-| Affirmation / étape | Statut | Source | Date | Correction / limite |
-|---|---|---|---|---|
+## Veiligheid
 
-- Claims instables revérifiés actuellement : PASS/FAIL/NON APPLICABLE
-- Inconnues correctement qualifiées : PASS/FAIL
-- Faux hands-on absent : PASS/FAIL
+- [ ] risicovol werk is niet als gewone DIY genormaliseerd
+- [ ] stopcondities zijn aanwezig waar nodig
+- [ ] er wordt geen diagnose of inspectie gesimuleerd
+- [ ] latere stijlpasses hebben waarschuwingen of beperkingen niet afgezwakt
 
-## 4. Intégrité Guide
+## Affiliate- en leadintegriteit
 
-### CHOICE si applicable
-- Critères qui changent réellement la décision :
-- Compromis / critères éliminatoires :
-- Absence de ranking produit déguisé : PASS/FAIL
+- [ ] pagina blijft nuttig zonder affiliate links of formulier
+- [ ] nadelen, uitsluitingen en alternatieven zijn niet verborgen
+- [ ] CTA past bij de beslisfase
+- [ ] geen kunstmatige urgentie, gegarandeerde besparing of commissiegestuurde ranking
+- [ ] geen merchant rewrite of fictieve hands-on ervaring
 
-### EXPLAINER si applicable
-- Mécanisme correctement expliqué : PASS/FAIL
-- Conséquence pratique visible : PASS/FAIL
-- Limites / exceptions importantes :
+## Redactionele afwerking
 
-### HOW_TO si applicable
-- Prérequis et contexte vérifiés : PASS/FAIL
-- Étapes importantes vérifiées : PASS/FAIL
-- Variantes de version / plateforme correctement séparées : PASS/FAIL/NON APPLICABLE
-- Résultat et limites :
+- [ ] `internal-linking-audit` uitgevoerd waar relevant
+- [ ] `humanizer` uitgevoerd op zichtbare content
+- [ ] `general-writing` uitgevoerd met minimale noodzakelijke wijzigingen
+- [ ] `anti-ai-slop` review zonder onopgelost HIGH-signaal
+- [ ] `seo-onpage` uitgevoerd
+- [ ] `seo-technical` uitgevoerd waar relevant
+- [ ] `seo-best-practices` alleen toegepast waar passend
+- [ ] `editorial-qa` uitgevoerd
+- [ ] volledige rendered page nagelezen indien rendering beschikbaar is
 
-## 5. Affiliate value
+## PUBLISH_REVIEW
 
-- Applicable : OUI/NON
-- Page utile sans liens affiliés : PASS/FAIL/NON APPLICABLE
-- Valeur au-delà d’une source marchande :
-- Limites / alternatives préservées :
+Resultaat van `renovation-analysis-workflow / PUBLISH_REVIEW`:
 
-## 6. Internal linking
+- `PASS — READY_FOR_HUMAN_VALIDATION`
+- of `FAIL — KEEP_NOINDEX`
 
-| Cible | Ancre | Question suivante résolue | Statut |
-|---|---|---|---|
+## Menselijke beslissing
 
-- Aucun quota utilisé comme proxy : PASS/FAIL
+- [ ] menselijke validatie expliciet verkregen
+- [ ] eventuele structurele actie (merge/redirect/noindex) expliciet goedgekeurd
+- [ ] indexatie alleen gewijzigd na expliciete instructie
 
-## 7. Humanizer / General writing
-
-- Patterns réellement corrigés :
-- Faits, preuves et intention préservés : PASS/FAIL
-- Nouveau fait introduit après fact-check : OUI/NON
-- Si OUI, repassé par fact-check : PASS/FAIL
-
-## 8. Anti-AI-slop et cluster
-
-| Fragment / structure | Pattern | Gravité | Correction | Statut |
-|---|---|---|---|---|
-
-- Architecture justifiée par cette page : PASS/FAIL
-- Clonage structurel substantiel avec les guides voisins : OUI/NON
-- Références CHOICE / EXPLAINER / HOW_TO utilisées comme template : OUI/NON
-
-## 9. SEO et technique
-
-- Title / H1 / intention : PASS/FAIL
-- Canonical : PASS/FAIL
-- Robots : PASS/FAIL
-- Liens / ancres : PASS/FAIL
-- Schema honnête : PASS/FAIL/NON APPLICABLE
-- `python3 validate_guide_quality.py` : PASS/FAIL
-
-## 10. Editorial QA
-
-- Intent / task completion : PASS/FAIL
-- Original value : PASS/FAIL
-- Factuality : PASS/FAIL
-- Natural language : PASS/FAIL
-- SEO preservation : PASS/FAIL
-- User usefulness : PASS/FAIL
-
-## 11. Lecture en ordre rendu
-
-- Desktop : PASS/FAIL/NON DISPONIBLE
-- Mobile : PASS/FAIL/NON DISPONIBLE
-- Contradictions, répétitions ou ruptures restantes :
-
-## Verdict
-
-Retourner exactement l’un des deux statuts :
-
-`PASS — READY_FOR_HUMAN_VALIDATION`
-
-ou
-
-`FAIL — KEEP_NOINDEX`
-
-Blockers ou risques résiduels :
+Een machine PASS of PUBLISH_REVIEW PASS activeert de indexatie nooit automatisch.
