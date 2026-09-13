@@ -1,22 +1,26 @@
-# Guide explicatif technique
+# Uitleg- en begripsreferentie voor renovatie
 
-Utiliser cette référence pour expliquer une technologie, une mesure, un format ou un fonctionnement.
+Gebruik deze referentie wanneer de lezer vooral een mechanisme, regel, kost, risico, materiaal of technische keuze correct moet begrijpen.
 
-Cette fiche est une **grille de risques et de questions**, pas une architecture de page. Ne pas reproduire mécaniquement définition → fonctionnement → avantages → limites sur tous les sujets.
+Dit is een **controlegids**, geen vaste artikelstructuur. De uiteindelijke secties volgen uit de echte vraag, de bronnen en de noodzakelijke nuances.
 
-## Questions de recherche utiles
+## Nuttige onderzoeksvragen
 
-- Quel concept le lecteur doit-il réellement comprendre ?
-- Quels termes voisins sont souvent confondus et doivent être distingués ?
-- Quelle partie relève du principe physique, de l’implémentation logicielle ou d’un choix constructeur ?
-- Quelle causalité peut être expliquée avec certitude ?
-- Qu’est-ce que le mécanisme change concrètement pour l’utilisateur ?
-- Quelles limites, exceptions, conditions de mesure ou variations entre générations peuvent changer l’interprétation ?
-- Quelles unités ou chiffres risquent de créer une fausse précision ?
-- Quelle simplification est acceptable et que laisse-t-elle volontairement de côté ?
+- Welk begrip of mechanisme moet de lezer werkelijk begrijpen?
+- Welke nabije termen worden vaak met elkaar verward?
+- Wat is de oorzaak-gevolgrelatie en waar stopt die relatie?
+- Welke woningcontext, bouwsituatie of installatie verandert de uitleg?
+- Welke praktische consequentie heeft dit voor een renovatiebeslissing?
+- Welke uitzonderingen, grenzen of vereenvoudigingen zijn belangrijk?
+- Welke claims zijn stabiele bouwfysica en welke zijn tijd-, product- of regelgebonden?
+- Welke cijfers lijken precies maar zijn zonder context misleidend?
+- Is een officiële bron voldoende of is onafhankelijke technische onderbouwing nodig?
+- Welke veiligheidswaarschuwing of professionele beoordeling kan niet ontbreken?
 
 ## Gate éditorial
 
-Une définition n’est pas suffisante : le lecteur doit pouvoir relier le mécanisme à une conséquence pratique ou à une meilleure interprétation d’une caractéristique.
+Een definitie alleen is geen uitleg. De pagina moet duidelijk maken **wat het mechanisme verandert voor de keuze of actie van de lezer**.
 
-Utiliser schéma, tableau, étapes ou analogie uniquement lorsqu’ils clarifient réellement le sujet. Une analogie trompeuse ou une symétrie artificielle « avantages / inconvénients » vaut moins qu’une explication précise des limites.
+Gebruik voorbeelden, schema's, tabellen of stappen alleen wanneer ze een echte onduidelijkheid oplossen. Geen enkel format is verplicht.
+
+Vermijd pseudo-precisie: kosten, rendement, besparing of prestaties mogen niet exact klinken wanneer de aannames dat niet toelaten.
