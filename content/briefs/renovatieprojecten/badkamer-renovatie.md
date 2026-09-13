@@ -3,7 +3,7 @@
 - Route: `/renovatieprojecten/badkamer-renovatie/`
 - Type: `PROJECT`
 - Workflow version: 2
-- Status: `QA_IN_PROGRESS`
+- Status: `QA_COMPLETE`
 - Decision: `DEEP_REWRITE`
 - Market/language: Nederland / nl-NL
 - Last researched: 2026-09-13
