@@ -1,24 +1,26 @@
-# Tutoriel et guide de compatibilité
+# How-to- en uitvoeringsreferentie voor renovatie
 
-Utiliser cette référence pour une action concrète, un transfert, un export ou une intégration.
+Gebruik deze referentie voor een concrete voorbereiding, controle, onderhoudstaak of DIY-handeling die werkelijk uitvoerbaar en veilig beschreven kan worden.
 
-Cette fiche est une **grille de vérification**, pas une procédure générique à recopier. Le nombre, l’ordre et la forme des sections doivent suivre la tâche réelle et la documentation disponible.
+Dit is een **verificatiegids**, geen generieke procedure om te kopiëren. Het aantal, de volgorde en de vorm van secties volgen de echte taak en het beschikbare bewijs.
 
-## Questions de recherche utiles
+## Nuttige onderzoeksvragen
 
-- Quel résultat concret le lecteur cherche-t-il à obtenir ?
-- Quels appareil, système, application, version, compte ou abonnement sont réellement nécessaires ?
-- La méthode est-elle native, tierce, manuelle ou un contournement ?
-- Quelles étapes sont indispensables et dans quel ordre uniquement lorsque cet ordre compte ?
-- Comment le lecteur vérifie-t-il que le résultat attendu est obtenu ?
-- Quelles différences de version, format, écosystème ou appareil changent la procédure ?
-- Quels échecs probables, limites, risques de perte de données ou questions de confidentialité doivent être signalés ?
-- Existe-t-il une alternative plus simple lorsque la méthode principale n’est pas disponible ?
+- Welk concreet resultaat wil de lezer bereiken?
+- Welke voorkennis, materialen, gereedschappen of woningcondities zijn nodig?
+- Is de taak werkelijk geschikt voor DIY of is professionele uitvoering vereist?
+- Welke stappen zijn noodzakelijk en in welke volgorde alleen wanneer die volgorde functioneel of veilig belangrijk is?
+- Hoe controleert de lezer dat het resultaat correct is?
+- Welke fouten of schade ontstaan vaak wanneer een voorwaarde ontbreekt?
+- Welke variant in materiaal, constructie of installatie verandert de methode?
+- Welke stopcondities maken verder zelf uitvoeren onverstandig of onveilig?
+- Welke regelgeving, garantie of aansprakelijkheid kan de uitvoering beperken?
+- Welke veiligere of eenvoudigere alternatieven bestaan?
 
 ## Gate éditorial
 
-Chaque étape publiée doit pouvoir être rattachée à une source actuelle ou à une observation documentée. Ne jamais inventer une étape parce qu’elle paraît logique.
+Elke gepubliceerde stap moet kunnen worden gekoppeld aan betrouwbare documentatie, vakkennis of een aantoonbare observatie. Verzin nooit een stap omdat ze logisch klinkt.
 
-Un tableau de compatibilité, une section dépannage ou une date de vérification sont utiles lorsque le sujet le demande, mais ne sont jamais obligatoires par template.
+Een gereedschapslijst, foutensectie, controlelijst of illustratie is alleen nuttig wanneer de taak dat vereist. Geen enkel onderdeel is verplicht per template.
 
-Ne pas fusionner des procédures de versions différentes sans distinguer clairement leurs conditions.
+Hoog-risicowerk rond draagstructuren, gas, elektriciteit, asbest, dakwerk op hoogte of andere gereglementeerde interventies mag niet als gewone DIY-procedure worden genormaliseerd.
