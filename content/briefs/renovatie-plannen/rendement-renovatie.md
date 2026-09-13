@@ -1,33 +1,21 @@
-# Content brief — Rendement renovatie
+# Brief v2 - Rendement renovatie
 
 - Route: `/renovatie-plannen/rendement-renovatie/`
-- Type: `PLAN`
-- Markt: Nederland
-- Taal: Nederlands
-- Rol: renovatie beoordelen op meerdere soorten rendement
-- Laatste broncheck: 2026-09-12
+- Status: QA_IN_PROGRESS
+- Primary topic: `renovatie rendement`, `welke verbouwing verhoogt woningwaarde`
+- Reader task: compare renovation value through property value, lower running costs, avoided damage and personal use value.
+- Decision: DEEP_REWRITE
+- Last researched: 2026-09-13
 
-## Primaire gebruikersjob
-Ik wil renovatiemaatregelen prioriteren op wat ze mij werkelijk opleveren, zonder alleen naar een theoretische terugverdientijd te kijken.
+## Evidence
 
-## Zoekintentie
-Beslisgericht rond ROI, woningwaarde, comfort, energie, onderhoud en risico.
+- Vereniging Eigen Huis 2026: creating extra usable space often gives the clearest value increase; kitchen/bathroom mainly add comfort and their value effect is limited by taste.
+- NVM/brainbay, 23 July 2026: fixer-uppers renovated in 2025 showed an average EUR 178,000 value increase at equal living area, nearly 50%; effects vary by property type, size and location and can rise further with added floor area.
 
-## Kernmodel
-Beoordeel een maatregel op vijf dimensies:
-1. noodzakelijk onderhoud / risicovermindering
-2. comfort en gebruikskwaliteit
-3. energie- en gebruikskosten
-4. toekomstige flexibiliteit
-5. mogelijke invloed op verkoopbaarheid / woningwaarde
+## Critical qualification
 
-## Bewijsregels
-- Geen gegarandeerde waardestijging.
-- Geen vaste terugverdientijd zonder expliciete aannames.
-- Energie-effecten hangen af van woning, gebruik, energieprijzen en uitvoering.
+NVM's value increase is not a universal renovation ROI or profit figure. It does not by itself deduct purchase discount, renovation cost, financing or project costs.
 
-## Interne links
-- `/renovatie-plannen/renovatiekosten/`
-- `/renovatie-plannen/renovatie-budget/`
-- `/verduurzamen/energie-besparen/`
-- `/verduurzamen/isolatie/`
+## Boundary
+
+Energy-specific economics belong under `/verduurzamen/`. This page owns the whole-renovation decision and market/value perspective.

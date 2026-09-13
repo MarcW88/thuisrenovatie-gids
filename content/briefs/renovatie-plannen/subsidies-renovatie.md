@@ -1,32 +1,20 @@
-# Content brief — Subsidies renovatie
+# Brief v2 - Renovatiesubsidies
 
 - Route: `/renovatie-plannen/subsidies-renovatie/`
-- Type: `PLAN`
-- Markt: Nederland
-- Taal: Nederlands
-- Rol: subsidie als beslisfactor, niet als vaste korting
-- Laatste broncheck: 2026-09-12
+- Status: QA_IN_PROGRESS
+- Primary query: `renovatie subsidie 2026` / `ISDE 2026`
+- Reader task: know which current national renovation/sustainability subsidies may apply and what must be checked before commissioning work.
+- Decision: DEEP_REWRITE
+- Last researched: 2026-09-13
 
-## Primaire gebruikersjob
-Ik wil weten welke subsidies mijn renovatie kunnen beïnvloeden en wanneer ik voorwaarden moet controleren zodat ik geen maatregel uitvoer die later niet in aanmerking blijkt te komen.
+## Official evidence
 
-## Officiële kernbron
-RVO — ISDE voor woningeigenaren:
-https://www.rvo.nl/subsidies-financiering/isde/woningeigenaren
+RVO ISDE 2026 covers five insulation categories and, under conditions, heat pumps, solar boilers, ventilation, warm-network connection and electric cooking provision. The exact amount for insulation depends on measure/material and m2; pumps and boilers depend on product/system.
 
-## Feitelijke basis 2026
-RVO publiceert in 2026 actuele ISDE-regels en meldcodes voor verduurzamingsmaatregelen. Voor isolatiemaatregelen kunnen voorwaarden, meldcodes en subsidiebedragen per maatregel gelden. RVO vermeldt bovendien dat combinaties van maatregelen onder voorwaarden tot een hoger subsidiebedrag kunnen leiden. Bedragen en voorwaarden zijn tijdsafhankelijk.
+Ventilation is a new 2026-relevant measure in the current ISDE flow: RVO states EUR 400 one-time when combined with one or more insulation measures and subject to conditions/meldcodes.
 
-## Pagina-opbouw
-1. Subsidie pas meenemen na controle van voorwaarden
-2. Welke soorten renovatiemaatregelen vaak relevant zijn
-3. Waarom product/meldcode en uitvoeringsmoment tellen
-4. Combineren van maatregelen
-5. Landelijk versus lokaal
-6. Checklist vóór opdracht
-7. Officiële bronnen
+Use the current RVO decision tree, calculator and meldcode lists as source of truth. Do not freeze all volatile product/m2 amounts into site copy.
 
-## Bewijsregels
-- Geen bedrag noemen zonder bron + datum.
-- Geen claim ‘je krijgt subsidie’ zonder voorwaarden.
-- Gemeentelijke regelingen alleen algemeen benoemen tenzij actueel geverifieerd voor een gemeente.
+## Local support
+
+Mention municipality/province schemes generically and tell users to check locally. Never imply a local subsidy without location/current verification.

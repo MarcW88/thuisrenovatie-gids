@@ -1,37 +1,24 @@
-# Content brief — Renovatiebudget
+# Brief v2 - Renovatiebudget
 
 - Route: `/renovatie-plannen/renovatie-budget/`
-- Type: `PLAN`
-- Markt: Nederland
-- Taal: Nederlands
-- Rol: methode om renovatiebudget op te bouwen
-- Laatste broncheck: 2026-09-12
+- Status: QA_IN_PROGRESS
+- Primary query: `renovatie budget` / `verbouwing budget maken`
+- Reader task: turn available money and market costs into a controllable project budget.
+- Decision: DEEP_REWRITE
+- Last researched: 2026-09-13
 
-## Primaire gebruikersjob
-Ik wil vooraf weten hoeveel financiële ruimte ik nodig heb en hoe ik mijn renovatiebudget zo opbouw dat onverwachte kosten mij niet meteen dwingen verkeerde keuzes te maken.
+## Method
 
-## Zoekintentie
-Praktisch beslisgericht. Niet ‘wat kost renovatie gemiddeld’, maar ‘hoe maak ik mijn eigen budget’.
+Separate maximum financial room from fixed scope, optional choices, project overhead and contingency. Rebudget after technical inventory, after design/offers and before contract.
 
-## Kernmodel
-Werk met vier potten:
-1. vaste scope
-2. nog te beslissen opties
-3. projectkosten buiten de zichtbare afwerking
-4. risicobuffer / onzekerheden
+## Evidence
 
-## Belangrijke beslissingen
-- budget per fase of per project
-- must-have versus nice-to-have
-- welke keuzes nu vastleggen en welke later
-- hoe offertes normaliseren naar dezelfde scope
-- wanneer opnieuw begroten
+Consumer guidance commonly recommends a practical contingency rather than zero buffer. Current NN guidance suggests roughly 10-20%; Funda has advised 10-15%. Present as guidance, never a universal technical norm.
 
-## Bewijsregels
-Geen universeel percentage voor buffer als feit presenteren. Leg uit dat de benodigde reserve afhangt van onzekerheid, woningstaat en projectcomplexiteit.
+## Example
 
-## Interne links
-- `/renovatie-plannen/renovatiekosten/`
-- `/renovatie-plannen/complete-renovatie/`
-- `/vakman-en-offertes/offertes-vergelijken/`
-- `/vakman-en-offertes/offerte-controleren/`
+An illustrative EUR 80,000 split is allowed only when clearly labelled a worked example, not a recommended allocation.
+
+## Boundary
+
+Do not duplicate current market prices from `/renovatiekosten/`. Link to it, then focus on allocation, control and trade-offs.

@@ -1,30 +1,22 @@
-# Content brief — Renovatievergunning
+# Brief v2 - Renovatievergunning
 
 - Route: `/renovatie-plannen/renovatievergunning/`
-- Type: `PLAN`
-- Markt: Nederland
-- Taal: Nederlands
-- Rol: vergunningen en meldingen als vroeg beslismoment
-- Laatste broncheck: 2026-09-12
+- Status: QA_IN_PROGRESS
+- Primary query: `vergunning renovatie` / `vergunning verbouwen`
+- Reader task: know whether a check is needed, what commonly triggers attention and where to get the authoritative answer.
+- Decision: LIGHT_UPDATE
+- Last researched: 2026-09-13
 
-## Primaire gebruikersjob
-Ik wil vóór ontwerp, bestelling of uitvoering weten of mijn renovatie vergunning-, meldings- of informatieplichtig kan zijn en waar ik dit officieel controleer.
+## Official sources
 
-## Officiële bronnen
-- Rijksoverheid: https://www.rijksoverheid.nl/vraag-en-antwoord/omgevingswet/wanneer-moet-ik-een-omgevingsvergunning-aanvragen
-- Rijksoverheid: https://www.rijksoverheid.nl/themas/bouwen-en-wonen/bouwregelgeving/checken-of-vergunning-nodig-is-voor-ver-bouwen
-- Omgevingsloket: https://omgevingswet.overheid.nl/
+- Rijksoverheid: check permit requirements for building, renovating and demolition.
+- Omgevingsloket Vergunningscheck: location/project-specific result.
+- Rijksoverheid states that permit-free building still has applicable rules, including Bbl and possibly other requirements.
 
-## Feitelijke basis
-Volgens Rijksoverheid kan een project vergunningplichtig, meldingsplichtig, informatieplichtig, vergunningvrij of verboden zijn. Dit hangt onder meer af van de locatie en het concrete project. Ook vergunningvrij bouwen moet aan toepasselijke regels voldoen.
+## Core answer
 
-## Pagina-opbouw
-1. Waarom je vroeg controleert
-2. Vergunning, melding of informatieplicht
-3. Waarom ‘vergunningvrij’ niet ‘regelvrij’ betekent
-4. Welke projectkenmerken extra aandacht vragen
-5. Officiële vergunningscheck
-6. Wat je vóór offerte/uitvoering documenteert
+Do not publish a universal yes/no list. Explain common triggers, then route to the official check. The online check belongs early enough to influence design and ordering.
 
-## Verboden simplificatie
-Geen universele lijst ‘dit is altijd vergunningvrij’. Verwijs voor de uitkomst altijd naar de actuele Vergunningscheck.
+## Safety/legal boundary
+
+No individual legal conclusion without the project/location-specific check.

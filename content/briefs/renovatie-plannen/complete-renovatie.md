@@ -1,51 +1,25 @@
-# Content brief — Complete renovatie
+# Brief v2 - Complete renovatie
 
 - Route: `/renovatie-plannen/complete-renovatie/`
-- Type: `PLAN`
-- Markt: Nederland
-- Taal: Nederlands
-- Rol: beslispagina voor renovaties waarbij meerdere systemen/ruimtes samen veranderen
+- Status: QA_IN_PROGRESS
+- Primary query: `complete renovatie` / `complete woningrenovatie`
+- Reader task: understand what a whole-house renovation includes, likely cost scale, phasing and coordination.
+- Decision: DEEP_REWRITE
+- Last researched: 2026-09-13
 
-## Primaire gebruikersjob
-Ik overweeg een complete renovatie en wil weten **wanneer ik alles als één samenhangend project moet plannen, wat ik vooraf moet vastleggen en wanneer faseren verstandiger is**.
+## Intent gaps to solve
 
-## Zoekintentie
-Informatief + beslissend. Geen algemene kopie van `huis-renoveren`: focus op integrale coördinatie, scope, afhankelijkheden en fasering bij meerdere ingrepen tegelijk.
+Current SERPs expect definition, cost, planning/phasing and execution coordination. The old page handled coordination but avoided cost and duration context too strongly.
 
-## SEO-focus
-- complete renovatie
-- volledige woning renovatie
-- huis volledig renoveren
-- totale renovatie woning
-- complete verbouwing
+## Evidence
 
-## Differentiatie
-Niet starten vanuit één generieke totaalprijs. Eerst bepalen welke systemen tegelijk geraakt worden en welke beslissingen elkaar vergrendelen.
+- Vereniging Eigen Huis 2026 project-level prices give reliable component context.
+- Current Dutch market guides commonly place an 80-120 m2 complete renovation around EUR 60,000-150,000, with wider ranges for structural work. Treat this only as broad market orientation and disclose scope differences.
 
-## Structuur
-1. Wanneer is een renovatie 'compleet'?
-2. Wanneer één integraal project logisch is
-3. Wanneer faseren beter kan
-4. Welke beslissingen vooraf vast moeten liggen
-5. Coördinatie tussen constructie, schil, installaties en afwerking
-6. Budget en onzekerheid
-7. Bewonen tijdens de renovatie
-8. Wie coördineert?
-9. Volgende beslissingen
+## Own role
 
-## Interne links
-- `/renovatie-plannen/huis-renoveren/`
-- `/renovatie-plannen/renovatie-volgorde/`
-- `/renovatie-plannen/renovatiefasen/`
-- `/renovatie-plannen/renovatiekosten/`
-- `/renovatie-plannen/renovatie-budget/`
-- `/vakman-en-offertes/aannemer-kiezen/`
-- `/vakman-en-offertes/offertes-vergelijken/`
+Only for multi-system or strongly interdependent renovation. Do not become a duplicate of `huis-renoveren`.
 
-## Safety
-Bij constructieve ingrepen, installaties, vochtproblemen en mogelijk asbest deskundige beoordeling als aparte voorwaarde benoemen.
+## Information gain
 
-## Prioriteiten
-CRITICAL: integrale afhankelijkheden centraal zetten.
-IMPORTANT: één project versus faseren expliciet vergelijken.
-OPTIONAL: later beslismatrix voor projectcoördinatie.
+Explain why the coordination interfaces between trades are a cost/risk driver, how phased execution still needs whole-house planning, and when temporary housing becomes a real budget item.
