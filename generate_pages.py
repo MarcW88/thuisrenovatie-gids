@@ -57,6 +57,7 @@ LABEL = {
 }
 
 RAW_AMPERSAND = re.compile(r"&(?!#\d+;|#x[0-9A-Fa-f]+;|[A-Za-z][A-Za-z0-9]+;)")
+VISUAL_TABLE_ROLE = re.compile(r' role="table" aria-label="[^"]*"')
 
 
 def name(slug):
@@ -79,7 +80,8 @@ def normalise_body_html(body):
     """Apply safe, generator-level HTML fixes without changing editorial content."""
     body = RAW_AMPERSAND.sub("&amp;", body)
     # These grid components are visual comparison layouts, not semantic data tables.
-    # Removing incomplete ARIA table roles avoids announcing invalid table structures.
+    # Remove both the incomplete table role and its table-only accessible label.
+    body = VISUAL_TABLE_ROLE.sub("", body)
     body = body.replace(' role="table"', "").replace(' role="row"', "")
     # A labelled diagnostic rail is a grouped status display, not an untyped labelled div.
     body = body.replace(
