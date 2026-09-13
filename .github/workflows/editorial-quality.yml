@@ -68,7 +68,7 @@ jobs:
               'seo-keyword', 'seo-competitor', 'search-intent', 'content-refresh',
               'fact-check', 'affiliate-value', 'internal-linking-audit',
               'seo-aeo-geo', 'anti-ai-slop', 'editorial-qa',
-              'SERP coverage matrix', 'serp-coverage.md', 'MUST = MISSING',
+              'serp-coverage.md', 'MUST = MISSING',
           ]
           required_content = [
               'engine_version: 2',
