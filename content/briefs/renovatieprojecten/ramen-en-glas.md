@@ -5,7 +5,7 @@
 - Markt: Nederland
 - Taal: Nederlands
 - Workflow version: 2
-- Status: `BRIEF_READY`
+- Status: `QA_COMPLETE`
 - Laatste broncheck: 2026-09-13
 - Decision: `DEEP_REWRITE`
 
