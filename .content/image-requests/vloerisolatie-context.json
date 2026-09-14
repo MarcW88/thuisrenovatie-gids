@@ -1,0 +1,20 @@
+{
+  "id": "vloerisolatie-context",
+  "page": "verduurzamen/isolatie/vloerisolatie/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Maakt de context van vloer, kruipruimte en isolatie zichtbaar zonder één uitvoeringsmethode als standaard voor te stellen.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:vloerisolatie-context -->",
+  "placement": "replace",
+  "output_path": "assets/generated/vloerisolatie-context.webp",
+  "prompt": "Photorealistic editorial photograph showing the context of floor insulation in a realistic Dutch or Benelux home. Use a wide cutaway-like renovation scene where part of a ground floor is open or a crawl-space access is visible, with joists and generic insulation context. A homeowner or inspector may be looking at the floor condition. Do not depict a precise technical assembly, measurements or a step-by-step method. Natural daylight, believable materials and residential proportions, candid documentary style, no brand, no readable text, no watermark.",
+  "alt": "Woningvloer en kruipruimte tijdens beoordeling van vloerisolatie",
+  "caption": "",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null
+}

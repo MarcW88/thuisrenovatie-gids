@@ -1,0 +1,20 @@
+{
+  "id": "zonnepanelen-context",
+  "page": "verduurzamen/zonnepanelen/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Geeft dakvorm, woningcontext en plaatsing van zonnepanelen visueel mee zonder een opbrengstclaim of productspecificatie te suggereren.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:zonnepanelen-context -->",
+  "placement": "replace",
+  "output_path": "assets/generated/zonnepanelen-context.webp",
+  "prompt": "Photorealistic editorial photograph of a realistic Dutch or Benelux brick house with solar panels integrated on a pitched tiled residential roof. Emphasize the actual roof and house context, including believable roof windows, chimney or neighboring roofs where natural, rather than a generic solar field. Panels should be generic and unbranded. Natural daylight, authentic residential architecture, documentary editorial photography, no logo, no watermark, no readable text, no exaggerated eco advertising look.",
+  "alt": "Bakstenen woning met zonnepanelen op een hellend dak",
+  "caption": "",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null
+}

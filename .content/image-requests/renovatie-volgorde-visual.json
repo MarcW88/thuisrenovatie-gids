@@ -1,0 +1,20 @@
+{
+  "id": "renovatie-volgorde-visual",
+  "page": "renovatie-plannen/renovatie-volgorde/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Geeft de technische afhankelijkheden tussen renovatiestappen in één oogopslag weer zonder de pagina tot een tekstmuur te maken.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:renovatie-volgorde-visual -->",
+  "placement": "replace",
+  "output_path": "assets/generated/renovatie-volgorde-visual.webp",
+  "prompt": "Editorial architectural infographic for a Dutch home renovation guide. Create a clean horizontal renovation sequence with seven numbered stages connected by restrained arrows. Use simple universally understandable line icons only: survey, demolition, structure, roof/envelope, installations, insulation/interior build-up, handover. Do not include any words or letters inside the image. Off-white cream background, deep mineral green, warm terracotta accents, warm charcoal lines, premium accessible architectural style, generous whitespace, crisp vector-like finish, no logo, no watermark, no fake technical dimensions.",
+  "alt": "Visuele renovatievolgorde van onderzoek tot oplevering",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null
+}

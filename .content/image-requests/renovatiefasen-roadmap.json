@@ -1,0 +1,20 @@
+{
+  "id": "renovatiefasen-roadmap",
+  "page": "renovatie-plannen/renovatiefasen/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Maakt het verschil tussen projectfasen en fysieke werkvolgorde visueel duidelijk met een rustige roadmap.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:renovatiefasen-roadmap -->",
+  "placement": "replace",
+  "output_path": "assets/generated/renovatiefasen-roadmap.webp",
+  "prompt": "Editorial roadmap illustration for a Dutch renovation planning website. Show seven numbered project phases as a calm vertical or stepped journey from initial inventory to design, feasibility, quotations, preparation, execution and handover. Use distinct line icons and numbers 1 through 7, but no words or letters anywhere in the image. Cream background, dark mineral green, restrained terracotta accents, warm charcoal, premium architectural editorial design, clean grid, generous whitespace, no logo, no watermark, no decorative stock-photo look.",
+  "alt": "Roadmap met zeven fasen van een renovatieproject",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null
+}
