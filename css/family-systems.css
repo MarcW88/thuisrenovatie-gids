@@ -1,0 +1,97 @@
+/* Family-level visual systems. Content and editorial hierarchy remain unchanged. */
+.page-head{position:relative;overflow:hidden}
+.page-head-inner{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:64px;align-items:end}
+.page-head-copy{min-width:0}
+.family-mark{display:grid;grid-template-columns:74px 1fr;gap:18px;align-items:center;min-height:112px;padding:20px 22px;border:1px solid rgba(36,72,61,.2);background:rgba(255,255,255,.48);backdrop-filter:blur(3px)}
+.family-mark>span{font:800 48px/1 Manrope,sans-serif;letter-spacing:-.07em;color:var(--green)}
+.family-mark strong,.family-mark small{display:block}
+.family-mark strong{margin-bottom:5px;font:700 14px/1.25 Manrope,sans-serif;letter-spacing:.01em;color:var(--ink)}
+.family-mark small{color:#5c625e;font-size:12px;line-height:1.45}
+
+/* Shared editorial reset: fewer repeated side-tabs and a stronger page rhythm. */
+.content-page:not(.family-problemen-oplossen) .quick-answer{border-left:0;border-top:3px solid var(--green)}
+.content-page:not(.family-problemen-oplossen) .article-main>h2{position:relative;padding-top:18px}
+.content-page:not(.family-problemen-oplossen) .article-main>h2:before{content:"";position:absolute;left:0;top:0;width:48px;height:2px;background:var(--line)}
+.content-page:not(.family-problemen-oplossen) .article-aside .aside-card{border-top-width:4px}
+
+/* 01 — Planning: route map, dependencies, sequence. */
+.family-renovatie-plannen .page-head{background:#f4f1e9}
+.family-renovatie-plannen .page-head:after{content:"";position:absolute;right:-40px;bottom:30px;width:520px;height:120px;background:radial-gradient(circle at 8px 60px,var(--terra) 0 4px,transparent 5px),linear-gradient(90deg,transparent 0 8px,#c9c1b5 8px 100%);background-size:110px 120px,100% 1px;background-position:0 0,0 60px;background-repeat:repeat-x,no-repeat;opacity:.34}
+.family-renovatie-plannen .family-mark{border-color:#cfc8bb;background:#fffdf8}
+.family-renovatie-plannen .family-mark>span{color:var(--terra-text)}
+.family-renovatie-plannen .phase-list{position:relative;border-top:0}
+.family-renovatie-plannen .phase-list:before{content:"";position:absolute;left:18px;top:20px;bottom:20px;width:1px;background:#c8c1b5}
+.family-renovatie-plannen .phase-list>div{position:relative;z-index:1;border-bottom:0;padding:18px 0}
+.family-renovatie-plannen .phase-list>div>span{background:var(--cream);border-color:#c8c1b5}
+.family-renovatie-plannen .decision-card{background:#fbfaf7}
+.family-renovatie-plannen .decision-card:hover{transform:translateY(-3px)}
+.family-renovatie-plannen .article-nav{border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:transparent}
+
+/* 02 — Projects: blueprint / technical dossier. */
+.family-renovatieprojecten .page-head{background-color:#ece8df;background-image:linear-gradient(rgba(36,72,61,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(36,72,61,.055) 1px,transparent 1px);background-size:28px 28px}
+.family-renovatieprojecten .family-mark{position:relative;background:#f7f5f0;border-color:#bfc6c1}
+.family-renovatieprojecten .family-mark:before,.family-renovatieprojecten .family-mark:after{content:"";position:absolute;width:18px;height:18px;border-color:var(--terra-text)}
+.family-renovatieprojecten .family-mark:before{left:-1px;top:-1px;border-left:2px solid;border-top:2px solid}
+.family-renovatieprojecten .family-mark:after{right:-1px;bottom:-1px;border-right:2px solid;border-bottom:2px solid}
+.family-renovatieprojecten .decision-grid{gap:14px;border:0}
+.family-renovatieprojecten .decision-card{position:relative;border:1px solid var(--line);background:#fff}
+.family-renovatieprojecten .decision-card:after{content:"";position:absolute;right:17px;top:17px;width:22px;height:22px;border-right:1px solid #bfc6c1;border-top:1px solid #bfc6c1}
+.family-renovatieprojecten .decision-card:hover{background:#f8faf9;color:var(--ink);border-color:#9fb0a8}
+.family-renovatieprojecten .decision-card:hover p{color:#555b57}
+.family-renovatieprojecten .decision-card:hover>strong{color:var(--green)}
+.family-renovatieprojecten .decision-card:hover>span{color:var(--terra-text)}
+.family-renovatieprojecten .quick-answer{background:#f1f3ef;border-top-color:var(--terra-text)}
+.family-renovatieprojecten .aside-card{background:#f0ede5}
+
+/* 03 — Sustainability: layers, system readiness, energy flow. */
+.family-verduurzamen .page-head{background:#edf2ef}
+.family-verduurzamen .page-head:after{content:"";position:absolute;right:0;bottom:0;width:42%;height:100%;background:linear-gradient(160deg,transparent 0 35%,rgba(36,72,61,.08) 35% 48%,transparent 48% 58%,rgba(216,111,72,.09) 58% 68%,transparent 68%);opacity:.95}
+.family-verduurzamen .family-mark{background:#f8fbf9;border-color:#abc0b7}
+.family-verduurzamen .family-mark>span{color:var(--green)}
+.family-verduurzamen .quick-answer{background:#edf2ef;border-top-color:var(--green)}
+.family-verduurzamen .checkpoint-grid{gap:14px}
+.family-verduurzamen .checkpoint-grid>div{border-top:3px solid #aac0b7;background:#f5f8f6}
+.family-verduurzamen .phase-list>div>span{border-radius:0;background:#edf2ef;border-color:#b5c7c0}
+.family-verduurzamen .link-grid a{background:#f4f7f5;border-color:#ccd8d3}
+.family-verduurzamen .article-main>h2:before{background:#91aa9f}
+
+/* 04 — Problems: keep the existing diagnostic language, add only the family marker. */
+.family-problemen-oplossen .page-head{background:#e8ece8}
+.family-problemen-oplossen .family-mark{background:var(--green);border-color:var(--green)}
+.family-problemen-oplossen .family-mark>span{color:#efaa8f}
+.family-problemen-oplossen .family-mark strong{color:#fff}
+.family-problemen-oplossen .family-mark small{color:#cad7d2}
+
+/* 05 — Professional selection: quote / agreement dossier. */
+.family-vakman-en-offertes .page-head{background:#f8f7f3}
+.family-vakman-en-offertes .page-head:after{content:"";position:absolute;right:0;top:0;width:40%;height:100%;background:repeating-linear-gradient(180deg,transparent 0 25px,rgba(36,72,61,.075) 25px 26px);opacity:.65}
+.family-vakman-en-offertes .family-mark{background:#fff;border:1px solid #cfcfc9;box-shadow:8px 8px 0 #ece8df}
+.family-vakman-en-offertes .family-mark>span{color:var(--terra-text)}
+.family-vakman-en-offertes .quick-answer{background:#fff;border:1px solid var(--line);border-top:4px solid var(--green)}
+.family-vakman-en-offertes .decision-grid{gap:12px;border:0}
+.family-vakman-en-offertes .decision-card{border:1px solid var(--line);background:#fbfaf7}
+.family-vakman-en-offertes .decision-card:hover{background:#fff;color:var(--ink);border-color:#9fb0a8;box-shadow:0 10px 24px rgba(32,36,33,.05)}
+.family-vakman-en-offertes .decision-card:hover p{color:#555b57}
+.family-vakman-en-offertes .decision-card:hover>strong{color:var(--green)}
+.family-vakman-en-offertes .decision-card:hover>span{color:var(--terra-text)}
+.family-vakman-en-offertes .article-nav{background:#fff}
+.family-vakman-en-offertes .decision-table{background:#fff}
+.family-vakman-en-offertes .article-main>h2:before{background:var(--terra-text)}
+
+/* 06 — DIY: workshop surface + visible safety boundary. */
+.family-doe-het-zelf .page-head{background:#f3eee6}
+.family-doe-het-zelf .page-head:after{content:"";position:absolute;right:0;top:0;width:38%;height:100%;background:repeating-linear-gradient(135deg,rgba(216,111,72,.08) 0 10px,transparent 10px 22px)}
+.family-doe-het-zelf .family-mark{background:#fffaf4;border-color:#d8c4b5}
+.family-doe-het-zelf .family-mark>span{color:var(--terra-text)}
+.family-doe-het-zelf .quick-answer{background:#fbf6ef;border-top:4px solid var(--terra-text)}
+.family-doe-het-zelf .decision-grid{gap:14px;border:0}
+.family-doe-het-zelf .decision-card{border:1px solid #dacfc3;background:#fffdf9}
+.family-doe-het-zelf .decision-card:hover{background:#fff8ef;color:var(--ink);border-color:#cfae98}
+.family-doe-het-zelf .decision-card:hover p{color:#555b57}
+.family-doe-het-zelf .decision-card:hover>strong{color:var(--green)}
+.family-doe-het-zelf .decision-card:hover>span{color:var(--terra-text)}
+.family-doe-het-zelf .note-box{position:relative;background:#2c4038}
+.family-doe-het-zelf .article-main>h2:before{background:var(--terra-text)}
+
+@media(max-width:950px){.page-head-inner{grid-template-columns:minmax(0,1fr) 240px;gap:36px}.family-mark{grid-template-columns:58px 1fr}.family-mark>span{font-size:39px}}
+@media(max-width:700px){.page-head-inner{grid-template-columns:1fr;gap:25px}.family-mark{grid-template-columns:48px 1fr;min-height:0;padding:14px 16px}.family-mark>span{font-size:32px}.family-mark strong{font-size:13px}.family-mark small{font-size:11px}.family-renovatie-plannen .page-head:after,.family-verduurzamen .page-head:after,.family-vakman-en-offertes .page-head:after,.family-doe-het-zelf .page-head:after{opacity:.35}.family-renovatie-plannen .phase-list:before{left:18px}.content-page:not(.family-problemen-oplossen) .article-main>h2{padding-top:15px}}
