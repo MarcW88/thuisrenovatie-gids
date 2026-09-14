@@ -56,6 +56,15 @@ LABEL = {
     "doe-het-zelf": "Doe het zelf",
 }
 
+FAMILY_MARKS = {
+    "renovatie-plannen": ("01", "Plan", "Van vraag naar volgorde"),
+    "renovatieprojecten": ("02", "Project", "Van scope naar uitvoering"),
+    "verduurzamen": ("03", "Energie", "Van woningstaat naar maatregel"),
+    "problemen-oplossen": ("04", "Diagnose", "Van signaal naar oorzaak"),
+    "vakman-en-offertes": ("05", "Selectie", "Van scope naar afspraak"),
+    "doe-het-zelf": ("06", "DIY", "Van klus naar veilige grens"),
+}
+
 RAW_AMPERSAND = re.compile(r"&(?!#\d+;|#x[0-9A-Fa-f]+;|[A-Za-z][A-Za-z0-9]+;)")
 VISUAL_TABLE_ROLE = re.compile(r' role="table" aria-label="[^"]*"')
 
@@ -151,6 +160,7 @@ def structured_data(route, title, description):
 
 def page(route):
     parts = route.split("/")
+    family = parts[0]
     h1 = name(parts[-1])
     trail = ['<a href="/">Home</a>']
     path = ""
@@ -178,8 +188,17 @@ def page(route):
         '<link rel="stylesheet" href="/css/content.css">'
         if main_class == "content-page" else ""
     )
+    family_class = f"family-{family}" if main_class == "content-page" else ""
+    family_mark = ""
+    if family in FAMILY_MARKS and main_class == "content-page":
+        number, label, strapline = FAMILY_MARKS[family]
+        family_mark = (
+            '<div class="family-mark" aria-hidden="true">'
+            f'<span>{escape(number)}</span><div><strong>{escape(label)}</strong>'
+            f'<small>{escape(strapline)}</small></div></div>'
+        )
 
-    return f'''<!DOCTYPE html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="{ROBOTS_DIRECTIVE}"><meta name="theme-color" content="#24483D"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><title>{escape(title)}</title>{description_tag}<link rel="canonical" href="{canonical}"><meta property="og:locale" content="nl_NL"><meta property="og:type" content="website"><meta property="og:site_name" content="{escape(SITE_NAME, quote=True)}"><meta property="og:title" content="{escape(title, quote=True)}">{og_description_tag}<meta property="og:url" content="{canonical}"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=optional" rel="stylesheet"><link rel="stylesheet" href="/css/style.css">{content_style_tag}<link rel="stylesheet" href="/css/audit-fixes.css"><script type="application/ld+json">{schema}</script><script src="/js/site.js" defer></script></head><body><header class="site-header"><div class="utility"><div class="container utility-inner"><span>Onafhankelijke renovatiekeuzes</span><a href="/vakman-en-offertes/offertes-vergelijken/">Zo werkt vergelijken ↗</a></div></div><nav class="container nav"><a class="brand" href="/"><span class="brand-mark"><i></i></span><span>Thuisrenovatie<small>Gids</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><em>Menu</em></button><div class="nav-links" id="nav-links"><a href="/renovatie-plannen/">Renovatie plannen</a><a href="/renovatieprojecten/">Projecten</a><a href="/verduurzamen/">Verduurzamen</a><a href="/problemen-oplossen/">Problemen oplossen</a><a href="/vakman-en-offertes/">Vakman vinden</a></div><a class="button small" href="/vakman-en-offertes/offertes-vergelijken/">Vergelijk vakmensen ↗</a></nav></header><main class="{main_class}"><section class="page-head"><div class="container"><div class="breadcrumbs">{breadcrumbs}</div><h1>{escape(h1)}</h1></div></section>{body}</main><footer class="footer"><div class="container footer-grid"><a class="brand footer-brand" href="/"><span class="brand-mark"><i></i></span><span>Thuisrenovatie<small>Gids</small></span></a><div><p class="footer-heading">Plannen</p><a href="/renovatie-plannen/">Renovatie plannen</a><a href="/renovatieprojecten/">Renovatieprojecten</a></div><div><p class="footer-heading">Verbeteren</p><a href="/verduurzamen/">Verduurzamen</a><a href="/problemen-oplossen/">Problemen oplossen</a></div><div><p class="footer-heading">Uitvoeren</p><a href="/vakman-en-offertes/">Vakman &amp; offertes</a><a href="/doe-het-zelf/">Doe het zelf</a></div></div><div class="container bottom">© 2026 {escape(SITE_NAME)} <span>Onafhankelijk beslissen. Beter renoveren.</span></div></footer></body></html>'''
+    return f'''<!DOCTYPE html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="{ROBOTS_DIRECTIVE}"><meta name="theme-color" content="#24483D"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><title>{escape(title)}</title>{description_tag}<link rel="canonical" href="{canonical}"><meta property="og:locale" content="nl_NL"><meta property="og:type" content="website"><meta property="og:site_name" content="{escape(SITE_NAME, quote=True)}"><meta property="og:title" content="{escape(title, quote=True)}">{og_description_tag}<meta property="og:url" content="{canonical}"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=optional" rel="stylesheet"><link rel="stylesheet" href="/css/style.css">{content_style_tag}<link rel="stylesheet" href="/css/audit-fixes.css"><link rel="stylesheet" href="/css/family-systems.css"><script type="application/ld+json">{schema}</script><script src="/js/site.js" defer></script></head><body class="{family_class}"><header class="site-header"><div class="utility"><div class="container utility-inner"><span>Onafhankelijke renovatiekeuzes</span><a href="/vakman-en-offertes/offertes-vergelijken/">Zo werkt vergelijken ↗</a></div></div><nav class="container nav"><a class="brand" href="/"><span class="brand-mark"><i></i></span><span>Thuisrenovatie<small>Gids</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><em>Menu</em></button><div class="nav-links" id="nav-links"><a href="/renovatie-plannen/">Renovatie plannen</a><a href="/renovatieprojecten/">Projecten</a><a href="/verduurzamen/">Verduurzamen</a><a href="/problemen-oplossen/">Problemen oplossen</a><a href="/vakman-en-offertes/">Vakman vinden</a></div><a class="button small" href="/vakman-en-offertes/offertes-vergelijken/">Vergelijk vakmensen ↗</a></nav></header><main class="{main_class}"><section class="page-head"><div class="container page-head-inner"><div class="page-head-copy"><div class="breadcrumbs">{breadcrumbs}</div><h1>{escape(h1)}</h1></div>{family_mark}</div></section>{body}</main><footer class="footer"><div class="container footer-grid"><a class="brand footer-brand" href="/"><span class="brand-mark"><i></i></span><span>Thuisrenovatie<small>Gids</small></span></a><div><p class="footer-heading">Plannen</p><a href="/renovatie-plannen/">Renovatie plannen</a><a href="/renovatieprojecten/">Renovatieprojecten</a></div><div><p class="footer-heading">Verbeteren</p><a href="/verduurzamen/">Verduurzamen</a><a href="/problemen-oplossen/">Problemen oplossen</a></div><div><p class="footer-heading">Uitvoeren</p><a href="/vakman-en-offertes/">Vakman &amp; offertes</a><a href="/doe-het-zelf/">Doe het zelf</a></div></div><div class="container bottom">© 2026 {escape(SITE_NAME)} <span>Onafhankelijk beslissen. Beter renoveren.</span></div></footer></body></html>'''
 
 
 def write_sitemap(routes):
