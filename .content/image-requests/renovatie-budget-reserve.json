@@ -1,0 +1,20 @@
+{
+  "id": "renovatie-budget-reserve",
+  "page": "renovatie-plannen/renovatie-budget/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Visualiseert dat een renovatiebudget uit geplande uitgaven, reeds vastgelegde kosten en een reserve bestaat.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:renovatie-budget-reserve -->",
+  "placement": "replace",
+  "output_path": "assets/generated/renovatie-budget-reserve.webp",
+  "prompt": "Editorial infographic for a Dutch home renovation budget guide. Show one total budget container divided into four clearly distinct conceptual compartments: committed costs, expected costs, contingency reserve, remaining available budget. Use icons and geometric sections only, no words, letters, prices or percentages. Do not imply exact ratios. Off-white cream background, deep mineral green, warm terracotta accents, warm charcoal outlines, premium architectural website style, generous whitespace, no logo, no watermark.",
+  "alt": "Conceptuele verdeling van een renovatiebudget inclusief reserve",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null
+}
