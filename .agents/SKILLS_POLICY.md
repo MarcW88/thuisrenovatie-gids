@@ -4,11 +4,11 @@ Thuisrenovatie Gids gebruikt dezelfde orkestratiegedachte als `bloc-notes-numeri
 
 ## Huidige verdeling
 
-- Upstream/reused skills: **24**
+- Upstream/reused skills: **44**
 - Custom skills: **2**
-- Totaal: **26**
-- Upstream/reused: **92,3%**
-- Custom: **7,7%**
+- Totaal: **46**
+- Upstream/reused: **95,7%**
+- Custom: **4,3%**
 
 De CI faalt zodra custom skills meer dan 20% van het totaal vormen.
 
@@ -33,9 +33,9 @@ De volgende **14** directories worden volledig en ongewijzigd gevendord uit `ram
 
 De exacte broncommit en Git blob hashes staan in `.agents/UPSTREAM_SOURCES.json`. `scripts/validate_upstream_skills.py` controleert dat deze directories lokaal **byte-for-byte overeenkomen** met de gepinde GitHub-bron. Domeinaanpassingen zijn in deze directories verboden.
 
-## Reused editorial engine — bloc-notes-numerique
+## Reused repository skills — bloc-notes-numerique
 
-De volgende 10 skills komen uit het bestaande editorial engine en mogen waar nodig domeinspecifiek zijn aangepast met behoud van dezelfde verantwoordelijkheid:
+De volgende **30** skills komen uit het bestaande repository/editorial engine van `bloc-notes-numerique`. Bestaande Thuisrenovatie-versies blijven behouden; ontbrekende skills worden toegevoegd vanuit de gepinde broncommit. Domeinspecifieke aanpassingen zijn toegestaan wanneer de verantwoordelijkheid van het skill gelijk blijft.
 
 - `search-intent`
 - `content-refresh`
@@ -47,6 +47,26 @@ De volgende 10 skills komen uit het bestaande editorial engine en mogen waar nod
 - `anti-ai-slop`
 - `seo-drift`
 - `seo-best-practices`
+- `academic-voice`
+- `better-usage`
+- `brand-analysis-workflow`
+- `brand-content-workflow`
+- `comparison-analysis-workflow`
+- `comparison-content-workflow`
+- `content-audit`
+- `deal-analysis-workflow`
+- `deal-content-workflow`
+- `editorial-image-planner`
+- `guide-analysis-workflow`
+- `guide-content-workflow`
+- `jobs-to-be-done`
+- `natural-writing`
+- `non-autoregressive-writing-pass`
+- `site-design-review`
+- `trust-content-workflow`
+- `usage-analysis-workflow`
+- `usage-content-workflow`
+- `writing-cadence`
 
 ## Custom catalogus
 
