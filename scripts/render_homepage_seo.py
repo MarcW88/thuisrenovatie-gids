@@ -71,6 +71,14 @@ def neutralize_comparison_ctas(html):
         '<a href="/vakman-en-offertes/offertes-vergelijken/">Vergelijk vakmensen →</a>',
         '<a href="/vakman-en-offertes/vakman-kiezen/">Zo kies je een vakman →</a>',
     )
+    html = html.replace(
+        '<p>Vergelijk vakmensen die ervaring hebben met jouw type project.</p>',
+        '<p>Lees waar je op let bij een vakman voor jouw type project.</p>',
+    )
+    html = html.replace(
+        '<a class="button accent" href="/vakman-en-offertes/offertes-vergelijken/">Vergelijk vakmensen →</a>',
+        '<a class="button accent" href="/vakman-en-offertes/vakman-kiezen/">Vakman kiezen →</a>',
+    )
     return html
 
 
