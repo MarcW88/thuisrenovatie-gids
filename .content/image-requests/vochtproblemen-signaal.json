@@ -1,0 +1,21 @@
+{
+  "id": "vochtproblemen-signaal",
+  "page": "problemen-oplossen/vochtproblemen/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Maakt een zichtbaar vochtsignaal herkenbaar terwijl de afbeelding geen oorzaak of diagnose pretendeert te bewijzen.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:vochtproblemen-signaal -->",
+  "placement": "replace",
+  "output_path": "assets/generated/vochtproblemen-signaal.webp",
+  "prompt": "Candid editorial photograph of a realistic interior wall in an older Dutch home showing a modest damp-related visual signal: discoloration and slightly damaged plaster near the lower part of the wall and skirting board. The scene must not imply a diagnosed cause, no dramatic black mold, no fake measurement device reading, no person claiming an inspection result. Natural side light, realistic plaster and flooring textures, documentary home-maintenance photography, no readable text, no branding, no watermark.",
+  "alt": "Vochtplek en verkleuring onderaan een binnenmuur",
+  "caption": "",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
