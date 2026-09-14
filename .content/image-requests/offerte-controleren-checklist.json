@@ -1,0 +1,20 @@
+{
+  "id": "offerte-controleren-checklist",
+  "page": "vakman-en-offertes/offerte-controleren/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Maakt visueel duidelijk dat een offerte op meerdere onderdelen gecontroleerd moet worden zonder een echt document na te bootsen.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:offerte-controleren-checklist -->",
+  "placement": "replace",
+  "output_path": "assets/generated/offerte-controleren-checklist.webp",
+  "prompt": "Editorial infographic for a Dutch renovation quote-checking guide. Show a stylized fictional quotation document made of abstract blocks and lines, surrounded by five inspection icons: scope, quantities, materials, exclusions, timing/conditions. Use symbols and check points only; no readable words, letters, prices, signatures, logos or realistic company details. Clearly illustrative, not a real legal document. Off-white cream background, deep mineral green, terracotta accents, warm charcoal outlines, premium architectural vector-like style, no watermark.",
+  "alt": "Conceptuele checklist voor het controleren van een renovatieofferte",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null
+}
