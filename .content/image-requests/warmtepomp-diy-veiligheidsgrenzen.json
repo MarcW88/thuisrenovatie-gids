@@ -1,0 +1,20 @@
+{
+  "id": "warmtepomp-diy-veiligheidsgrenzen",
+  "page": "doe-het-zelf/warmtepomp-zelf-plaatsen/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Ondersteunt de veiligheidsboodschap door de professionele domeinen rond een warmtepomp conceptueel af te bakenen.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:warmtepomp-diy-veiligheidsgrenzen -->",
+  "placement": "replace",
+  "output_path": "assets/generated/warmtepomp-diy-veiligheidsgrenzen.webp",
+  "prompt": "Safety-boundary editorial infographic for a Dutch DIY heat pump article. Show a generic home and heat pump system surrounded by four separate conceptual professional domains represented only with icons: refrigerant circuit, high-voltage electrical work, hydraulic heating circuit, and system sizing or commissioning. No detailed pipe or wiring connections, no step-by-step installation, no labels or text. Cream background, dark mineral green, restrained terracotta warning accents, clear professional editorial diagram, no logo, no watermark.",
+  "alt": "Conceptueel schema van professionele veiligheidsdomeinen rond een warmtepomp",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null
+}

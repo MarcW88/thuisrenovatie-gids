@@ -1,0 +1,20 @@
+{
+  "id": "dubbel-glas-context",
+  "page": "verduurzamen/dubbel-glas/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Maakt isolerend glas visueel concreet in de context van een bestaande woning en kozijnopening.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:dubbel-glas-context -->",
+  "placement": "replace",
+  "output_path": "assets/generated/dubbel-glas-context.webp",
+  "prompt": "Photorealistic editorial photograph focused on an existing Dutch or Benelux residential window being upgraded with modern insulating glazing. Show the full window opening and surrounding frame and room or facade context, with believable installer or assessment context if useful, but no close-up technical section that could be mistaken for a specification. Natural daylight, authentic materials, unbranded, documentary architectural photography, no logo, no watermark, no readable text.",
+  "alt": "Isolerend glas in een bestaande raamopening van een woning",
+  "caption": "",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null
+}

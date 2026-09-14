@@ -1,0 +1,20 @@
+{
+  "id": "vakman-kiezen-context",
+  "page": "vakman-en-offertes/vakman-kiezen/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Geeft de selectie van een vakman een geloofwaardige menselijke context rond opname, vragen en afstemming op locatie.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:vakman-kiezen-context -->",
+  "placement": "replace",
+  "output_path": "assets/generated/vakman-kiezen-context.webp",
+  "prompt": "Photorealistic editorial photograph of a homeowner and an experienced renovation professional doing a calm on-site walkthrough in a Dutch or Benelux home before work starts. They are discussing the space and scope, looking at the room or building rather than posing for camera. Neutral workwear, no logos, no contract text, natural daylight, trustworthy documentary editorial photography, realistic home renovation context, no staged handshake advertising look.",
+  "alt": "Huiseigenaar en vakman bespreken de renovatiescope tijdens een woningopname",
+  "caption": "",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null
+}

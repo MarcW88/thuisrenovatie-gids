@@ -1,0 +1,20 @@
+{
+  "id": "ventilatie-luchtstroom",
+  "page": "verduurzamen/ventilatie/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Maakt de luchtstroom van droge naar natte ruimtes begrijpelijk zonder een specifiek ventilatiesysteem als universele oplossing voor te stellen.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:ventilatie-luchtstroom -->",
+  "placement": "replace",
+  "output_path": "assets/generated/ventilatie-luchtstroom.webp",
+  "prompt": "Clean editorial architectural diagram for a Dutch home ventilation article. Show a simplified cutaway house with fresh air entering living room and bedrooms, moving through interior circulation, and stale humid air leaving kitchen, bathroom and toilet. Use arrows and simple room silhouettes only, no technical dimensions, no product-specific ducts, no labels or embedded text. Premium warm architectural style matching a cream background, dark mineral green and restrained terracotta accents. Clear conceptual airflow, not an installation instruction, no logo, no watermark.",
+  "alt": "Schematische luchtstroom van verblijfsruimtes naar natte ruimtes",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null
+}

@@ -1,0 +1,20 @@
+{
+  "id": "complete-renovatie-context",
+  "page": "renovatie-plannen/complete-renovatie/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Geeft een geloofwaardig totaalbeeld van een woning waar meerdere renovatiedisciplines tegelijk samenkomen.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:complete-renovatie-context -->",
+  "placement": "replace",
+  "output_path": "assets/generated/complete-renovatie-context.webp",
+  "prompt": "Photorealistic editorial photograph of a substantial whole-house renovation in a realistic Dutch or Benelux home. Show one interior space where several renovation scopes are visibly coordinated: stripped walls, new services routes in context, insulation or framing in progress, and protected finished elements. Believable sequence and site organization, natural daylight, documentary architectural photography, no unsafe work, no brand logos, no readable text, no glossy showroom look.",
+  "alt": "Woning tijdens een complete renovatie met meerdere werkzaamheden in samenhang",
+  "caption": "",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null
+}
