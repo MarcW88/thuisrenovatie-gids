@@ -1,4 +1,4 @@
-# Crawling en indexering zijn toegestaan voor publieke pagina's.
+# Crawling blijft toegestaan zodat zoekmachines de noindex-directive kunnen zien.
 User-agent: *
 Allow: /
 
