@@ -55,6 +55,22 @@ head = f'''<head><meta charset="utf-8"><meta name="viewport" content="width=devi
 
 homepage = R / "index.html"
 html = homepage.read_text(encoding="utf-8")
+html = html.replace(
+    '>Zo werkt vergelijken ↗</a>',
+    '>Zo vergelijk je offertes ↗</a>',
+)
+html = html.replace(
+    '<a class="button small" href="/vakman-en-offertes/offertes-vergelijken/">Vergelijk vakmensen ↗</a>',
+    '<a class="button small" href="/vakman-en-offertes/vakman-kiezen/">Vakman kiezen ↗</a>',
+)
+html = html.replace(
+    '<small>Vergelijk ervaring, aanpak en offertes voor jouw project.</small>',
+    '<small>Leer waar je op let bij ervaring, aanpak en offertes.</small>',
+)
+html = html.replace(
+    '<a href="/vakman-en-offertes/offertes-vergelijken/">Vergelijk vakmensen →</a>',
+    '<a href="/vakman-en-offertes/vakman-kiezen/">Zo kies je een vakman →</a>',
+)
 updated, count = re.subn(r"<head>.*?</head>", head, html, count=1, flags=re.DOTALL)
 if count != 1:
     raise SystemExit("Could not replace homepage <head>")
