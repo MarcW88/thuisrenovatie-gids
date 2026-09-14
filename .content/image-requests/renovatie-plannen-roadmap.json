@@ -1,0 +1,20 @@
+{
+  "id": "renovatie-plannen-roadmap",
+  "page": "renovatie-plannen/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Geeft de beslislogica van een renovatieplanning visueel weer zonder de hub met extra tekst te verzwaren.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:renovatie-plannen-roadmap -->",
+  "placement": "replace",
+  "output_path": "assets/generated/renovatie-plannen-roadmap.webp",
+  "prompt": "Editorial architectural infographic for a Dutch home renovation planning guide. Create a clean decision roadmap moving through six conceptual stages: scope, order, cost, budget, permits, return/value. Use only simple universally understandable icons, numbered nodes and arrows, with no words or letters inside the image. Off-white cream background, deep mineral green, warm terracotta accents, warm charcoal lines, premium accessible architectural style, generous whitespace, crisp vector-like finish, no logo, no watermark, no fake technical dimensions.",
+  "alt": "Visuele roadmap voor renovatieplanning van scope tot rendement",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null
+}
