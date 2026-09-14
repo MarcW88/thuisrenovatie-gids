@@ -1,0 +1,20 @@
+{
+  "id": "problemen-oplossen-diagnostic-flow",
+  "page": "problemen-oplossen/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Vat de diagnostische aanpak samen zonder een specifieke schadeoorzaak als bewezen diagnose voor te stellen.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:problemen-oplossen-diagnostic-flow -->",
+  "placement": "replace",
+  "output_path": "assets/generated/problemen-oplossen-diagnostic-flow.webp",
+  "prompt": "Editorial diagnostic-process infographic for a Dutch home renovation problem-solving guide. Show a calm four-stage flow using universally understandable icons only: visible signal, observation/inspection, multiple hypotheses, targeted investigation leading to an intervention decision. Emphasize branching hypotheses rather than one direct cause. No words, letters, labels, medical-style certainty, or technical measurements. Off-white cream background, deep mineral green, warm terracotta, charcoal lines, clean premium architectural vector-like style, generous whitespace, no logo, no watermark.",
+  "alt": "Diagnostische flow van signaal en observatie naar onderzoek en interventie",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null
+}
