@@ -9,10 +9,10 @@
 .family-mark small{color:#5c625e;font-size:12px;line-height:1.45}
 
 /* Shared editorial reset: fewer repeated side-tabs and a stronger page rhythm. */
-.content-page:not(.family-problemen-oplossen) .quick-answer{border-left:0;border-top:3px solid var(--green)}
-.content-page:not(.family-problemen-oplossen) .article-main>h2{position:relative;padding-top:18px}
-.content-page:not(.family-problemen-oplossen) .article-main>h2:before{content:"";position:absolute;left:0;top:0;width:48px;height:2px;background:var(--line)}
-.content-page:not(.family-problemen-oplossen) .article-aside .aside-card{border-top-width:4px}
+body:not(.family-problemen-oplossen) .content-page .quick-answer{border-left:0;border-top:3px solid var(--green)}
+body:not(.family-problemen-oplossen) .content-page .article-main>h2{position:relative;padding-top:18px}
+body:not(.family-problemen-oplossen) .content-page .article-main>h2:before{content:"";position:absolute;left:0;top:0;width:48px;height:2px;background:var(--line)}
+body:not(.family-problemen-oplossen) .content-page .article-aside .aside-card{border-top-width:4px}
 
 /* 01 — Planning: route map, dependencies, sequence. */
 .family-renovatie-plannen .page-head{background:#f4f1e9}
@@ -94,4 +94,4 @@
 .family-doe-het-zelf .article-main>h2:before{background:var(--terra-text)}
 
 @media(max-width:950px){.page-head-inner{grid-template-columns:minmax(0,1fr) 240px;gap:36px}.family-mark{grid-template-columns:58px 1fr}.family-mark>span{font-size:39px}}
-@media(max-width:700px){.page-head-inner{grid-template-columns:1fr;gap:25px}.family-mark{grid-template-columns:48px 1fr;min-height:0;padding:14px 16px}.family-mark>span{font-size:32px}.family-mark strong{font-size:13px}.family-mark small{font-size:11px}.family-renovatie-plannen .page-head:after,.family-verduurzamen .page-head:after,.family-vakman-en-offertes .page-head:after,.family-doe-het-zelf .page-head:after{opacity:.35}.family-renovatie-plannen .phase-list:before{left:18px}.content-page:not(.family-problemen-oplossen) .article-main>h2{padding-top:15px}}
+@media(max-width:700px){.page-head-inner{grid-template-columns:1fr;gap:25px}.family-mark{grid-template-columns:48px 1fr;min-height:0;padding:14px 16px}.family-mark>span{font-size:32px}.family-mark strong{font-size:13px}.family-mark small{font-size:11px}.family-renovatie-plannen .page-head:after,.family-verduurzamen .page-head:after,.family-vakman-en-offertes .page-head:after,.family-doe-het-zelf .page-head:after{opacity:.35}.family-renovatie-plannen .phase-list:before{left:18px}body:not(.family-problemen-oplossen) .content-page .article-main>h2{padding-top:15px}}
