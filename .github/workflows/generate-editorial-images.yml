@@ -6,10 +6,9 @@ on:
       - '.content/image-requests/**'
       - 'content/**/body.html'
       - 'scripts/generate_bfl_images.py'
-      - 'scripts/bootstrap_p0_image_markers.py'
       - '.github/workflows/generate-editorial-images.yml'
   push:
-    branches: [main, images-p0-bfl-run]
+    branches: [main]
     paths:
       - '.content/image-requests/**'
       - 'content/**/body.html'
@@ -20,7 +19,6 @@ on:
       - 'vakman-en-offertes/**/index.html'
       - 'doe-het-zelf/**/index.html'
       - 'scripts/generate_bfl_images.py'
-      - 'scripts/bootstrap_p0_image_markers.py'
       - '.github/workflows/generate-editorial-images.yml'
   workflow_dispatch:
 
@@ -46,8 +44,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Ensure P0 image markers
-        run: python scripts/bootstrap_p0_image_markers.py
       - name: Regenerate source-driven pages
         run: |
           python generate_pages.py
@@ -75,8 +71,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Ensure P0 image markers
-        run: python scripts/bootstrap_p0_image_markers.py
       - name: Regenerate source-driven pages
         run: |
           python generate_pages.py
