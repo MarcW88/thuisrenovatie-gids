@@ -1,0 +1,20 @@
+{
+  "id": "renovatiekosten-cost-structure",
+  "page": "renovatie-plannen/renovatiekosten/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Maakt zichtbaar dat renovatiekosten uit meerdere kostensoorten bestaan en niet uit één los prijsgetal.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:renovatiekosten-cost-structure -->",
+  "placement": "replace",
+  "output_path": "assets/generated/renovatiekosten-cost-structure.webp",
+  "prompt": "Editorial architectural infographic for a Dutch renovation cost guide. Show a stylized house surrounded by six cost components represented with clear icons: structural work, installations, finishes, labor, professional services, contingency. No prices, no currency amounts, no words or letters. Use balanced proportional blocks rather than implying exact percentages. Off-white cream background, deep mineral green, terracotta accents, warm charcoal, premium architectural vector-like style, generous whitespace, no logo, no watermark.",
+  "alt": "Conceptueel overzicht van verschillende kostensoorten bij een renovatie",
+  "caption": "",
+  "width": 1024,
+  "height": 768,
+  "prompt_upsampling": true,
+  "seed": null
+}
