@@ -6,7 +6,7 @@
   "reason": "Ondersteunt de besliscontext van offertes vergelijken met een herkenbaar, niet-commercieel tafelmoment.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:offertes-vergelijken-tafel -->",
   "placement": "replace",
   "output_path": "assets/generated/offertes-vergelijken-tafel.webp",
@@ -17,5 +17,8 @@
   "height": 672,
   "prompt_upsampling": true,
   "seed": null,
-  "generated_at": null
+  "generated_at": "2026-09-14T08:03:42.819060+00:00",
+  "bfl_request_id": "a64bf498-7b1d-4604-855f-0ef1aa83d936",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }
