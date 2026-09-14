@@ -6,7 +6,7 @@
   "reason": "Visualiseert dat een renovatiebudget uit geplande uitgaven, reeds vastgelegde kosten en een reserve bestaat.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:renovatie-budget-reserve -->",
   "placement": "replace",
   "output_path": "assets/generated/renovatie-budget-reserve.webp",
@@ -16,5 +16,9 @@
   "width": 1024,
   "height": 768,
   "prompt_upsampling": true,
-  "seed": null
+  "seed": null,
+  "generated_at": "2026-09-14T09:40:05.148085+00:00",
+  "bfl_request_id": "ec264d50-8f16-4ee4-babb-12302d12a4c4",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }

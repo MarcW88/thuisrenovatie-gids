@@ -6,7 +6,7 @@
   "reason": "Ondersteunt de pagina met een neutrale beslisflow zonder actuele vergunningsregels als afbeelding vast te leggen.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:renovatievergunning-decision-flow -->",
   "placement": "replace",
   "output_path": "assets/generated/renovatievergunning-decision-flow.webp",
@@ -16,5 +16,9 @@
   "width": 1024,
   "height": 768,
   "prompt_upsampling": true,
-  "seed": null
+  "seed": null,
+  "generated_at": "2026-09-14T09:40:33.994645+00:00",
+  "bfl_request_id": "7888267a-50e0-4b97-8166-8bcdce33809d",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }

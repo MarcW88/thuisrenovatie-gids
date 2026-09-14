@@ -6,7 +6,7 @@
   "reason": "Vat de verduurzamingslogica samen van schil en ventilatie naar verwarming en opwekking.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:verduurzamen-layers -->",
   "placement": "replace",
   "output_path": "assets/generated/verduurzamen-layers.webp",
@@ -16,5 +16,9 @@
   "width": 1024,
   "height": 768,
   "prompt_upsampling": true,
-  "seed": null
+  "seed": null,
+  "generated_at": "2026-09-14T09:41:00.655580+00:00",
+  "bfl_request_id": "3336d7ea-b7a0-4efc-8216-d52d4829a82a",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }
