@@ -6,7 +6,7 @@
   "reason": "Toont gevelisolatie als ingreep aan de gebouwschil en geeft schaal en woningcontext aan de keuze tussen gevelsystemen.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:gevelisolatie-context -->",
   "placement": "replace",
   "output_path": "assets/generated/gevelisolatie-context.webp",
@@ -16,5 +16,9 @@
   "width": 1024,
   "height": 672,
   "prompt_upsampling": true,
-  "seed": null
+  "seed": null,
+  "generated_at": "2026-09-14T08:38:32.343123+00:00",
+  "bfl_request_id": "5572425d-066f-4867-8d1d-d632f6d69e67",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }

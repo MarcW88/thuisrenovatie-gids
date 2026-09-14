@@ -6,7 +6,7 @@
   "reason": "Geeft lezers een herkenbaar zolder- en dakcontextbeeld zonder een specifieke dakopbouw als instructie te presenteren.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:dakisolatie-context -->",
   "placement": "replace",
   "output_path": "assets/generated/dakisolatie-context.webp",
@@ -16,5 +16,9 @@
   "width": 1024,
   "height": 672,
   "prompt_upsampling": true,
-  "seed": null
+  "seed": null,
+  "generated_at": "2026-09-14T08:38:11.585415+00:00",
+  "bfl_request_id": "6886414a-8f0b-4283-8be4-f929cb8ddb82",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }
