@@ -1,0 +1,21 @@
+{
+  "id": "warmtepomp-woning-context",
+  "page": "verduurzamen/warmtepomp/index.html",
+  "slot": "editorial",
+  "required": true,
+  "reason": "Laat zien hoe een warmtepomp zich tot een gewone woning en buitenruimte verhoudt zonder een specifiek toestel aan te bevelen.",
+  "allow_ai_generation": true,
+  "truth_risk": "LOW",
+  "status": "PENDING",
+  "marker": "<!-- EDITORIAL_IMAGE:warmtepomp-woning-context -->",
+  "placement": "replace",
+  "output_path": "assets/generated/warmtepomp-woning-context.webp",
+  "prompt": "Photorealistic editorial exterior of a contemporary but ordinary Dutch terraced or semi-detached home with a generic unbranded air-source heat pump outdoor unit positioned plausibly beside the house. Show the broader garden and facade context rather than installation details. No visible logo, no model markings, no readable labels, no technicians, no unrealistic futuristic architecture. Overcast soft daylight, natural brick and greenery, believable scale, candid architectural photography, no watermark.",
+  "alt": "Generieke buitenunit van een warmtepomp naast een Nederlandse woning",
+  "caption": "",
+  "width": 1024,
+  "height": 672,
+  "prompt_upsampling": true,
+  "seed": null,
+  "generated_at": null
+}
