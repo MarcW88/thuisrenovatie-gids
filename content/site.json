@@ -2,7 +2,7 @@
   "base_url": "https://thuisrenovatie-gids.nl",
   "site_name": "Thuisrenovatie Gids",
   "language": "nl-NL",
-  "indexing_enabled": false,
+  "indexing_enabled": true,
   "homepage": {
     "title": "Huis renoveren? Beslis, plan en vergelijk | Thuisrenovatie Gids",
     "description": "Plan je renovatie op basis van woning, volgorde, budget en risico. Vergelijk maatregelen, projecten en vakmensen pas wanneer je scope duidelijk is."
