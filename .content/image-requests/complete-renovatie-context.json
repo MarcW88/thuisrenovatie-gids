@@ -6,7 +6,7 @@
   "reason": "Geeft een geloofwaardig totaalbeeld van een woning waar meerdere renovatiedisciplines tegelijk samenkomen.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:complete-renovatie-context -->",
   "placement": "replace",
   "output_path": "assets/generated/complete-renovatie-context.webp",
@@ -16,5 +16,9 @@
   "width": 1024,
   "height": 672,
   "prompt_upsampling": true,
-  "seed": null
+  "seed": null,
+  "generated_at": "2026-09-14T09:08:09.110826+00:00",
+  "bfl_request_id": "0ec72881-a7ec-4af7-ad58-5bce97a45424",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }

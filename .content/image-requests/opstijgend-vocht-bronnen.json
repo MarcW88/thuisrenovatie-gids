@@ -6,7 +6,7 @@
   "reason": "Helpt mogelijke vochtbronnen uit elkaar houden zonder een gegenereerde foto als diagnosebewijs te laten functioneren.",
   "allow_ai_generation": true,
   "truth_risk": "LOW",
-  "status": "PENDING",
+  "status": "GENERATED",
   "marker": "<!-- EDITORIAL_IMAGE:opstijgend-vocht-bronnen -->",
   "placement": "replace",
   "output_path": "assets/generated/opstijgend-vocht-bronnen.webp",
@@ -16,5 +16,9 @@
   "width": 1024,
   "height": 768,
   "prompt_upsampling": true,
-  "seed": null
+  "seed": null,
+  "generated_at": "2026-09-14T09:08:41.495258+00:00",
+  "bfl_request_id": "393a8617-cebd-467e-b112-b980083e77a9",
+  "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
+  "bfl_cost": 3.0
 }
