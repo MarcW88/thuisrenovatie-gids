@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="672" viewBox="0 0 1024 672" role="img">
+<rect width="1024" height="672" fill="#F7F5F0"/>
+<path d="M42 0 V94 M58 0 V132" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<path d="M982 672 V578 M966 672 V540" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<text x="64" y="64" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#24483D"><tspan x="64" dy="0">Ventilatie</tspan></text>
+<text x="64" y="96" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#66706A"><tspan x="64" dy="0">Van verblijfsruimtes naar natte ruimtes</tspan></text>
+<line x1="64" y1="118" x2="960" y2="118" stroke="#D7D7CF" stroke-width="1"/>
+<rect x="92" y="190" width="240" height="250" rx="28" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="212" cy="260" r="48" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 192.96 250.48 H 217.44 Q 226.96 250.48 226.96 258.64 Q 226.96 266.8 217.44 266.8 H 205.2"/><path d="M 195.0 273.6 H 213.36 Q 221.52 273.6 221.52 266.8"/></g>
+<text x="212" y="340" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#24483D"><tspan x="212" dy="0">Toevoer</tspan></text>
+<text x="212" y="378" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="212" dy="0">Woonkamer &amp; slaapkamers</tspan></text>
+<path d="M340 315 H364" stroke="#D86F48" stroke-width="4"/>
+<path d="M356 305 L370 315 L356 325" fill="none" stroke="#D86F48" stroke-width="4"/>
+<rect x="372" y="190" width="240" height="250" rx="28" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="492" cy="260" r="48" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 474.32 264.08 L 492 247.76 L 509.68 264.08"/><rect x="478.4" y="263.4" width="27.200000000000003" height="20.400000000000002" rx="1.36"/><rect x="487.92" y="271.56" width="8.16" height="12.24"/></g>
+<text x="492" y="340" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#24483D"><tspan x="492" dy="0">Doorstroom</tspan></text>
+<text x="492" y="378" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="492" dy="0">Hal, overloop &amp;</tspan><tspan x="492" dy="16">deuropeningen</tspan></text>
+<path d="M620 315 H644" stroke="#D86F48" stroke-width="4"/>
+<path d="M636 305 L650 315 L636 325" fill="none" stroke="#D86F48" stroke-width="4"/>
+<rect x="652" y="190" width="240" height="250" rx="28" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="772" cy="260" r="48" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 752.96 250.48 H 777.44 Q 786.96 250.48 786.96 258.64 Q 786.96 266.8 777.44 266.8 H 765.2"/><path d="M 755.0 273.6 H 773.36 Q 781.52 273.6 781.52 266.8"/></g>
+<text x="772" y="340" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#24483D"><tspan x="772" dy="0">Afvoer</tspan></text>
+<text x="772" y="378" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="772" dy="0">Keuken, badkamer &amp; toilet</tspan></text>
+<text x="512" y="520" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="600" fill="#D86F48"><tspan x="512" dy="0">Conceptuele luchtweg — geen installatieplan</tspan></text>
+</svg>

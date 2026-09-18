@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="672" viewBox="0 0 1024 672" role="img">
+<rect width="1024" height="672" fill="#F7F5F0"/>
+<path d="M42 0 V94 M58 0 V132" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<path d="M982 672 V578 M966 672 V540" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<text x="64" y="64" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#24483D"><tspan x="64" dy="0">Mogelijke funderingssignalen</tspan></text>
+<text x="64" y="96" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#66706A"><tspan x="64" dy="0">Eén signaal op zichzelf bewijst geen funderingsprobleem</tspan></text>
+<line x1="64" y1="118" x2="960" y2="118" stroke="#D7D7CF" stroke-width="1"/>
+<rect x="72" y="158" width="286" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="72" y="158" width="7" height="188" rx="3.5" fill="#24483D"/>
+<circle cx="126" cy="216" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 118.48 201.9 L 124.12 212.24 L 119.89 217.41 L 127.88 224.46 L 125.06 230.57"/></g>
+<text x="172" y="206" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="172" dy="0">Scheuren</tspan></text>
+<text x="172" y="250" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="172" dy="0">Patroon, breedte en</tspan><tspan x="172" dy="16">verandering</tspan></text>
+<rect x="386" y="158" width="286" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="386" y="158" width="7" height="188" rx="3.5" fill="#D86F48"/>
+<circle cx="440" cy="216" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 427.78 218.82 L 440 207.54 L 452.22 218.82"/><rect x="430.6" y="218.35" width="18.799999999999997" height="14.1" rx="0.94"/><rect x="437.18" y="223.99" width="5.64" height="8.459999999999999"/></g>
+<text x="486" y="206" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="486" dy="0">Deuren &amp; ramen</tspan></text>
+<text x="486" y="250" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="486" dy="0">Klemmen of uit lijn</tspan><tspan x="486" dy="16">raken</tspan></text>
+<rect x="700" y="158" width="286" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="700" y="158" width="7" height="188" rx="3.5" fill="#24483D"/>
+<circle cx="754" cy="216" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="742.25" y="205.66" width="23.5" height="5.64" rx="0.94"/><rect x="744.6" y="214.12" width="18.799999999999997" height="5.64" rx="0.94"/><rect x="746.95" y="222.58" width="14.1" height="5.64" rx="0.94"/></g>
+<text x="800" y="206" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="800" dy="0">Vloerniveau</tspan></text>
+<text x="800" y="250" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="800" dy="0">Zichtbare of voelbare</tspan><tspan x="800" dy="16">scheefstand</tspan></text>
+<rect x="72" y="370" width="286" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="72" y="370" width="7" height="188" rx="3.5" fill="#D86F48"/>
+<circle cx="126" cy="428" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 113.78 430.82 L 126 419.54 L 138.22 430.82"/><rect x="116.6" y="430.35" width="18.799999999999997" height="14.1" rx="0.94"/><rect x="123.18" y="435.99" width="5.64" height="8.459999999999999"/></g>
+<text x="172" y="418" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="172" dy="0">Gevel &amp; maaiveld</tspan></text>
+<text x="172" y="462" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="172" dy="0">Verzakking of</tspan><tspan x="172" dy="16">vervorming</tspan></text>
+<rect x="386" y="370" width="286" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="386" y="370" width="7" height="188" rx="3.5" fill="#24483D"/>
+<circle cx="440" cy="428" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 440 413.9 C 436.24 421.42 429.66 428 429.66 434.58 A 10.34 10.34 0 0 0 450.34 434.58 C 450.34 428 443.76 421.42 440 413.9 Z"/></g>
+<text x="486" y="418" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="486" dy="0">Omgeving</tspan></text>
+<text x="486" y="462" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="486" dy="0">Afwatering en</tspan><tspan x="486" dy="16">aangrenzende panden</tspan></text>
+</svg>

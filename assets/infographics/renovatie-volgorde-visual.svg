@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="672" viewBox="0 0 1024 672" role="img">
+<rect width="1024" height="672" fill="#F7F5F0"/>
+<path d="M42 0 V94 M58 0 V132" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<path d="M982 672 V578 M966 672 V540" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<text x="64" y="64" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#24483D"><tspan x="64" dy="0">Renovatievolgorde</tspan></text>
+<text x="64" y="96" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#66706A"><tspan x="64" dy="0">Eerst ruw en verborgen, daarna dicht en afgewerkt</tspan></text>
+<line x1="64" y1="118" x2="960" y2="118" stroke="#D7D7CF" stroke-width="1"/>
+<rect x="94" y="210" width="262" height="132" rx="18" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="140" cy="258" r="31" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="136.4" cy="255.3" r="7.65"/><path d="M 141.8 261.15 L 151.25 270.6"/></g>
+<text x="182" y="252" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#D86F48"><tspan x="182" dy="0">01</tspan></text>
+<text x="182" y="280" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" fill="#202421"><tspan x="182" dy="0">Blokkades oplossen</tspan></text>
+<rect x="380" y="210" width="262" height="132" rx="18" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="426" cy="258" r="31" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 414.75 267.9 L 432.3 250.35"/><path d="M 429.15 247.2 Q 437.25 244.05 439.05 252.15 L 433.2 258"/><circle cx="418.35" cy="264.75" r="3.15"/></g>
+<text x="468" y="252" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#D86F48"><tspan x="468" dy="0">02</tspan></text>
+<text x="468" y="280" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" fill="#202421"><tspan x="468" dy="0">Sloop</tspan></text>
+<rect x="666" y="210" width="262" height="132" rx="18" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="712" cy="258" r="31" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 700.3 260.7 L 712 249.9 L 723.7 260.7"/><rect x="703.0" y="260.25" width="18.0" height="13.5" rx="0.9"/><rect x="709.3" y="265.65" width="5.4" height="8.1"/></g>
+<text x="754" y="252" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#D86F48"><tspan x="754" dy="0">03</tspan></text>
+<text x="754" y="280" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" fill="#202421"><tspan x="754" dy="0">Constructie &amp;</tspan><tspan x="754" dy="20">buitenschil</tspan></text>
+<rect x="94" y="388" width="262" height="132" rx="18" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="140" cy="436" r="31" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 128.75 446.8 L 141.35 434.2"/><path d="M 140.9 433.75 Q 148.1 423.4 153.5 430.15 L 147.65 436 L 152.6 440.95 Q 145.85 447.25 138.65 439.15"/></g>
+<text x="182" y="430" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#D86F48"><tspan x="182" dy="0">04</tspan></text>
+<text x="182" y="458" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" fill="#202421"><tspan x="182" dy="0">Leidingen &amp;</tspan><tspan x="182" dy="20">installaties</tspan></text>
+<rect x="380" y="388" width="262" height="132" rx="18" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="426" cy="436" r="31" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="414.75" y="426.1" width="22.5" height="5.4" rx="0.9"/><rect x="417.0" y="434.2" width="18.0" height="5.4" rx="0.9"/><rect x="419.25" y="442.3" width="13.5" height="5.4" rx="0.9"/></g>
+<text x="468" y="430" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#D86F48"><tspan x="468" dy="0">05</tspan></text>
+<text x="468" y="458" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" fill="#202421"><tspan x="468" dy="0">Isolatie &amp; opbouw</tspan></text>
+<rect x="666" y="388" width="262" height="132" rx="18" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="712" cy="436" r="31" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="700.75" y="426.1" width="22.5" height="5.4" rx="0.9"/><rect x="703.0" y="434.2" width="18.0" height="5.4" rx="0.9"/><rect x="705.25" y="442.3" width="13.5" height="5.4" rx="0.9"/></g>
+<text x="754" y="430" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#D86F48"><tspan x="754" dy="0">06</tspan></text>
+<text x="754" y="458" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" fill="#202421"><tspan x="754" dy="0">Ondergronden &amp;</tspan><tspan x="754" dy="20">droogwerk</tspan></text>
+<rect x="94" y="566" width="262" height="132" rx="18" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="140" cy="614" r="31" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 128.3 616.7 L 140 605.9 L 151.7 616.7"/><rect x="131.0" y="616.25" width="18.0" height="13.5" rx="0.9"/><rect x="137.3" y="621.65" width="5.4" height="8.1"/></g>
+<text x="182" y="608" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#D86F48"><tspan x="182" dy="0">07</tspan></text>
+<text x="182" y="636" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" fill="#202421"><tspan x="182" dy="0">Vaste inrichting &amp;</tspan><tspan x="182" dy="20">vloeren</tspan></text>
+<rect x="380" y="566" width="262" height="132" rx="18" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="426" cy="614" r="31" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 414.75 623.9 L 432.3 606.35"/><path d="M 429.15 603.2 Q 437.25 600.05 439.05 608.15 L 433.2 614"/><circle cx="418.35" cy="620.75" r="3.15"/></g>
+<text x="468" y="608" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#D86F48"><tspan x="468" dy="0">08</tspan></text>
+<text x="468" y="636" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" fill="#202421"><tspan x="468" dy="0">Afmontage</tspan></text>
+<rect x="666" y="566" width="262" height="132" rx="18" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="712" cy="614" r="31" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="712" cy="614" r="11.700000000000001"/><path d="M 706.15 614.45 L 710.65 618.95 L 719.65 608.15"/></g>
+<text x="754" y="608" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#D86F48"><tspan x="754" dy="0">09</tspan></text>
+<text x="754" y="636" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" fill="#202421"><tspan x="754" dy="0">Testen &amp; opleveren</tspan></text>
+</svg>
