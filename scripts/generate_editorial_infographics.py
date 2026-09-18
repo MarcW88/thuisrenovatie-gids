@@ -152,8 +152,8 @@ def timeline(title, subtitle, items):
     n = len(items)
     if n <= 6:
         y = 285
-        gap = 140 if n == 6 else 170
-        start = 82 if n == 6 else 92
+        start = 112
+        gap = (912 - start) / max(1, n - 1)
         for i, item in enumerate(items):
             x = start + i*gap
             if i < n-1:
@@ -186,11 +186,14 @@ def timeline(title, subtitle, items):
 
 def grid(title, subtitle, items, cols=3):
     p = frame(title, subtitle)
-    cell_w = 286 if cols == 3 else 210
+    if cols == 3:
+        cell_w, start_x, gap_x, label_chars, sub_chars = 286, 72, 28, 18, 22
+    elif cols == 2:
+        cell_w, start_x, gap_x, label_chars, sub_chars = 410, 82, 40, 28, 36
+    else:
+        cell_w, start_x, gap_x, label_chars, sub_chars = 210, 72, 28, 18, 22
     cell_h = 188 if len(items) <= 6 else 150
-    start_x = 72
     start_y = 158
-    gap_x = 28
     gap_y = 24
     for i, (label, sub, kind) in enumerate(items):
         row, col = divmod(i, cols)
@@ -200,8 +203,8 @@ def grid(title, subtitle, items, cols=3):
         p.append(f'<rect x="{x}" y="{y}" width="7" height="{cell_h}" rx="3.5" fill="{TERRA if i%2 else GREEN}"/>')
         p.append(f'<circle cx="{x+54}" cy="{y+58}" r="34" fill="{STONE}"/>')
         p.append(icon(kind, x+54, y+58, .47))
-        p.append(tx(x+100, y+48, label, 18, 700, GREEN, "start", 18))
-        p.append(tx(x+100, y+92, sub, 14, 400, MUTED, "start", 22))
+        p.append(tx(x+100, y+48, label, 18, 700, GREEN, "start", label_chars))
+        p.append(tx(x+100, y+92, sub, 14, 400, MUTED, "start", sub_chars))
     return end(p)
 
 
