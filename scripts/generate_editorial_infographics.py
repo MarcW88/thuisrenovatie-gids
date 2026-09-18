@@ -170,17 +170,17 @@ def timeline(title, subtitle, items):
         cols = 3 if n >= 8 else 4
         cell_w = 286 if cols == 3 else 212
         start_x = 94
-        start_y = 210
-        row_gap = 178
+        start_y = 178
+        row_gap = 148
         for i, (label, kind) in enumerate(items):
             row, col = divmod(i, cols)
             x = start_x + col*cell_w
             y = start_y + row*row_gap
-            p.append(f'<rect x="{x}" y="{y}" width="{cell_w-24}" height="132" rx="18" fill="{WHITE}" stroke="{LINE}"/>')
-            p.append(f'<circle cx="{x+46}" cy="{y+48}" r="31" fill="{STONE}"/>')
-            p.append(icon(kind, x+46, y+48, .45))
-            p.append(tx(x+88, y+42, f"{i+1:02d}", 13, 700, TERRA))
-            p.append(tx(x+88, y+70, label, 17, 700, INK, "start", 19))
+            p.append(f'<rect x="{x}" y="{y}" width="{cell_w-24}" height="116" rx="18" fill="{WHITE}" stroke="{LINE}"/>')
+            p.append(f'<circle cx="{x+44}" cy="{y+43}" r="28" fill="{STONE}"/>')
+            p.append(icon(kind, x+44, y+43, .40))
+            p.append(tx(x+84, y+36, f"{i+1:02d}", 12, 700, TERRA))
+            p.append(tx(x+84, y+64, label, 16, 700, INK, "start", 19))
     return end(p)
 
 
