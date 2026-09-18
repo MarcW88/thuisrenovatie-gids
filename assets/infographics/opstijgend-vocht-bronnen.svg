@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="672" viewBox="0 0 1024 672" role="img">
+<rect width="1024" height="672" fill="#F7F5F0"/>
+<path d="M42 0 V94 M58 0 V132" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<path d="M982 672 V578 M966 672 V540" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<text x="64" y="64" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#24483D"><tspan x="64" dy="0">Lage vochtplek: mogelijke bronnen</tspan></text>
+<text x="64" y="96" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#66706A"><tspan x="64" dy="0">De plek alleen bewijst de oorzaak niet</tspan></text>
+<line x1="64" y1="118" x2="960" y2="118" stroke="#D7D7CF" stroke-width="1"/>
+<rect x="72" y="158" width="286" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="72" y="158" width="7" height="188" rx="3.5" fill="#24483D"/>
+<circle cx="126" cy="216" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 126 201.9 C 122.24 209.42 115.66 216 115.66 222.58 A 10.34 10.34 0 0 0 136.34 222.58 C 136.34 216 129.76 209.42 126 201.9 Z"/></g>
+<text x="172" y="206" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="172" dy="0">Bodemvocht</tspan></text>
+<text x="172" y="250" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="172" dy="0">Capillaire route via</tspan><tspan x="172" dy="16">materiaal</tspan></text>
+<rect x="386" y="158" width="286" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="386" y="158" width="7" height="188" rx="3.5" fill="#D86F48"/>
+<circle cx="440" cy="216" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 440 201.9 C 436.24 209.42 429.66 216 429.66 222.58 A 10.34 10.34 0 0 0 450.34 222.58 C 450.34 216 443.76 209.42 440 201.9 Z"/></g>
+<text x="486" y="206" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="486" dy="0">Regeninslag</tspan></text>
+<text x="486" y="250" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="486" dy="0">Gevel of aansluiting</tspan></text>
+<rect x="700" y="158" width="286" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="700" y="158" width="7" height="188" rx="3.5" fill="#24483D"/>
+<circle cx="754" cy="216" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 742.25 227.28 L 755.41 214.12"/><path d="M 754.94 213.65 Q 762.46 202.84 768.1 209.89 L 761.99 216 L 767.16 221.17 Q 760.11 227.75 752.59 219.29"/></g>
+<text x="800" y="206" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="800" dy="0">Leidinglek</tspan></text>
+<text x="800" y="250" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="800" dy="0">Water- of</tspan><tspan x="800" dy="16">afvoerleiding</tspan></text>
+<rect x="72" y="370" width="286" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="72" y="370" width="7" height="188" rx="3.5" fill="#D86F48"/>
+<circle cx="126" cy="428" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="114.25" y="417.66" width="23.5" height="5.64" rx="0.94"/><rect x="116.6" y="426.12" width="18.799999999999997" height="5.64" rx="0.94"/><rect x="118.95" y="434.58" width="14.1" height="5.64" rx="0.94"/></g>
+<text x="172" y="418" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="172" dy="0">Vloer /</tspan><tspan x="172" dy="21">kruipruimte</tspan></text>
+<text x="172" y="462" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="172" dy="0">Vocht uit aangrenzende</tspan><tspan x="172" dy="16">bouwlaag</tspan></text>
+<rect x="386" y="370" width="286" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="386" y="370" width="7" height="188" rx="3.5" fill="#24483D"/>
+<circle cx="440" cy="428" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 426.84 421.42 H 443.76 Q 450.34 421.42 450.34 427.06 Q 450.34 432.7 443.76 432.7 H 435.3"/><path d="M 428.25 437.4 H 440.94 Q 446.58 437.4 446.58 432.7"/></g>
+<text x="486" y="418" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="486" dy="0">Condensatie</tspan></text>
+<text x="486" y="462" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="486" dy="0">Koud oppervlak en</tspan><tspan x="486" dy="16">binnenklimaat</tspan></text>
+<rect x="700" y="370" width="286" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="700" y="370" width="7" height="188" rx="3.5" fill="#D86F48"/>
+<circle cx="754" cy="428" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 741.78 430.82 L 754 419.54 L 766.22 430.82"/><rect x="744.6" y="430.35" width="18.799999999999997" height="14.1" rx="0.94"/><rect x="751.18" y="435.99" width="5.64" height="8.459999999999999"/></g>
+<text x="800" y="418" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="800" dy="0">Detailaansluiting</tspan></text>
+<text x="800" y="462" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="800" dy="0">Lokale bouwkundige</tspan><tspan x="800" dy="16">route</tspan></text>
+</svg>

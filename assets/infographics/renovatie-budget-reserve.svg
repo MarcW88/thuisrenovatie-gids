@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="672" viewBox="0 0 1024 672" role="img">
+<rect width="1024" height="672" fill="#F7F5F0"/>
+<path d="M42 0 V94 M58 0 V132" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<path d="M982 672 V578 M966 672 V540" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<text x="64" y="64" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#24483D"><tspan x="64" dy="0">Renovatiebudget</tspan></text>
+<text x="64" y="96" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#66706A"><tspan x="64" dy="0">Houd plafond, verplichtingen, verwachtingen en reserve uit elkaar</tspan></text>
+<line x1="64" y1="118" x2="960" y2="118" stroke="#D7D7CF" stroke-width="1"/>
+<rect x="86" y="166" width="852" height="72" rx="20" fill="#24483D"/>
+<text x="118" y="194" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#C9D7D1"><tspan x="118" dy="0">Budgetplafond</tspan></text>
+<text x="118" y="220" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700" fill="#FFFFFF"><tspan x="118" dy="0">Jouw maximale grens</tspan></text>
+<rect x="86" y="272" width="412" height="132" rx="20" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="144" cy="338" r="36" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 134.0 324.0 H 149.0 L 155.0 330.0 V 353.0 H 134.0 Z"/><path d="M 149.0 324.0 V 330.0 H 155.0"/><path d="M 139.0 336.5 H 149.5 M 139.0 342.0 H 149.5 M 139.0 347.5 H 146.5"/></g>
+<text x="198" y="328" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700" fill="#24483D"><tspan x="198" dy="0">Vastgelegd</tspan></text>
+<text x="198" y="356" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="198" dy="0">Getekende opdrachten en</tspan><tspan x="198" dy="16">bestellingen</tspan></text>
+<text x="458" y="310" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" fill="#D86F48"><tspan x="458" dy="0">01</tspan></text>
+<rect x="516" y="272" width="412" height="132" rx="20" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="574" cy="338" r="36" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="574" cy="338" r="12.5"/><text x="574" y="342.0" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#24483D"><tspan x="574" dy="0">€</tspan></text></g>
+<text x="628" y="328" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700" fill="#24483D"><tspan x="628" dy="0">Verwacht</tspan></text>
+<text x="628" y="356" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="628" dy="0">Nog niet definitief geprijsd</tspan></text>
+<text x="888" y="310" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" fill="#D86F48"><tspan x="888" dy="0">02</tspan></text>
+<rect x="86" y="426" width="412" height="132" rx="20" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="144" cy="492" r="36" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 144 477.5 L 156.0 482.5 V 492.5 Q 154.0 503.0 144 507.5 Q 134.0 503.0 132.0 492.5 V 482.5 Z"/></g>
+<text x="198" y="482" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700" fill="#24483D"><tspan x="198" dy="0">Projectreserve</tspan></text>
+<text x="198" y="510" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="198" dy="0">Voor onzekerheden en</tspan><tspan x="198" dy="16">wijzigingen</tspan></text>
+<text x="458" y="464" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" fill="#D86F48"><tspan x="458" dy="0">03</tspan></text>
+<rect x="516" y="426" width="412" height="132" rx="20" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="574" cy="492" r="36" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="560.5" y="483.0" width="27.0" height="18.5" rx="3.0"/><path d="M 576.5 489.5 H 588.5 V 497.0 H 576.5 Q 572.5 493.0 576.5 489.5 Z"/><circle cx="582.5" cy="493.0" r="1.0" fill="#24483D"/></g>
+<text x="628" y="482" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700" fill="#24483D"><tspan x="628" dy="0">Vrije ruimte</tspan></text>
+<text x="628" y="510" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="628" dy="0">Nog niet toegewezen budget</tspan></text>
+<text x="888" y="464" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" fill="#D86F48"><tspan x="888" dy="0">04</tspan></text>
+</svg>

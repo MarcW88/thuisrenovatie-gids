@@ -12,6 +12,8 @@ on:
       - 'robots.txt'
       - 'sitemap.xml'
       - 'scripts/render_homepage_seo.py'
+      - 'scripts/generate_editorial_infographics.py'
+      - 'scripts/sync_editorial_infographics.py'
       - 'scripts/validate_global_seo.py'
       - 'scripts/validate_empty_content_phase.py'
       - 'scripts/validate_content_quality.py'
@@ -32,6 +34,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Synchronize infographic markup
+        run: python scripts/sync_editorial_infographics.py
+      - name: Generate controlled SVG infographics
+        run: python scripts/generate_editorial_infographics.py
       - name: Regenerate renovation pages and crawl files
         run: python generate_pages.py
       - name: Render homepage SEO
@@ -50,7 +56,7 @@ jobs:
         run: |
           git config user.name "Marc Williame"
           git config user.email "146358493+MarcW88@users.noreply.github.com"
-          git add renovatie-plannen renovatieprojecten verduurzamen problemen-oplossen vakman-en-offertes doe-het-zelf index.html robots.txt sitemap.xml
+          git add content assets/infographics renovatie-plannen renovatieprojecten verduurzamen problemen-oplossen vakman-en-offertes doe-het-zelf index.html robots.txt sitemap.xml
           if git diff --cached --quiet; then
             echo "No generated changes to commit"
           else

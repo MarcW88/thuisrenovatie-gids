@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="672" viewBox="0 0 1024 672" role="img">
+<rect width="1024" height="672" fill="#F7F5F0"/>
+<path d="M42 0 V94 M58 0 V132" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<path d="M982 672 V578 M966 672 V540" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<text x="64" y="64" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#24483D"><tspan x="64" dy="0">Renovatierendement</tspan></text>
+<text x="64" y="96" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#66706A"><tspan x="64" dy="0">Waarde is breder dan financiële terugverdientijd</tspan></text>
+<line x1="64" y1="118" x2="960" y2="118" stroke="#D7D7CF" stroke-width="1"/>
+<rect x="82" y="168" width="410" height="205" rx="24" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="152" cy="242" r="42" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 136.92000000000002 245.48 L 152 231.56 L 167.07999999999998 245.48"/><rect x="140.4" y="244.9" width="23.2" height="17.4" rx="1.16"/><rect x="148.52" y="251.86" width="6.959999999999999" height="10.44"/></g>
+<text x="214" y="234" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#24483D"><tspan x="214" dy="0">Woningwaarde</tspan></text>
+<text x="214" y="278" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="214" dy="0">Bruikbaarheid en marktwaarde</tspan></text>
+<text x="432" y="223" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#D86F48">01</text>
+<rect x="512" y="168" width="410" height="205" rx="24" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="582" cy="242" r="42" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="582" cy="242" r="8.7"/><path d="M 582.0 230.3072 L 582.0 225.76"/><path d="M 582.0 253.6928 L 582.0 258.24"/><path d="M 570.3072 242.0 L 565.76 242.0"/><path d="M 593.6928 242.0 L 598.24 242.0"/><path d="M 573.648 233.648 L 570.4 230.4"/><path d="M 590.352 233.648 L 593.6 230.4"/><path d="M 573.648 250.352 L 570.4 253.6"/><path d="M 590.352 250.352 L 593.6 253.6"/></g>
+<text x="644" y="234" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#24483D"><tspan x="644" dy="0">Energie</tspan></text>
+<text x="644" y="278" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="644" dy="0">Verbruik en structurele lasten</tspan></text>
+<text x="862" y="223" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#D86F48">02</text>
+<rect x="82" y="393" width="410" height="205" rx="24" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="152" cy="467" r="42" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 141.56 480.92 Q 133.44 470.48 142.14 461.78 Q 149.68 454.24 146.2 449.6 Q 160.12 456.56 163.02 467.58 Q 165.34 478.6 152 484.98"/><path d="M 149.1 478.6 Q 145.04 471.06 153.16 464.68 Q 159.54 471.64 156.06 478.6"/></g>
+<text x="214" y="459" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#24483D"><tspan x="214" dy="0">Comfort</tspan></text>
+<text x="214" y="503" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="214" dy="0">Temperatuur, geluid en gebruik</tspan></text>
+<text x="432" y="448" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#D86F48">03</text>
+<rect x="512" y="393" width="410" height="205" rx="24" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="582" cy="467" r="42" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 582 450.18 L 595.92 455.98 V 467.58 Q 593.6 479.76 582 484.98 Q 570.4 479.76 568.08 467.58 V 455.98 Z"/></g>
+<text x="644" y="459" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#24483D"><tspan x="644" dy="0">Onderhoud &amp; risico</tspan></text>
+<text x="644" y="503" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="644" dy="0">Vermeden herstel en</tspan><tspan x="644" dy="16">toekomstbestendigheid</tspan></text>
+<text x="862" y="448" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#D86F48">04</text>
+</svg>

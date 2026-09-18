@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="672" viewBox="0 0 1024 672" role="img">
+<defs><marker id="b" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#D86F48"/></marker></defs>
+<rect width="1024" height="672" fill="#F7F5F0"/>
+<path d="M42 0 V94 M58 0 V132" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<path d="M982 672 V578 M966 672 V540" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<text x="64" y="64" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#24483D"><tspan x="64" dy="0">Vergunning of melding?</tspan></text>
+<text x="64" y="96" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#66706A"><tspan x="64" dy="0">Controleer altijd locatie én concrete werkzaamheden</tspan></text>
+<line x1="64" y1="118" x2="960" y2="118" stroke="#D7D7CF" stroke-width="1"/>
+<rect x="120" y="166" width="300" height="110" rx="24" fill="#FFFFFF" stroke="#24483D" stroke-width="3"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 159.4 223.6 L 175 209.2 L 190.6 223.6"/><rect x="163.0" y="223.0" width="24.0" height="18.0" rx="1.2"/><rect x="171.4" y="230.2" width="7.199999999999999" height="10.799999999999999"/></g>
+<text x="225" y="210" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" fill="#24483D"><tspan x="225" dy="0">Project + locatie</tspan></text>
+<text x="225" y="240" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="225" dy="0">Concrete werkzaamheden</tspan></text>
+<path d="M430 220 H582" stroke="#D86F48" stroke-width="4" marker-end="url(#b)"/>
+<rect x="590" y="166" width="300" height="110" rx="24" fill="#24483D"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="646" cy="220" r="14.3"/><path d="M 638.85 220.55 L 644.35 226.05 L 655.35 212.85"/></g>
+<text x="700" y="210" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700" fill="#FFFFFF"><tspan x="700" dy="0">Officiële</tspan></text>
+<text x="700" y="238" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700" fill="#FFFFFF"><tspan x="700" dy="0">Vergunningscheck</tspan></text>
+<rect x="80" y="350" width="206" height="132" rx="20" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="183" cy="382" r="16" fill="#D86F48"/>
+<text x="183" y="387" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF"><tspan x="183" dy="0">1</tspan></text>
+<text x="183" y="430" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700" fill="#24483D"><tspan x="183" dy="0">Geen indieningsactie</tspan></text>
+<rect x="310" y="350" width="206" height="132" rx="20" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="413" cy="382" r="16" fill="#D86F48"/>
+<text x="413" y="387" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF"><tspan x="413" dy="0">2</tspan></text>
+<text x="413" y="430" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700" fill="#24483D"><tspan x="413" dy="0">Informatieplicht</tspan></text>
+<rect x="540" y="350" width="206" height="132" rx="20" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="643" cy="382" r="16" fill="#D86F48"/>
+<text x="643" y="387" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF"><tspan x="643" dy="0">3</tspan></text>
+<text x="643" y="430" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700" fill="#24483D"><tspan x="643" dy="0">Melding</tspan></text>
+<rect x="770" y="350" width="206" height="132" rx="20" fill="#FFFFFF" stroke="#D7D7CF"/>
+<circle cx="873" cy="382" r="16" fill="#D86F48"/>
+<text x="873" y="387" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF"><tspan x="873" dy="0">4</tspan></text>
+<text x="873" y="430" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700" fill="#24483D"><tspan x="873" dy="0">Vergunning</tspan></text>
+<text x="512" y="548" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="512" dy="0">De uitkomst hangt af van locatie, werkzaamheden en actuele regels.</tspan></text>
+</svg>

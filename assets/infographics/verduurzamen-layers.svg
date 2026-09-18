@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="672" viewBox="0 0 1024 672" role="img">
+<rect width="1024" height="672" fill="#F7F5F0"/>
+<path d="M42 0 V94 M58 0 V132" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<path d="M982 672 V578 M966 672 V540" stroke="#24483D" stroke-width="2" opacity=".55"/>
+<text x="64" y="64" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#24483D"><tspan x="64" dy="0">Woning verduurzamen</tspan></text>
+<text x="64" y="96" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#66706A"><tspan x="64" dy="0">Vier systemen die elkaar beïnvloeden</tspan></text>
+<line x1="64" y1="118" x2="960" y2="118" stroke="#D7D7CF" stroke-width="1"/>
+<rect x="112" y="160" width="800" height="86" rx="24" fill="#FFFFFF" stroke="#24483D" stroke-width="3"/>
+<circle cx="166" cy="203" r="30" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="155.5" y="193.76" width="21.0" height="5.04" rx="0.84"/><rect x="157.6" y="201.32" width="16.8" height="5.04" rx="0.84"/><rect x="159.7" y="208.88" width="12.6" height="5.04" rx="0.84"/></g>
+<text x="212" y="197" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="212" dy="0">01  Schil</tspan></text>
+<text x="212" y="224" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="212" dy="0">Isolatie en glas</tspan></text>
+<rect x="162" y="270" width="700" height="86" rx="24" fill="#FFFFFF" stroke="#D7D7CF" stroke-width="1"/>
+<circle cx="216" cy="313" r="30" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 204.24 307.12 H 219.36 Q 225.24 307.12 225.24 312.16 Q 225.24 317.2 219.36 317.2 H 211.8"/><path d="M 205.5 321.4 H 216.84 Q 221.88 321.4 221.88 317.2"/></g>
+<text x="262" y="307" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="262" dy="0">02  Ventilatie</tspan></text>
+<text x="262" y="334" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="262" dy="0">Toevoer, doorstroom en afvoer</tspan></text>
+<rect x="212" y="380" width="600" height="86" rx="24" fill="#FFFFFF" stroke="#D7D7CF" stroke-width="1"/>
+<circle cx="266" cy="423" r="30" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 258.44 433.08 Q 252.56 425.52 258.86 419.22 Q 264.32 413.76 261.8 410.4 Q 271.88 415.44 273.98 423.42 Q 275.66 431.4 266 436.02"/><path d="M 263.9 431.4 Q 260.96 425.94 266.84 421.32 Q 271.46 426.36 268.94 431.4"/></g>
+<text x="312" y="417" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="312" dy="0">03  Verwarming</tspan></text>
+<text x="312" y="444" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="312" dy="0">Warmtevraag, afgifte en regeling</tspan></text>
+<rect x="262" y="490" width="500" height="86" rx="24" fill="#FFFFFF" stroke="#D7D7CF" stroke-width="1"/>
+<circle cx="316" cy="533" r="30" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="316" cy="533" r="6.3"/><path d="M 316.0 524.5328 L 316.0 521.24"/><path d="M 316.0 541.4672 L 316.0 544.76"/><path d="M 307.5328 533.0 L 304.24 533.0"/><path d="M 324.4672 533.0 L 327.76 533.0"/><path d="M 309.952 526.952 L 307.6 524.6"/><path d="M 322.048 526.952 L 324.4 524.6"/><path d="M 309.952 539.048 L 307.6 541.4"/><path d="M 322.048 539.048 L 324.4 541.4"/></g>
+<text x="362" y="527" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="362" dy="0">04  Opwekking</tspan></text>
+<text x="362" y="554" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="362" dy="0">Duurzame elektriciteit en warmte</tspan></text>
+<text x="512" y="624" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="500" fill="#66706A"><tspan x="512" dy="0">Geen universele volgorde: vertrek van de toestand van je woning.</tspan></text>
+</svg>
