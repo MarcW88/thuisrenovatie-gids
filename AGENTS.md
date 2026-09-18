@@ -119,3 +119,15 @@ Een PASS activeert nooit automatisch indexatie.
 ## Indexatie
 
 De globale status staat in `content/site.json` en wordt door `generate_pages.py` gebruikt. `indexing_enabled` mag alleen worden gewijzigd na expliciete menselijke instructie, nadat de relevante content een PUBLISH_REVIEW PASS heeft gekregen.
+
+
+## Beeldkwaliteit en AI-generatie
+
+- AI-beeldgeneratie is alleen toegestaan voor foto's en illustratieve contextbeelden zonder functionele tekst.
+- Gebruik AI nooit voor infographics, roadmaps, matrices, beslisflows, checklists, schema's of diagrammen waarin labels, stappen, categorieën, cijfers of andere informatie correct leesbaar moeten zijn.
+- Informatieve visuals met tekst worden opgebouwd in HTML/CSS/SVG met gecontroleerde Nederlandse labels.
+- Alle zichtbare tekst in visuals is Nederlands, tenzij een bron of merknaam bewust in een andere taal wordt geciteerd.
+- Pseudo-tekst, verzonnen woorden, half leesbare labels en decoratieve AI-typografie zijn blockers voor publicatie.
+- Vermijd generieke 'AI-infographic'-esthetiek: zwevende icoontjes, onnodige pijlen, willekeurige badge-vormen, pseudo-3D, overdreven symmetrie en betekenisloze decoratie.
+- Een gegenereerd beeld moet ook zonder promptcontext geloofwaardig, functioneel en visueel rustig ogen.
+- Bestaande gegenereerde infographics moeten bij revisie worden vervangen door gecontroleerde code-visuals; niet opnieuw laten genereren met alleen een andere taalprompt.
