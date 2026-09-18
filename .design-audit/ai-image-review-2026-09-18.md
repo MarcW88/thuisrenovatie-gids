@@ -82,3 +82,10 @@ Voorbeelden:
 - renovatiekosten: zes kostencategorieën rond één woning, geen verzonnen verhoudingen;
 - vergunningen: neutrale beslisflow met labels als `Controleren`, `Melding`, `Vergunning`, zonder een juridisch resultaat te claimen;
 - ventilatie: kamers benoemen in HTML/SVG en pijlen als SVG/CSS, zodat de tekst altijd correct blijft.
+
+
+## Implementatiestatus
+
+De 20 informatieve AI-beelden zijn vervangen door gecontroleerde HTML/CSS-visuals met Nederlandse labels. Hun image requests staan op `BLOCKED` en kunnen niet opnieuw via BFL worden gegenereerd.
+
+De bestaande contextbeelden/fotografische beelden blijven behouden. De regeneratieworkflow herstelt voortaan bestaande `GENERATED` contextbeelden met `--restore-only`, zonder BFL-call of nieuwe beeldgeneratie. Daardoor verwijdert een gewone page regeneration geen goedgekeurde contextbeelden meer.
