@@ -4,9 +4,9 @@
   "slot": "editorial",
   "required": true,
   "reason": "Maakt het verschil tussen projectfasen en fysieke werkvolgorde visueel duidelijk met een rustige roadmap.",
-  "allow_ai_generation": true,
+  "allow_ai_generation": false,
   "truth_risk": "LOW",
-  "status": "GENERATED",
+  "status": "BLOCKED",
   "marker": "<!-- EDITORIAL_IMAGE:renovatiefasen-roadmap -->",
   "placement": "replace",
   "output_path": "assets/generated/renovatiefasen-roadmap.webp",
@@ -20,5 +20,7 @@
   "generated_at": "2026-09-14T08:39:10.310374+00:00",
   "bfl_request_id": "21c7243a-fa2a-49c4-ab98-bd72c3933b0a",
   "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
-  "bfl_cost": 3.0
+  "bfl_cost": 3,
+  "block_reason": "Informative infographic/diagram replaced by controlled HTML/CSS with reviewed Dutch labels.",
+  "replacement": "content/renovatie-plannen/renovatiefasen/body.html"
 }
