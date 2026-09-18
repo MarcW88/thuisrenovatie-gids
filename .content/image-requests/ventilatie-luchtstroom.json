@@ -4,9 +4,9 @@
   "slot": "editorial",
   "required": true,
   "reason": "Maakt de luchtstroom van droge naar natte ruimtes begrijpelijk zonder een specifiek ventilatiesysteem als universele oplossing voor te stellen.",
-  "allow_ai_generation": true,
+  "allow_ai_generation": false,
   "truth_risk": "LOW",
-  "status": "GENERATED",
+  "status": "BLOCKED",
   "marker": "<!-- EDITORIAL_IMAGE:ventilatie-luchtstroom -->",
   "placement": "replace",
   "output_path": "assets/generated/ventilatie-luchtstroom.webp",
@@ -20,5 +20,7 @@
   "generated_at": "2026-09-14T09:08:58.031777+00:00",
   "bfl_request_id": "551437f8-3b07-4047-a473-aee21d5ac9da",
   "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
-  "bfl_cost": 3.0
+  "bfl_cost": 3,
+  "block_reason": "Informative infographic/diagram replaced by controlled HTML/CSS with reviewed Dutch labels.",
+  "replacement": "content/verduurzamen/ventilatie/body.html"
 }
