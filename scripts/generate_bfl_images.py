@@ -27,6 +27,7 @@ ACTIVE_STATUSES = {"PENDING", "REGENERATE"}
 VALID_STATUSES = {"NOT_NEEDED", "BLOCKED", "PENDING", "GENERATED", "REGENERATE"}
 VALID_PLACEMENTS = {"replace", "before", "after"}
 TERMINAL_FAILURES = {"Error", "Failed"}
+INFOGRAPHIC_TERMS = {"infographic", "diagram", "roadmap", "matrix", "decision-flow", "decision flow", "checklist", "hierarchy", "flow", "schema", "schematic"}
 
 
 class RequestError(RuntimeError):
@@ -38,6 +39,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--root", default=".")
     parser.add_argument("--requests-dir", default=DEFAULT_REQUESTS_DIR)
     parser.add_argument("--check-only", action="store_true")
+    parser.add_argument("--restore-only", action="store_true", help="Restore existing GENERATED images into regenerated pages without calling BFL")
     parser.add_argument("--github-output", default=None)
     parser.add_argument("--api-url", default=os.environ.get("BFL_API_URL", DEFAULT_BFL_API_URL))
     parser.add_argument("--timeout", type=int, default=int(os.environ.get("BFL_TIMEOUT", "600")))
@@ -113,6 +115,13 @@ def validate_request(root: Path, source: Path, req: dict[str, Any]) -> None:
             raise RequestError(f"{source}: {status} requires allow_ai_generation=true")
         if req.get("truth_risk") != "LOW":
             raise RequestError(f"{source}: automatic generation requires truth_risk=LOW")
+        prompt = str(req.get("prompt") or "").lower()
+        request_id_text = str(request_id).lower()
+        if any(term in prompt or term in request_id_text for term in INFOGRAPHIC_TERMS):
+            raise RequestError(
+                f"{source}: AI generation is blocked for infographics/diagrams. "
+                "Build the visual in HTML/CSS/SVG with reviewed Dutch labels instead."
+            )
 
     if status in ACTIVE_STATUSES or status == "GENERATED":
         for field in ("page", "marker", "output_path", "prompt", "alt"):
@@ -357,6 +366,15 @@ def main() -> int:
         print(f"Image requests: {len(sources)} | pending={pending} | reinsert={reinsert}")
         write_github_output(args.github_output, work_needed, pending, reinsert)
         if args.check_only:
+            return 0
+        if args.restore_only:
+            restored = 0
+            for source in sources:
+                req = load_request(source)
+                validate_request(root, source, req)
+                if page_needs_insertion(root, source, req) and insert_or_restore_figure(root, source, req):
+                    restored += 1
+            print(f"Restored existing generated images: {restored}")
             return 0
         if work_needed:
             process(root, sources, args)

@@ -4,9 +4,9 @@
   "slot": "editorial",
   "required": true,
   "reason": "Ondersteunt de veiligheidsboodschap door de professionele domeinen rond een warmtepomp conceptueel af te bakenen.",
-  "allow_ai_generation": true,
+  "allow_ai_generation": false,
   "truth_risk": "LOW",
-  "status": "GENERATED",
+  "status": "BLOCKED",
   "marker": "<!-- EDITORIAL_IMAGE:warmtepomp-diy-veiligheidsgrenzen -->",
   "placement": "replace",
   "output_path": "assets/generated/warmtepomp-diy-veiligheidsgrenzen.webp",
@@ -20,5 +20,7 @@
   "generated_at": "2026-09-14T09:09:15.896840+00:00",
   "bfl_request_id": "03af337b-5fa6-46f9-96bd-5831798f89f6",
   "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
-  "bfl_cost": 3.0
+  "bfl_cost": 3,
+  "block_reason": "Informative infographic/diagram replaced by controlled HTML/CSS with reviewed Dutch labels.",
+  "replacement": "content/doe-het-zelf/warmtepomp-zelf-plaatsen/body.html"
 }

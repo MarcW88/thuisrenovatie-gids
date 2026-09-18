@@ -4,9 +4,9 @@
   "slot": "editorial",
   "required": true,
   "reason": "Visualiseert dat vocht in muren meerdere oorzaken kan hebben en ondersteunt de diagnostische logica van de pagina.",
-  "allow_ai_generation": true,
+  "allow_ai_generation": false,
   "truth_risk": "LOW",
-  "status": "GENERATED",
+  "status": "BLOCKED",
   "marker": "<!-- EDITORIAL_IMAGE:vocht-in-muren-bronnen -->",
   "placement": "replace",
   "output_path": "assets/generated/vocht-in-muren-bronnen.webp",
@@ -20,5 +20,7 @@
   "generated_at": "2026-09-14T09:09:07.847502+00:00",
   "bfl_request_id": "2d1e810a-4d36-4c91-a550-a4cd2cdbe0b3",
   "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
-  "bfl_cost": 3.0
+  "bfl_cost": 3,
+  "block_reason": "Informative infographic/diagram replaced by controlled HTML/CSS with reviewed Dutch labels.",
+  "replacement": "content/problemen-oplossen/vocht-in-muren/body.html"
 }

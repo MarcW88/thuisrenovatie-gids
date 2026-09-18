@@ -4,9 +4,9 @@
   "slot": "editorial",
   "required": true,
   "reason": "Geeft de technische afhankelijkheden tussen renovatiestappen in één oogopslag weer zonder de pagina tot een tekstmuur te maken.",
-  "allow_ai_generation": true,
+  "allow_ai_generation": false,
   "truth_risk": "LOW",
-  "status": "GENERATED",
+  "status": "BLOCKED",
   "marker": "<!-- EDITORIAL_IMAGE:renovatie-volgorde-visual -->",
   "placement": "replace",
   "output_path": "assets/generated/renovatie-volgorde-visual.webp",
@@ -20,5 +20,7 @@
   "generated_at": "2026-09-14T08:39:01.255092+00:00",
   "bfl_request_id": "53e8cfbd-79c1-403c-a9f5-acecb1570e0d",
   "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
-  "bfl_cost": 3.0
+  "bfl_cost": 3,
+  "block_reason": "Informative infographic/diagram replaced by controlled HTML/CSS with reviewed Dutch labels.",
+  "replacement": "content/renovatie-plannen/renovatie-volgorde/body.html"
 }

@@ -36,6 +36,8 @@ jobs:
         run: python generate_pages.py
       - name: Render homepage SEO
         run: python scripts/render_homepage_seo.py
+      - name: Restore existing editorial context images
+        run: python scripts/generate_bfl_images.py --restore-only
       - name: Validate structure
         run: python scripts/validate_renovation_structure.py
       - name: Validate route content state

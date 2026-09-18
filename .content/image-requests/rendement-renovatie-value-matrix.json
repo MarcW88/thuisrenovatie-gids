@@ -4,9 +4,9 @@
   "slot": "editorial",
   "required": true,
   "reason": "Laat zien dat rendement breder is dan financiële terugverdientijd en ook comfort, energie en onderhoud omvat.",
-  "allow_ai_generation": true,
+  "allow_ai_generation": false,
   "truth_risk": "LOW",
-  "status": "GENERATED",
+  "status": "BLOCKED",
   "marker": "<!-- EDITORIAL_IMAGE:rendement-renovatie-value-matrix -->",
   "placement": "replace",
   "output_path": "assets/generated/rendement-renovatie-value-matrix.webp",
@@ -20,5 +20,7 @@
   "generated_at": "2026-09-14T09:39:44.622585+00:00",
   "bfl_request_id": "2eddec8a-3463-4fcf-bc11-12a3e356bc10",
   "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
-  "bfl_cost": 3.0
+  "bfl_cost": 3,
+  "block_reason": "Informative infographic/diagram replaced by controlled HTML/CSS with reviewed Dutch labels.",
+  "replacement": "content/renovatie-plannen/rendement-renovatie/body.html"
 }
