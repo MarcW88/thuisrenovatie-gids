@@ -27,6 +27,7 @@ ACTIVE_STATUSES = {"PENDING", "REGENERATE"}
 VALID_STATUSES = {"NOT_NEEDED", "BLOCKED", "PENDING", "GENERATED", "REGENERATE"}
 VALID_PLACEMENTS = {"replace", "before", "after"}
 TERMINAL_FAILURES = {"Error", "Failed"}
+INFOGRAPHIC_TERMS = {"infographic", "diagram", "roadmap", "matrix", "decision-flow", "decision flow", "checklist", "hierarchy", "flow", "schema", "schematic"}
 
 
 class RequestError(RuntimeError):
@@ -113,6 +114,13 @@ def validate_request(root: Path, source: Path, req: dict[str, Any]) -> None:
             raise RequestError(f"{source}: {status} requires allow_ai_generation=true")
         if req.get("truth_risk") != "LOW":
             raise RequestError(f"{source}: automatic generation requires truth_risk=LOW")
+        prompt = str(req.get("prompt") or "").lower()
+        request_id_text = str(request_id).lower()
+        if any(term in prompt or term in request_id_text for term in INFOGRAPHIC_TERMS):
+            raise RequestError(
+                f"{source}: AI generation is blocked for infographics/diagrams. "
+                "Build the visual in HTML/CSS/SVG with reviewed Dutch labels instead."
+            )
 
     if status in ACTIVE_STATUSES or status == "GENERATED":
         for field in ("page", "marker", "output_path", "prompt", "alt"):
