@@ -4,9 +4,9 @@
   "slot": "editorial",
   "required": true,
   "reason": "Ordent energiebesparing van eenvoudige instellingen en schilmaatregelen naar installaties en opwekking.",
-  "allow_ai_generation": true,
+  "allow_ai_generation": false,
   "truth_risk": "LOW",
-  "status": "GENERATED",
+  "status": "BLOCKED",
   "marker": "<!-- EDITORIAL_IMAGE:energie-besparen-hierarchy -->",
   "placement": "replace",
   "output_path": "assets/generated/energie-besparen-hierarchy.webp",
@@ -20,5 +20,7 @@
   "generated_at": "2026-09-14T09:39:14.788245+00:00",
   "bfl_request_id": "75b34d05-0c0a-4447-b236-06cff0356a34",
   "bfl_endpoint": "https://api.bfl.ai/v1/flux-2-pro-preview",
-  "bfl_cost": 3.0
+  "bfl_cost": 3,
+  "block_reason": "Informative infographic/diagram replaced by controlled HTML/CSS with reviewed Dutch labels.",
+  "replacement": "content/verduurzamen/energie-besparen/body.html"
 }
