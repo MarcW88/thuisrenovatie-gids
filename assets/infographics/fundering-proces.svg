@@ -6,33 +6,33 @@
 <text x="64" y="64" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#24483D"><tspan x="64" dy="0">Funderingsherstel</tspan></text>
 <text x="64" y="96" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#66706A"><tspan x="64" dy="0">Van onderzoek naar controle en dossier</tspan></text>
 <line x1="64" y1="118" x2="960" y2="118" stroke="#D7D7CF" stroke-width="1"/>
-<path d="M 148 285 H 206" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
-<path d="M 318 285 H 376" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
-<path d="M 488 285 H 546" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
-<path d="M 658 285 H 716" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
-<circle cx="92" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="87.36" cy="281.52" r="9.86"/><path d="M 94.32 289.06 L 106.5 301.24"/></g>
-<circle cx="54" cy="243" r="18" fill="#D86F48"/>
-<text x="54" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="54" dy="0">1</tspan></text>
-<text x="92" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="92" dy="0">Onderzoek</tspan></text>
-<circle cx="262" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="248.08" y="272.24" width="27.839999999999996" height="25.52" rx="2.9"/><path d="M 254.46 280.36 H 269.54 M 254.46 286.74 H 266.64 M 254.46 293.12 H 263.16"/></g>
-<circle cx="224" cy="243" r="18" fill="#D86F48"/>
-<text x="224" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="224" dy="0">2</tspan></text>
-<text x="262" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="262" dy="0">Eisen &amp; scope</tspan></text>
-<circle cx="432" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 420.4 268.76 H 437.8 L 444.76 275.72 V 302.4 H 420.4 Z"/><path d="M 437.8 268.76 V 275.72 H 444.76"/><path d="M 426.2 283.26 H 438.38 M 426.2 289.64 H 438.38 M 426.2 296.02 H 434.9"/></g>
-<circle cx="394" cy="243" r="18" fill="#D86F48"/>
-<text x="394" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="394" dy="0">3</tspan></text>
-<text x="432" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="432" dy="0">Offertes</tspan></text>
-<circle cx="602" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 587.5 297.76 L 610.12 275.14"/><path d="M 606.06 271.08 Q 616.5 267.02 618.82 277.46 L 611.28 285"/><circle cx="592.14" cy="293.7" r="4.06"/></g>
-<circle cx="564" cy="243" r="18" fill="#D86F48"/>
-<text x="564" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="564" dy="0">4</tspan></text>
-<text x="602" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="602" dy="0">Uitvoering</tspan></text>
-<circle cx="772" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="772" cy="285" r="15.079999999999998"/><path d="M 764.46 285.58 L 770.26 291.38 L 781.86 277.46"/></g>
-<circle cx="734" cy="243" r="18" fill="#D86F48"/>
-<text x="734" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="734" dy="0">5</tspan></text>
-<text x="772" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="772" dy="0">Controle &amp;</tspan><tspan x="772" dy="21">dossier</tspan></text>
+<path d="M 168.0 285 H 256.0" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
+<path d="M 368.0 285 H 456.0" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
+<path d="M 568.0 285 H 656.0" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
+<path d="M 768.0 285 H 856.0" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
+<circle cx="112.0" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="107.36" cy="281.52" r="9.86"/><path d="M 114.32 289.06 L 126.5 301.24"/></g>
+<circle cx="74.0" cy="243" r="18" fill="#D86F48"/>
+<text x="74.0" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="74.0" dy="0">1</tspan></text>
+<text x="112.0" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="112.0" dy="0">Onderzoek</tspan></text>
+<circle cx="312.0" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="298.08" y="272.24" width="27.839999999999996" height="25.52" rx="2.9"/><path d="M 304.46 280.36 H 319.54 M 304.46 286.74 H 316.64 M 304.46 293.12 H 313.16"/></g>
+<circle cx="274.0" cy="243" r="18" fill="#D86F48"/>
+<text x="274.0" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="274.0" dy="0">2</tspan></text>
+<text x="312.0" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="312.0" dy="0">Eisen &amp; scope</tspan></text>
+<circle cx="512.0" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 500.4 268.76 H 517.8 L 524.76 275.72 V 302.4 H 500.4 Z"/><path d="M 517.8 268.76 V 275.72 H 524.76"/><path d="M 506.2 283.26 H 518.38 M 506.2 289.64 H 518.38 M 506.2 296.02 H 514.9"/></g>
+<circle cx="474.0" cy="243" r="18" fill="#D86F48"/>
+<text x="474.0" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="474.0" dy="0">3</tspan></text>
+<text x="512.0" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="512.0" dy="0">Offertes</tspan></text>
+<circle cx="712.0" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 697.5 297.76 L 720.12 275.14"/><path d="M 716.06 271.08 Q 726.5 267.02 728.82 277.46 L 721.28 285"/><circle cx="702.14" cy="293.7" r="4.06"/></g>
+<circle cx="674.0" cy="243" r="18" fill="#D86F48"/>
+<text x="674.0" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="674.0" dy="0">4</tspan></text>
+<text x="712.0" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="712.0" dy="0">Uitvoering</tspan></text>
+<circle cx="912.0" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="912.0" cy="285" r="15.079999999999998"/><path d="M 904.46 285.58 L 910.26 291.38 L 921.86 277.46"/></g>
+<circle cx="874.0" cy="243" r="18" fill="#D86F48"/>
+<text x="874.0" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="874.0" dy="0">5</tspan></text>
+<text x="912.0" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="912.0" dy="0">Controle &amp;</tspan><tspan x="912.0" dy="21">dossier</tspan></text>
 </svg>

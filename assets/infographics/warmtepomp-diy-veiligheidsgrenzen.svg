@@ -5,28 +5,28 @@
 <text x="64" y="64" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#24483D"><tspan x="64" dy="0">Warmtepomp: veiligheidsgrenzen</tspan></text>
 <text x="64" y="96" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#66706A"><tspan x="64" dy="0">Vier domeinen die professionele beoordeling kunnen vereisen</tspan></text>
 <line x1="64" y1="118" x2="960" y2="118" stroke="#D7D7CF" stroke-width="1"/>
-<rect x="72" y="158" width="210" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
-<rect x="72" y="158" width="7" height="188" rx="3.5" fill="#24483D"/>
-<circle cx="126" cy="216" r="34" fill="#ECE8DF"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 126 202.37 L 137.28 207.07 V 216.47 Q 135.4 226.34 126 230.57 Q 116.6 226.34 114.72 216.47 V 207.07 Z"/></g>
-<text x="172" y="206" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="172" dy="0">Koudemiddelcircuit</tspan></text>
-<text x="172" y="250" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="172" dy="0">Gecertificeerd werk</tspan><tspan x="172" dy="16">kan verplicht zijn</tspan></text>
-<rect x="310" y="158" width="210" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
-<rect x="310" y="158" width="7" height="188" rx="3.5" fill="#D86F48"/>
-<circle cx="364" cy="216" r="34" fill="#ECE8DF"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 366.35 201.43 L 356.48 218.35 H 363.53 L 360.24 230.57 L 372.46 212.24 H 365.41 Z"/></g>
-<text x="410" y="206" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="410" dy="0">Elektrische</tspan><tspan x="410" dy="21">aansluiting</tspan></text>
-<text x="410" y="250" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="410" dy="0">Beveiliging, voeding</tspan><tspan x="410" dy="16">en aansluiting</tspan></text>
-<rect x="72" y="370" width="210" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
-<rect x="72" y="370" width="7" height="188" rx="3.5" fill="#24483D"/>
-<circle cx="126" cy="428" r="34" fill="#ECE8DF"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 114.25 439.28 L 127.41 426.12"/><path d="M 126.94 425.65 Q 134.46 414.84 140.1 421.89 L 133.99 428 L 139.16 433.17 Q 132.11 439.75 124.59 431.29"/></g>
-<text x="172" y="418" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="172" dy="0">Hydraulisch</tspan><tspan x="172" dy="21">circuit</tspan></text>
-<text x="172" y="462" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="172" dy="0">Verwarming, debiet en</tspan><tspan x="172" dy="16">inregeling</tspan></text>
-<rect x="310" y="370" width="210" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
-<rect x="310" y="370" width="7" height="188" rx="3.5" fill="#D86F48"/>
-<circle cx="364" cy="428" r="34" fill="#ECE8DF"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="364" cy="428" r="12.219999999999999"/><path d="M 357.89 428.47 L 362.59 433.17 L 371.99 421.89"/></g>
-<text x="410" y="418" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="410" dy="0">Dimensionering &amp;</tspan><tspan x="410" dy="21">inbedrijfstelling</tspan></text>
-<text x="410" y="462" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="410" dy="0">Vermogen, regeling en</tspan><tspan x="410" dy="16">controle</tspan></text>
+<rect x="82" y="158" width="410" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="82" y="158" width="7" height="188" rx="3.5" fill="#24483D"/>
+<circle cx="136" cy="216" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 136 202.37 L 147.28 207.07 V 216.47 Q 145.4 226.34 136 230.57 Q 126.6 226.34 124.72 216.47 V 207.07 Z"/></g>
+<text x="182" y="206" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="182" dy="0">Koudemiddelcircuit</tspan></text>
+<text x="182" y="250" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="182" dy="0">Gecertificeerd werk kan verplicht</tspan><tspan x="182" dy="16">zijn</tspan></text>
+<rect x="532" y="158" width="410" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="532" y="158" width="7" height="188" rx="3.5" fill="#D86F48"/>
+<circle cx="586" cy="216" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 588.35 201.43 L 578.48 218.35 H 585.53 L 582.24 230.57 L 594.46 212.24 H 587.41 Z"/></g>
+<text x="632" y="206" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="632" dy="0">Elektrische aansluiting</tspan></text>
+<text x="632" y="250" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="632" dy="0">Beveiliging, voeding en aansluiting</tspan></text>
+<rect x="82" y="370" width="410" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="82" y="370" width="7" height="188" rx="3.5" fill="#24483D"/>
+<circle cx="136" cy="428" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 124.25 439.28 L 137.41 426.12"/><path d="M 136.94 425.65 Q 144.46 414.84 150.1 421.89 L 143.99 428 L 149.16 433.17 Q 142.11 439.75 134.59 431.29"/></g>
+<text x="182" y="418" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="182" dy="0">Hydraulisch circuit</tspan></text>
+<text x="182" y="462" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="182" dy="0">Verwarming, debiet en inregeling</tspan></text>
+<rect x="532" y="370" width="410" height="188" rx="22" fill="#FFFFFF" stroke="#D7D7CF"/>
+<rect x="532" y="370" width="7" height="188" rx="3.5" fill="#D86F48"/>
+<circle cx="586" cy="428" r="34" fill="#ECE8DF"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="586" cy="428" r="12.219999999999999"/><path d="M 579.89 428.47 L 584.59 433.17 L 593.99 421.89"/></g>
+<text x="632" y="418" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#24483D"><tspan x="632" dy="0">Dimensionering &amp;</tspan><tspan x="632" dy="21">inbedrijfstelling</tspan></text>
+<text x="632" y="462" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="400" fill="#66706A"><tspan x="632" dy="0">Vermogen, regeling en controle</tspan></text>
 </svg>

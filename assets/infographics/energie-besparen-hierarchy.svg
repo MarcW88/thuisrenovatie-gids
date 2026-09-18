@@ -6,33 +6,33 @@
 <text x="64" y="64" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="31" font-weight="700" fill="#24483D"><tspan x="64" dy="0">Energie besparen</tspan></text>
 <text x="64" y="96" text-anchor="start" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#66706A"><tspan x="64" dy="0">Van eenvoudige ingrepen naar structurele maatregelen</tspan></text>
 <line x1="64" y1="118" x2="960" y2="118" stroke="#D7D7CF" stroke-width="1"/>
-<path d="M 148 285 H 206" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
-<path d="M 318 285 H 376" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
-<path d="M 488 285 H 546" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
-<path d="M 658 285 H 716" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
-<circle cx="92" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="78.08" y="272.24" width="27.839999999999996" height="25.52" rx="2.9"/><path d="M 84.46000000000001 280.36 H 99.53999999999999 M 84.46000000000001 286.74 H 96.64 M 84.46000000000001 293.12 H 93.16"/></g>
-<circle cx="54" cy="243" r="18" fill="#D86F48"/>
-<text x="54" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="54" dy="0">1</tspan></text>
-<text x="92" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="92" dy="0">Gedrag &amp;</tspan><tspan x="92" dy="21">instellingen</tspan></text>
-<circle cx="262" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="247.5" y="272.24" width="28.999999999999996" height="6.959999999999999" rx="1.16"/><rect x="250.4" y="282.68" width="23.2" height="6.959999999999999" rx="1.16"/><rect x="253.3" y="293.12" width="17.4" height="6.959999999999999" rx="1.16"/></g>
-<circle cx="224" cy="243" r="18" fill="#D86F48"/>
-<text x="224" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="224" dy="0">2</tspan></text>
-<text x="262" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="262" dy="0">Isolatie &amp; glas</tspan></text>
-<circle cx="432" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 415.76 276.88 H 436.64 Q 444.76 276.88 444.76 283.84 Q 444.76 290.8 436.64 290.8 H 426.2"/><path d="M 417.5 296.6 H 433.16 Q 440.12 296.6 440.12 290.8"/></g>
-<circle cx="394" cy="243" r="18" fill="#D86F48"/>
-<text x="394" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="394" dy="0">3</tspan></text>
-<text x="432" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="432" dy="0">Ventilatie</tspan></text>
-<circle cx="602" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 591.56 298.92 Q 583.44 288.48 592.14 279.78 Q 599.68 272.24 596.2 267.6 Q 610.12 274.56 613.02 285.58 Q 615.34 296.6 602 302.98"/><path d="M 599.1 296.6 Q 595.04 289.06 603.16 282.68 Q 609.54 289.64 606.06 296.6"/></g>
-<circle cx="564" cy="243" r="18" fill="#D86F48"/>
-<text x="564" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="564" dy="0">4</tspan></text>
-<text x="602" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="602" dy="0">Verwarming</tspan></text>
-<circle cx="772" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
-<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="772" cy="285" r="8.7"/><path d="M 772.0 273.3072 L 772.0 268.76"/><path d="M 772.0 296.6928 L 772.0 301.24"/><path d="M 760.3072 285.0 L 755.76 285.0"/><path d="M 783.6928 285.0 L 788.24 285.0"/><path d="M 763.648 276.648 L 760.4 273.4"/><path d="M 780.352 276.648 L 783.6 273.4"/><path d="M 763.648 293.352 L 760.4 296.6"/><path d="M 780.352 293.352 L 783.6 296.6"/></g>
-<circle cx="734" cy="243" r="18" fill="#D86F48"/>
-<text x="734" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="734" dy="0">5</tspan></text>
-<text x="772" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="772" dy="0">Opwekking</tspan></text>
+<path d="M 168.0 285 H 256.0" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
+<path d="M 368.0 285 H 456.0" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
+<path d="M 568.0 285 H 656.0" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
+<path d="M 768.0 285 H 856.0" stroke="#D86F48" stroke-width="3" marker-end="url(#a)"/>
+<circle cx="112.0" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="98.08" y="272.24" width="27.839999999999996" height="25.52" rx="2.9"/><path d="M 104.46000000000001 280.36 H 119.53999999999999 M 104.46000000000001 286.74 H 116.64 M 104.46000000000001 293.12 H 113.16"/></g>
+<circle cx="74.0" cy="243" r="18" fill="#D86F48"/>
+<text x="74.0" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="74.0" dy="0">1</tspan></text>
+<text x="112.0" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="112.0" dy="0">Gedrag &amp;</tspan><tspan x="112.0" dy="21">instellingen</tspan></text>
+<circle cx="312.0" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="297.5" y="272.24" width="28.999999999999996" height="6.959999999999999" rx="1.16"/><rect x="300.4" y="282.68" width="23.2" height="6.959999999999999" rx="1.16"/><rect x="303.3" y="293.12" width="17.4" height="6.959999999999999" rx="1.16"/></g>
+<circle cx="274.0" cy="243" r="18" fill="#D86F48"/>
+<text x="274.0" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="274.0" dy="0">2</tspan></text>
+<text x="312.0" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="312.0" dy="0">Isolatie &amp; glas</tspan></text>
+<circle cx="512.0" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 495.76 276.88 H 516.64 Q 524.76 276.88 524.76 283.84 Q 524.76 290.8 516.64 290.8 H 506.2"/><path d="M 497.5 296.6 H 513.16 Q 520.12 296.6 520.12 290.8"/></g>
+<circle cx="474.0" cy="243" r="18" fill="#D86F48"/>
+<text x="474.0" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="474.0" dy="0">3</tspan></text>
+<text x="512.0" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="512.0" dy="0">Ventilatie</tspan></text>
+<circle cx="712.0" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M 701.56 298.92 Q 693.44 288.48 702.14 279.78 Q 709.68 272.24 706.2 267.6 Q 720.12 274.56 723.02 285.58 Q 725.34 296.6 712.0 302.98"/><path d="M 709.1 296.6 Q 705.04 289.06 713.16 282.68 Q 719.54 289.64 716.06 296.6"/></g>
+<circle cx="674.0" cy="243" r="18" fill="#D86F48"/>
+<text x="674.0" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="674.0" dy="0">4</tspan></text>
+<text x="712.0" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="712.0" dy="0">Verwarming</tspan></text>
+<circle cx="912.0" cy="285" r="54" fill="#FFFFFF" stroke="#24483D" stroke-width="4"/>
+<g stroke="#24483D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="912.0" cy="285" r="8.7"/><path d="M 912.0 273.3072 L 912.0 268.76"/><path d="M 912.0 296.6928 L 912.0 301.24"/><path d="M 900.3072 285.0 L 895.76 285.0"/><path d="M 923.6928 285.0 L 928.24 285.0"/><path d="M 903.648 276.648 L 900.4 273.4"/><path d="M 920.352 276.648 L 923.6 273.4"/><path d="M 903.648 293.352 L 900.4 296.6"/><path d="M 920.352 293.352 L 923.6 296.6"/></g>
+<circle cx="874.0" cy="243" r="18" fill="#D86F48"/>
+<text x="874.0" y="249" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF"><tspan x="874.0" dy="0">5</tspan></text>
+<text x="912.0" y="373" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#202421"><tspan x="912.0" dy="0">Opwekking</tspan></text>
 </svg>
