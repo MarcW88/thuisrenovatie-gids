@@ -183,3 +183,17 @@
 .cost-visual>div:nth-child(6) b:before{width:38%;background:var(--terra-text)}
 .support-note{margin:24px 0 0;padding-top:18px;border-top:1px solid var(--line);color:var(--muted-text);font-size:12px;line-height:1.65}
 @media(max-width:700px){.support-figure-code{padding:22px}.cost-visual>div{grid-template-columns:1fr;gap:7px}}
+
+
+/* Homepage issue section: replace budget chart with a clear renovation sequence. */
+.issue-sequence{padding:28px;border:1px solid var(--line);background:#fff}
+.issue-sequence-label{margin:0 0 8px;color:var(--terra-text);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.issue-sequence h3{margin:0 0 20px;font-size:28px;line-height:1.2}
+.issue-sequence ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.issue-sequence li{display:grid;grid-template-columns:38px 1fr;gap:15px;padding:17px 0;border-bottom:1px solid var(--line)}
+.issue-sequence li>span{display:grid;place-items:center;width:32px;height:32px;border:1px solid var(--line);border-radius:50%;color:var(--green);font:700 11px Manrope,sans-serif}
+.issue-sequence strong,.issue-sequence small{display:block}
+.issue-sequence strong{font:700 14px/1.4 Manrope,sans-serif}
+.issue-sequence small{margin-top:4px;color:var(--muted-text);font-size:11px;line-height:1.55}
+.issue-sequence>a{display:inline-block;margin-top:20px;color:var(--terra-text);font-size:12px;font-weight:700}
+@media(max-width:700px){.issue-sequence{padding:22px}.issue-sequence h3{font-size:24px}}
