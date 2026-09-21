@@ -164,3 +164,22 @@
   .direct-home h3{font-size:23px}
   .method-steps li{grid-template-columns:34px 1fr;padding:16px 18px}
 }
+
+
+/* Homepage image-quality fix: controlled data visual instead of generated infographic text. */
+.support-figure-code{padding:28px;border:1px solid var(--line);background:#fff}
+.support-figure-label{margin:0 0 8px;color:var(--terra-text);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.support-figure-code h3{margin:0 0 24px;font-size:28px;line-height:1.2}
+.cost-visual{display:grid;gap:14px}
+.cost-visual>div{display:grid;grid-template-columns:minmax(130px,1fr) 2fr;gap:18px;align-items:center}
+.cost-visual span{font-size:12px;font-weight:600;color:var(--ink)}
+.cost-visual b{display:block;height:12px;background:var(--stone);position:relative;overflow:hidden}
+.cost-visual b:before{content:"";display:block;height:100%;background:var(--green)}
+.cost-visual>div:nth-child(1) b:before{width:78%}
+.cost-visual>div:nth-child(2) b:before{width:68%}
+.cost-visual>div:nth-child(3) b:before{width:62%}
+.cost-visual>div:nth-child(4) b:before{width:72%}
+.cost-visual>div:nth-child(5) b:before{width:46%}
+.cost-visual>div:nth-child(6) b:before{width:38%;background:var(--terra-text)}
+.support-note{margin:24px 0 0;padding-top:18px;border-top:1px solid var(--line);color:var(--muted-text);font-size:12px;line-height:1.65}
+@media(max-width:700px){.support-figure-code{padding:22px}.cost-visual>div{grid-template-columns:1fr;gap:7px}}
