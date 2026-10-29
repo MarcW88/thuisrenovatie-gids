@@ -25,7 +25,7 @@ ROUTES = {
     ],
     "renovatieprojecten": [
         "badkamer-renovatie", "keuken-renovatie", "aanbouw", "fundering",
-        "ramen-en-glas", "dak-renoveren",
+        "ramen-en-glas", "dak-renoveren", "dak-renoveren/plat-dak-renoveren",
     ],
     "verduurzamen": [
         "isolatie", "isolatie/dakisolatie", "isolatie/vloerisolatie",
