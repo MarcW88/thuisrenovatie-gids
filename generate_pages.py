@@ -34,7 +34,7 @@ ROUTES = {
     ],
     "problemen-oplossen": [
         "vochtproblemen", "opstijgend-vocht", "vocht-in-muren",
-        "funderingsproblemen", "daklekkage",
+        "funderingsproblemen", "daklekkage", "schimmel-in-huis",
     ],
     "vakman-en-offertes": [
         "vakman-kiezen", "aannemer-kiezen", "offertes-vergelijken",
@@ -162,6 +162,8 @@ def page(route):
     parts = route.split("/")
     family = parts[0]
     h1 = name(parts[-1])
+    if route == "problemen-oplossen/schimmel-in-huis":
+        h1 = "Schimmel in huis verwijderen"
     trail = ['<a href="/">Home</a>']
     path = ""
     for part in parts[:-1]:
