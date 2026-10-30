@@ -34,7 +34,7 @@ ROUTES = {
     ],
     "problemen-oplossen": [
         "vochtproblemen", "opstijgend-vocht", "vocht-in-muren",
-        "funderingsproblemen",
+        "funderingsproblemen", "daklekkage",
     ],
     "vakman-en-offertes": [
         "vakman-kiezen", "aannemer-kiezen", "offertes-vergelijken",
