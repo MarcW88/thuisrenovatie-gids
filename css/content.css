@@ -10,3 +10,15 @@
 /* Editorial infographics are real SVG image assets with controlled Dutch labels. */
 .editorial-infographic{overflow:hidden;border:1px solid var(--line);border-radius:var(--radius-md);background:#F7F5F0;box-shadow:0 14px 34px rgba(32,36,33,.045)}
 .editorial-infographic img{object-fit:contain;background:#F7F5F0}
+
+/* Condens guide: readable semantic tables on narrow screens. */
+@media (max-width:700px){
+ .problem-shell .condens-responsive-table{overflow:visible;margin-left:0;margin-right:0;border:0;box-shadow:none;background:transparent}
+ .problem-shell .condens-responsive-table table{width:100%;min-width:0;display:block;border-collapse:separate}
+ .problem-shell .condens-responsive-table thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+ .problem-shell .condens-responsive-table tbody{display:block}
+ .problem-shell .condens-responsive-table tr{display:block;margin:0 0 12px;border:1px solid var(--line);background:#fff}
+ .problem-shell .condens-responsive-table td{display:block;width:100%;padding:11px 14px;border-right:0;border-bottom:1px solid var(--line);overflow-wrap:anywhere;font-size:13px}
+ .problem-shell .condens-responsive-table td:last-child{border-bottom:0}
+ .problem-shell .condens-responsive-table td::before{content:attr(data-label);display:block;margin-bottom:5px;color:var(--green);font:700 10px/1.35 Manrope,sans-serif;letter-spacing:.03em;text-transform:uppercase}
+}
