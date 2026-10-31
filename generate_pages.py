@@ -34,7 +34,7 @@ ROUTES = {
     ],
     "problemen-oplossen": [
         "vochtproblemen", "opstijgend-vocht", "vocht-in-muren",
-        "funderingsproblemen", "daklekkage", "schimmel-in-huis", "condens-op-ramen",
+        "funderingsproblemen", "daklekkage", "schimmel-in-huis", "condens-op-ramen", "doorslaand-vocht",
     ],
     "vakman-en-offertes": [
         "vakman-kiezen", "aannemer-kiezen", "offertes-vergelijken",
@@ -166,6 +166,8 @@ def page(route):
         h1 = "Schimmel in huis verwijderen"
     if route == "problemen-oplossen/condens-op-ramen":
         h1 = "Condens op ramen voorkomen"
+    if route == "problemen-oplossen/doorslaand-vocht":
+        h1 = "Doorslaand vocht behandelen"
     trail = ['<a href="/">Home</a>']
     path = ""
     for part in parts[:-1]:
